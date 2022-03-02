@@ -1,0 +1,38 @@
+.elearning-exercise-list-item-v2{
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding:2rem;
+    margin-top:2rem;
+    position: relative;
+    .eeliv-content{
+        display: flex;
+        margin-top: 1rem;
+        &__left{
+            margin-right:5rem;
+            width: 16rem;
+            .item-title{
+                width:8rem;
+            }
+        }
+        &__right{
+            .item-title{
+                width:14rem;
+            }
+        }
+    }
+    .eeliv-left{
+        border-right: 1px solid #E0E0E0;
+    }
+    .btn-result__fail{
+        background: $color-pink-2;
+    }
+    .fill-pending path{
+        fill: #E6A01E;
+    }
+    .exercise-require{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

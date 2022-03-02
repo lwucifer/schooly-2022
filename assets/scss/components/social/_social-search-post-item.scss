@@ -1,0 +1,17 @@
+.socical-search-post-item{
+    border-bottom: 1px solid #E0E0E0;
+    padding: 2rem;
+    .sspi__content{
+        display: flex;
+        .sspi__desc{
+            width: 45rem;
+            cursor: pointer;
+        }
+        .sspi__img{
+            margin-left: auto;
+        }
+    }
+    &:last-of-type{
+        border-bottom: none;
+    }
+}

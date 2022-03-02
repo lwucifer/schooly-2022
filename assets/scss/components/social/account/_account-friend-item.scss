@@ -1,0 +1,65 @@
+.account-friend-item {
+    @include box($padding: 1.1rem);
+    display: flex;
+}
+
+.account-friend-item__avatar {
+    flex-shrink: 0;
+    margin-right: 1.675rem;
+}
+
+.account-friend-item__name {
+    margin-bottom: 0.4rem;
+
+    a {
+        color: $color-text-dark;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+}
+
+.account-friend-item__mutual {
+    font-size: $font-size-caption;
+    margin-bottom: 1rem;
+}
+
+.account-friend-item__btn-friend.btn {
+    background-color: #F9F9F9;
+    border-color: #EEEEEE;
+    color: $color-text;
+}
+
+.account-friend-item__birthday {
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+    .icon {
+        font-size: 1.6rem;
+        transform: translate(0, 1px);
+    }
+}
+
+.account-friend-item__dropdown-item {
+    display: flex;
+    align-items: center;
+    color: $color-text;
+    padding: 5px;
+
+    .icon {
+        font-size: 2.4rem;
+        margin-right: 1.1rem;
+    }
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.btn.account-friend-item__btn-decline {
+    color: $color-text;
+}

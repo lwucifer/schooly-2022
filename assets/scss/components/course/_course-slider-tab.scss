@@ -1,0 +1,83 @@
+.course-slider-tab {
+    .toolbar {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        h3 {
+            margin-right: 2.5rem;
+            font-size: 2rem;
+        }
+        .btn {
+            margin-right: 1rem;
+            font-size: 1.6rem;
+            line-height: 2.2;
+            padding: 0 1rem;
+            height: auto;
+            svg {
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+.course-slider.post-slider  {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0 1.8rem;
+    background-color: transparent;
+    //.swiper-button-next, .swiper-button-prev {
+    //    border-radius: 50%;
+    //    height: 4rem;
+    //    width: 4rem;
+    //}
+}
+
+.swiper-button-custom {
+    $background-disable: #E1E1E1;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: $background-disable;
+    text-align: center;
+    line-height: 4rem;
+    z-index: 10;
+    cursor: pointer;
+
+    &:hover,
+    &:visited,
+    &:focus {
+        background-color: $color-primary;
+        outline: none;
+    }
+
+    svg {
+        width: .6rem;
+        height: 1.2rem;
+        fill: #fff;
+    }
+
+    &.swiper-button-disabled {
+        background-color: $background-disable;
+    }
+}
+
+.swiper-button-next--circle {
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -2rem;
+    right: -2rem;
+    left: auto;
+}
+
+.swiper-button-prev--circle {
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -2rem;
+    left: -2rem;
+    right: auto;
+}
+
+.course-slider-tab-container {
+    .slider-item {
+        margin: 1rem 0;
+    }
+}

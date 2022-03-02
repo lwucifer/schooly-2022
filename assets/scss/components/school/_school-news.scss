@@ -1,0 +1,42 @@
+.school-news {
+    background: $color-text-white;
+    padding: 5.5rem 3.5rem;
+
+    &__title {
+        font-weight: 500;
+        font-size: 3rem;  
+        margin-bottom: 1rem;   
+        color: $color-text-dark;
+        text-align: center;   
+    }
+
+    &__line {
+        width: 67px;
+        height: 3px;
+        background: $color-primary;
+        margin: 0 auto;
+        margin-bottom: 5.5rem;
+    }
+
+    &__content {
+        margin-bottom: 4rem;
+
+        .col-12.col-md-4:nth-child(1) .school-news-item {
+            background: url("~assets/images/school/new-1.png") no-repeat;
+        }
+
+        .col-12.col-md-4:nth-child(2) .school-news-item {
+            background: url("~assets/images/school/new-2.png") no-repeat;
+        }
+
+        .col-12.col-md-4:nth-child(3) .school-news-item {
+            background: url("~assets/images/school/new-3.png") no-repeat;
+        }
+    }
+
+    &__btn {
+        button {
+            padding: 0.8rem 2.4rem;
+        }
+    }
+}

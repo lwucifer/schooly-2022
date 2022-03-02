@@ -1,0 +1,18 @@
+.elearning-homepage.page-content {
+    padding-top: 0;
+}
+
+.eh-subject-pagination.swiper-pagination {
+    align-self: center;
+    position: static;
+
+    .swiper-pagination-bullet {
+        background-color: #DADADA;
+        margin-left: 1rem;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $color-primary;
+    }
+}

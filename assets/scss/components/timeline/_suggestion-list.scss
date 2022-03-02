@@ -1,0 +1,33 @@
+.suggestion-list {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: map-get($text-size, 'body-2');
+    min-width: 180px;
+    max-height: 40rem;
+    overflow-y: auto;
+    
+    &__no-results {
+        padding: 0.5rem 1rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.is-selected,
+        &:hover {
+            background-color: rgba($color-dark, 0.2);
+        }
+    }
+}
+
+.tippy-tooltip {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

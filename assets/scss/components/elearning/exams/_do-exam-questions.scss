@@ -1,0 +1,101 @@
+.do-exam-wrapper {
+    background: $color-text-white;
+    padding: 2rem;
+    height: 100%;
+    
+    .do-exam-questions {
+        border: 1px solid $color-disabled;
+        border-radius: 2px;
+        &__title--expand {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 2rem;
+            height: 50px;
+            background: #F9F9F9;
+            border-bottom: 1px solid $color-disabled;
+
+            .countdown-time {
+                border-right: 1px solid $color-disabled;
+                display: flex;
+                align-items: center;
+                padding: 0 2rem;
+
+                p {
+                    margin-right: 1rem;
+                    span {
+                        color: $color-primary;
+                        font-size: 2.4rem;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+
+            .list-question {
+               padding-left: 2rem;
+               cursor: pointer;
+               position: relative;
+
+            }
+        }
+    
+        &__title {
+            padding: 1.5rem 2rem;
+            height: 50px;
+            background: #F9F9F9;
+            border-bottom: 1px solid $color-disabled;
+        }
+    
+        &__content {
+            padding: 2rem;
+            .title-question {
+                span:first-child {
+                    background: $color-primary;
+                    padding: 1.2rem;
+                    border-radius: 50%;
+                    color: $color-text-white;
+                    font-weight: 500;
+                    margin-right: 1.4rem;
+                }
+    
+                span:last-child {
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid $color-disabled;
+                }
+            }
+    
+            .answer-question {
+                margin-top: 4rem;
+                padding-left: 6rem;
+    
+                p{
+                    margin-bottom: 2rem;
+                }
+    
+                p:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .view-question {
+                svg {
+                    cursor: pointer;
+                }
+            }
+        }
+        .loading-question{
+            width: 100%;
+            height: 40rem;
+            padding: 3rem;
+        }
+    }
+    .btn-send-expend{
+        background: #008EAF;
+        border-radius: 3px;
+        margin-left: auto;
+    }
+}
+
+.height-vh {
+    height: calc(100vh - 220px);
+}

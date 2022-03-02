@@ -1,0 +1,342 @@
+.elearning-manager-content {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+
+    .elearning-manager-content__main {
+        padding: 2rem 0;
+
+        .app-table table {
+            td:first-child {
+                padding-left: 1.5rem;
+            }
+            th {
+                &:first-child {
+                    padding-left: 1.5rem;
+                }
+                div {
+                    white-space: nowrap !important;
+                }
+                //.btn-sort {
+                //    height: 18px;
+                //    width: 18px;
+                //    position: absolute;
+                //    right: -4px;
+                //    top: calc(50% - 9px);
+                //}
+            }
+        }
+        
+        .rate-result-wrapper {
+            .status-item {
+                width: 4rem;
+                padding: 0.1rem 0.4rem;
+                font-size: 1.3rem;
+                letter-spacing: -0.01em;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    &__title {
+        padding: 0;
+        display: flex;
+        .btn-right {
+            margin-left: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        &__nav {
+            a {
+                position: relative;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 19px;
+                display: inline-block;
+                cursor: pointer;
+                padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+                margin: 0 1rem;
+                color: $color-text-dark;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .badge {
+                    background-color: #D50000;
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    min-width: 15px;
+                    line-height: 15px;
+                    border-radius: 15px;
+                    text-align: center;
+                    padding: 0 4px;
+                    position: absolute;
+                    top: 0;
+                    right: -2px;
+                }
+            }
+
+            a.active,
+            a:hover {
+                font-weight: 500;
+                border-bottom: 3px solid $color-primary;
+                color: $color-primary;
+            }
+        }
+
+        &__breadcrumb {
+
+            a {
+                font-size: 1.4rem;
+                line-height: 19px;
+                display: inline-block;
+                cursor: pointer;
+                padding: 1rem 0;
+                color: #333;
+            }
+        }
+    }
+
+    .dates,
+    h5.elearning-manager-content__title {
+        padding: 0 2rem;
+    }
+
+    .pagination {
+        margin: 0 2rem 1rem;
+    }
+}
+
+// .elearning-manager-content__title__nav a {
+//     font-size: 1.2rem;
+//     text-transform: uppercase;
+//     font-weight: 500;
+//     line-height: 19px;
+//     display: inline-block;
+//     cursor: pointer;
+//     padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+//     margin: 0 1rem;
+//     color: #222222;
+// }
+
+// .elearning-manager-content__title a {
+//     text-decoration: none;
+// }
+
+// .elearning-manager-content__title__nav a.active, .elearning-manager-content__title__nav a:hover {
+//     font-weight: 500;
+//     border-bottom: 3px solid #37a000;
+//     color: #37a000;
+// }
+
+// .elearning-manager-content__title__nav a:first-child {
+//     margin-left: 0;
+// }
+
+//score
+.score--pass {
+    color: $color-primary;
+}
+
+.score--fail {
+    color: $color-secondary;
+}
+
+.score--empty {
+    color: $color-warning;
+
+    .elm__set-score-dropdown {
+        svg:first-child {
+            path {
+                stroke: currentColor;
+            }
+        }
+
+        svg:nth-child(2) {
+            path {
+                fill: currentColor;
+            }
+        }
+    }
+}
+
+//tooltip
+.tooltip-elearning {
+    $color: #fff;
+    max-width: 99%;
+    .tooltip-inner {
+        background: #fff;
+        padding: 1rem 2rem;
+        border: 0.5px solid #E0E0E0;
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+
+    .tooltip-arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        position: absolute;
+        margin: 6px;
+        border-color: #E0E0E0;
+        z-index: 1;
+    }
+
+    &[x-placement^="top"] {
+        margin-bottom: 6px;
+
+        .tooltip-arrow {
+            border-width: 6px 6px 0 6px;
+            border-left-color: transparent !important;
+            border-right-color: transparent !important;
+            border-bottom-color: transparent !important;
+            bottom: 0px;
+            left: calc(50% - 6px);
+            margin-top: 0;
+            margin-bottom: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                height: 6px;
+                width: 6px;
+                transform: rotate(45deg);
+                left: calc(50% - 3px);
+                bottom: 3px;
+            }
+        }
+    }
+
+    &[x-placement^="bottom"] {
+        margin-top: 6px;
+
+        .tooltip-arrow {
+            border-width: 0 6px 6px 6px;
+            border-left-color: transparent !important;
+            border-right-color: transparent !important;
+            border-top-color: transparent !important;
+            top: 0px;
+            left: calc(50% - 6px);
+            margin-top: 0;
+            margin-bottom: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                height: 6px;
+                width: 6px;
+                transform: rotate(45deg);
+                left: calc(50% - 3px);
+                top: 3px;
+            }
+        }
+    }
+
+    &[x-placement^="right"] {
+        margin-left: 6px;
+
+        .tooltip-arrow {
+            border-width: 6px 6px 6px 0;
+            border-left-color: transparent !important;
+            border-top-color: transparent !important;
+            border-bottom-color: transparent !important;
+            left: -5px;
+            top: calc(50% - 6px);
+            margin-left: 0;
+            margin-right: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                height: 6px;
+                width: 6px;
+                transform: rotate(45deg);
+                right: -9px;
+                top: calc(50% - 3px)
+            }
+        }
+    }
+
+    &[x-placement^="left"] {
+        margin-right: 6px;
+
+        .tooltip-arrow {
+            border-width: 6px 0 6px 6px;
+            border-top-color: transparent !important;
+            border-right-color: transparent !important;
+            border-bottom-color: transparent !important;
+            right: -6px;
+            top: calc(50% - 6px);
+            margin-left: 0;
+            margin-right: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                height: 6px;
+                width: 6px;
+                transform: rotate(45deg);
+                left: -9px;
+                top: calc(50% - 3px)
+            }
+        }
+    }
+}
+
+.tooltip--rate {
+    max-width: 34rem;
+    @extend .tooltip-elearning;
+}
+
+.tooltip--eln-vote.tooltip {
+    max-width: 50rem;
+    @extend .tooltip-elearning;
+}
+
+.tooltip--available-file {
+    @extend .tooltip-elearning;
+    max-width: 45.5rem;
+    .tooltip-inner {
+      letter-spacing: -0.01em;
+      line-height: 2.4rem;
+    }
+}
+//end tooltip
+
+.content-box-peer {
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: $color-text-sub;
+    box-shadow: $shadow-1;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.content-box-peer--solid {
+    border-style: solid;
+}
+
+.content-box-peer--dashed {
+    border-style: dashed;
+}
+
+// Text description
+.elm--text-desc {
+    font-size: 1.3rem;
+}
+
+.elm--required-symbol {
+    color: #D50000;
+    svg path {
+        fill: #D50000;
+        fill-opacity: 1;
+    }
+}

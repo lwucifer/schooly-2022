@@ -1,0 +1,19 @@
+.e-exercise-results {
+    &__pane {
+        background-color: #fff;
+        padding: 1rem;
+
+        .row {
+            margin-top: 1.1rem;
+            margin-bottom: 1.1rem;
+        }
+
+        .col-5 {
+            text-align: right;
+        }
+
+        .col-7 {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+// $unchecked-star: '\2606';
+// $unchecked-color: #888;
+// $checked-star: '\2605';
+// $checked-color: #e52;
+
+.app-select-stars {
+    display: inline-block;
+    /* remove inline-block whitespace */
+    font-size: 0;
+    * {
+        font-size: 1em * $line-height-base;
+    }
+
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+
+    $this: &;
+
+    & > input {
+        display: none;
+
+        & + label {
+            /* only enough room for the star */
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+
+            .app-select-stars__icon-active {
+                display: none;
+            }
+
+            .app-select-stars__icon-deactive {
+                display: inline-block;
+            }
+        }
+
+        &:checked ~ label,
+        & + label:hover ~ label,
+        & + label:hover {
+            .app-select-stars__icon-active {
+                display: inline-block;
+            }
+
+            .app-select-stars__icon-deactive {
+                display: none;
+            }
+        }
+    }
+    
+    /* the hidden clearer */
+    input#{$this}__clear + label {
+        width: .5em;
+        height: 1em;
+        margin-left: -.5em;
+        padding: 0 !important;
+
+        .app-select-stars__icon-active,
+        .app-select-stars__icon-deactive {
+            display: none !important;
+        }
+    }
+  
+    &:hover > input + label {
+        .app-select-stars__icon-active {
+            display: none;
+        }
+
+        .app-select-stars__icon-deactive {
+            display: inline-block;
+        }
+    }
+
+    &:hover > input + label:hover ~ label,
+    &:hover > input + label:hover {
+        .app-select-stars__icon-active {
+            display: inline-block;
+        }
+
+        .app-select-stars__icon-deactive {
+            display: none;
+        }
+    }
+
+    label:nth-of-type(5) {
+        padding-left: 0 !important;
+    }
+
+    &--size-sm {
+        label {
+            padding: 0 .4rem;
+        }
+    }
+
+    &--size-lg {
+        label {
+            padding: 0 .75rem;
+        }
+    }
+}

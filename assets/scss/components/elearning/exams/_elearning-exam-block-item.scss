@@ -1,0 +1,37 @@
+.block-item {
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+    background-color: $color-text-white;
+    min-height: 42px;
+    text-align: center;
+    margin: 15px 0;
+    transition: box-shadow .3s;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid $color-text-white;
+
+
+    &__star {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        display: none;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: normal;
+        position: absolute;
+        @include absCenter;
+    }
+    
+    &:hover {
+        border-color: $color-primary;
+
+        .block-item__star {
+            display: block;
+        }
+    }
+}
+  

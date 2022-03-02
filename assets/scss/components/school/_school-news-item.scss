@@ -1,0 +1,23 @@
+.school-news-item {
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    align-items: flex-end;
+    height: 366px;
+
+    &__text {
+        .date {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: $color-text-white;
+        }
+
+        .title {
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $color-text-white;
+        }
+    }
+}

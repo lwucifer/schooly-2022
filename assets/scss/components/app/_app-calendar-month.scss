@@ -1,0 +1,42 @@
+.app-calendar-month {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+
+    td {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    td {
+        height: (100%/4);
+        padding: .2rem;
+        cursor: pointer;
+
+        span {
+            vertical-align: middle;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+
+        &:hover {
+            span {
+                color: #fff;
+                background-color: rgba($color-primary, .5);
+            }
+        }
+
+        &.active {
+            span {
+                color: #fff;
+                background-color: $color-primary;
+                font-weight: 700;
+            }
+        }
+    }
+}

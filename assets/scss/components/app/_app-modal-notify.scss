@@ -1,0 +1,35 @@
+.app-modal-notify {
+    .app-modal-content {
+        text-align: center;
+        padding: 3rem 8.4rem 2rem 8.4rem;
+    }
+}
+
+.app-modal-notify__close {
+    position: absolute;
+    top: 1.9rem;
+    right: 1.9rem;
+    font-size: map-get($text-size, 'heading-3');
+}
+
+.app-modal-notify__icon {
+    margin-bottom: 1.5rem;
+}
+
+.app-modal-notify__title {
+    margin-bottom: 1rem;
+}
+
+.app-modal-notify__desc {
+    margin-bottom: 2.5rem;
+    font-size: map-get($text-size, 'body-1');
+}
+
+.app-modal-notify__actions {
+    margin-top: 2.5rem;
+
+    .btn {
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+    }
+}

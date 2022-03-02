@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+yarn.lock
+package-lock.json
+
+#
+.
+deploy.sh
+merge.sh
+push.sh
+
+# static
+static/sw.js
+static/firebase-auth-sw.js
+static/firebase-messaging-sw.js
+# static

@@ -1,0 +1,50 @@
+.list-scroll {
+    padding: 2rem 3.5rem;
+    background-color: $color-text-white;
+    border-top: 1px solid $color-disabled;
+    border-bottom: 1px solid $color-disabled;
+    span{
+        display: inline-block;
+    }
+    ul {
+        padding: 1rem;
+        li {
+            list-style-type: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-right: 4rem !important;
+        padding: 1.7rem 1rem;
+        color: $color-text;
+
+        
+
+        svg {
+            vertical-align: middle;
+        }
+
+        &:hover {
+            border-bottom: 3px solid $color-primary;
+            color: $color-primary;
+
+            svg path{
+                fill: $color-primary;
+            }
+        }
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+    .active{
+        border-bottom: 3px solid $color-primary;
+        color: $color-primary;
+
+        svg path{
+            fill: $color-primary;
+        }
+    }
+}

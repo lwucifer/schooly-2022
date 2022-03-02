@@ -1,0 +1,56 @@
+.app-progress {
+  // default
+  position: relative;
+  background-color: #eee;
+  height: 6px;
+  &__inner {
+    position: absolute;
+    height: 100%;
+  }
+  
+  &__inner--full {
+    border-radius: inherit;
+  }
+  
+  &__inner--not-full {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+//size
+.app-progress--size-sm {
+  height: 5px;
+}
+
+.app-progress--size-md {
+  height: 6px;
+}
+
+.app-progress--size-lg {
+  height: 10px;
+}
+
+// border
+.app-progress--normal {
+  border-radius: 2px;
+}
+
+.app-progress--square {
+  border-radius: 0;
+}
+
+.app-progress--rounded {
+  border-radius: 10px;
+}
+
+// color
+@each $name, $color in $colors {
+  .app-progress--color-#{$name} {
+    .app-progress__inner {
+      background-color: $color;
+    }
+  }
+}

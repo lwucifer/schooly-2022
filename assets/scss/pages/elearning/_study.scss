@@ -1,0 +1,172 @@
+.elearning-study-tabs {
+    margin: 0 0 2rem;
+
+    a {
+        position: relative;
+        display: inline-block;
+        padding: 1.3rem .5rem;
+        text-decoration: none;
+        color: $color-text-dark;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+
+        + a {
+            margin-left: 4rem;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .3rem;
+            background-color: $color-primary;
+            transition: transform .3s;
+            transform: scale(0)
+        }
+        
+        &:hover {
+            color: $color-primary;
+        }
+
+        &.active {
+            color: $color-primary;
+            
+            &:after {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.elearning-study-bottom {
+    flex-shrink: 0;
+    height: 4.9rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: $color-text-light-2;
+    border-radius: 0px 0px 2px 2px;
+    padding: 0 1.2rem;
+    border-top: 1px solid $color-disabled;
+
+    &__button {
+        font-size: 2.4rem;
+        margin-left: 1.5rem;
+
+        .icon {
+            display: block;
+        }
+
+        &--expand {
+            .icon {
+                fill: none;
+
+                path {
+                    fill: $color-text;
+                }
+            }
+        }
+    }
+}
+
+.elearning-lesson-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 42.6rem;
+    overflow-y: auto;
+
+    iframe {
+        border: 0;
+        width: 100%;
+    }
+
+    &--video-mode,
+    &--default-mode {
+        padding: 2rem 2rem 0;
+    }
+
+    &--doc-mode,
+    &--exercise-mode {
+        padding: 2rem;
+    }
+
+    &--exercise-mode {
+        height: auto;
+        min-height: 42.6rem;
+    }
+
+    &--article-mode {
+        padding: 2rem 0 2rem 2rem
+    }
+
+    &--scorm-mode {
+        padding: 0;
+    }
+}
+
+.elearning-study-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.elearning-study-theater {
+    .elearning-study-content {
+        height: calc(100vh - 7rem - 8.3rem);
+
+        .e-exercise {
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+
+    .elearning-lesson-screen {
+        height: 100%;
+
+        iframe {
+            height: 100%;
+        }
+
+        .stream-frame {
+            margin-left: -2rem;
+            margin-right: -2rem;
+            margin-top: -2rem;
+            width: calc(100% + 4rem);
+
+            .video-player-box {
+                height: 100%;
+            }
+    
+            .vjs-fluid {
+                padding-top: 0;
+                height: 100%;
+            }
+        }
+
+
+        &--exercise-mode {
+            min-height: unset;
+        }
+    }
+
+    &--fullscreen {
+        .elearning-study-content {
+            height: 100vh;
+        }
+    }
+
+    &--active {
+        margin-bottom: 2rem;
+    }
+}
+
+.elearning-study {
+    &.fullscreen {
+        margin-top: -70px !important;
+        padding-top: 0 !important;
+    }
+}

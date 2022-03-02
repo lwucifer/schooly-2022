@@ -1,0 +1,27 @@
+.e-exercise {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // min-height: 42.6rem;
+    padding: 1rem;
+    background-color: $color-text-light;
+}
+
+.e-exercise-bottom {
+    margin-top: auto;
+    text-align: right;
+
+    &__button {
+        font-size: 2.4rem;
+        margin-left: 1.5rem;
+
+        .icon {
+            display: block;
+        }
+    }
+}
+
+.e-exercise-components {
+    padding: 1rem;
+    position: relative;
+}

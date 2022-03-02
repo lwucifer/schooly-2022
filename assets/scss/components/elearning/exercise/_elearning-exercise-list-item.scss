@@ -1,0 +1,55 @@
+.e-exercise-list-item {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 1.4rem 2rem 1.2rem 1rem;
+    margin-bottom: 1.8rem;
+    position: relative;
+    overflow: hidden;
+
+    &__desc {
+        font-size: 11px;
+    }
+
+    &__divider {
+        background-color: $color-disabled;
+    }
+
+    &__star {
+        font-size: 12px;
+        color: #fff;
+        
+        .icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+
+            path {
+                fill-opacity: 1
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            border-top: 35px solid $color-red;
+        }
+    }
+
+    &--pending, &--none {
+        border-color: $color-yellow;
+    }
+
+    &--failed {
+        border-color: $color-red;
+    }
+
+    &--passed {
+        border-color: $color-primary;
+    }
+}

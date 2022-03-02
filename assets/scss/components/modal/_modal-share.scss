@@ -1,0 +1,121 @@
+.modal-share {
+    position: relative;
+    z-index: 1;
+    width: 570px;
+    max-width: 100%;
+    background-color: #fff;
+
+    @include media(">=lg") {
+        margin: 10% auto;
+    }
+}
+
+.modal-share-wrapper /deep/ .modal-wrapper {
+    @include media(">=lg") {
+        display: block;
+    }
+}
+
+.ms-content {
+    padding: 15px;
+}
+
+.ms-close-wrapper {
+    @include clearfix;
+}
+
+.ms-close {
+    float: right;
+}
+
+.ms-title {
+    margin-bottom: 10px;
+}
+
+.link-area {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid rgba(167, 169, 172, 0.75);
+
+    &__link {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        overflow: hidden;
+
+        span {
+            // @include set-line((
+            //     'lineClamp': 1,
+            //     'lineHeight': 1.2
+            // ));
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__copy {
+        flex-shrink: 0;
+        padding: 10px 20px;
+        border-left: 1px solid rgba(167, 169, 172, 0.75);
+        color: $color-brand;
+    }
+}
+
+.bar-bottom {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.share-social {
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.share-embed-toggle {
+    margin-left: auto;
+    color: inherit;
+    text-decoration: none;
+
+    svg {
+        transition: fill .3s, transform .3s;
+    }
+
+    &:hover, &.active {
+        color: $color-brand;
+        
+        svg {
+            fill: $color-brand;
+        }
+    }
+
+    &.active svg {
+        transform: rotate(180deg)
+    }
+}
+
+.embed-code {
+    position: relative;
+
+    &__copy {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 20px;
+        color: $color-brand;
+        border: 1px solid $color-border;
+        background-color: #fff;
+    }
+    
+    &__area {
+        padding: 10px;
+        border: 1px solid $color-border;
+    }
+
+    &__code {
+        word-break: break-word;
+    }
+}

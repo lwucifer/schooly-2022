@@ -1,0 +1,27 @@
+.search-result {
+  margin-bottom: 2rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__list {
+    padding: 2rem 0 0 0;
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+    @media (min-width: 992px) {
+      .custom-col-lg-5 {
+        max-width: 20%;
+        flex: 0 0 20%;
+        padding: 0 10px;
+      }
+    }
+    .school-item {
+      margin-bottom: 2rem;
+    }
+  }
+}

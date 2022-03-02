@@ -1,0 +1,48 @@
+.app-noti-header {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    li {
+      display: inline-block;
+      margin: 0 1.5rem;
+      &:last-child {
+       margin-right: 0;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+      svg path {
+        fill: $color-primary
+      }
+    }
+
+    svg {
+      height: 22px;
+    }
+
+    > span {
+      position: absolute;
+      top: -4px;
+      right: -16px;
+      width: 22.67px;
+      height: 16.29px;
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #E9446A;
+      border-radius: 12px;
+    }
+  }
+}

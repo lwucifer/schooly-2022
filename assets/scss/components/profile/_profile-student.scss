@@ -1,0 +1,20 @@
+.wrapStudent__Profile{
+    background: #FFFFFF;
+    padding:20px;
+    div{
+        display: flex;
+        flex: row;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 16px;
+            margin-left: 20px;
+            display:block;
+        }
+    }
+}
+.wrapSlider__ProfileStudent{
+    padding-top:20px;
+}

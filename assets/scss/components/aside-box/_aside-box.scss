@@ -1,0 +1,66 @@
+.aside-box {
+    background-color: #fff;
+    padding: 1rem 2rem 2rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: $shadow-1;
+    
+    &.course-guess__side {
+        padding: 1.2rem 1rem;
+    }
+    &.side-links {
+        .aside-box__title {
+            font-weight: bold;
+            font-size: 2.2rem;
+            color: #333;
+        }
+        a:any-link {
+            font-size: 1.8rem;
+            color: #666;
+            text-decoration: none;
+            display: block;
+            padding: 1rem 0;
+            &.active,
+            &:hover {
+                color: $color-primary;
+            }
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.aside-box__top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem
+}
+
+.aside-box__title {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.aside-box__link {
+    margin-left: auto;
+    text-decoration: none;
+}
+.link-underline .aside-box__link {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #333;
+    text-decoration: underline;
+}
+
+.aside-box.nav-links {
+    padding: 0;
+    margin-bottom: 3rem;
+    .aside-box__content {
+        display: flex;
+        .btn {
+            margin-right: 1rem;
+        }
+    }
+}

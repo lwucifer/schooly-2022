@@ -1,0 +1,85 @@
+.school-filter {
+    padding: 1rem 0;
+    .app-search__input .submit-btn{
+        background-color: $color-primary;
+        color: #fff;
+    }
+    .school-filter__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        h3 {
+            color: #333;
+            font-size: 2rem;
+        }
+    }
+
+    .school-filter__form {
+        $color-placeholder: #333333;
+
+        display: flex;
+        margin-bottom: 1rem;
+        margin-left: -0.6rem;
+        margin-right: -0.6rem;
+
+        &__item__title {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-right: 1rem;
+        }
+
+        &__item {
+            display: flex;
+            margin: 0 6px;
+            align-items: center;
+
+            &:last-child {
+                margin-right: 0;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            .vs__selected-options {
+              min-width: 7rem;
+            }
+            &.school-filter__form__item--search {
+                flex: 1;
+                max-width: 40rem;
+            }
+            &.school-filter__form__item--search__inline {
+                display: inline-block;
+                width: 30%;
+                max-width: 40rem;
+            }
+        }
+        &__item:first-child {
+            min-width: unset;
+        }
+
+        .school-filter__btn-submit {
+            border-radius: 10rem;
+            padding: .1rem 1.6rem; // 1/10rem & (7.7/2 + 20)/10rem
+            height: 3.2rem;
+        }
+
+        .school-filter__btn-submit span {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 24px;
+            margin-left: 6.3px;
+        }
+    }
+
+    .school-filter__form--right {
+        margin-left: auto;
+        margin-right: 0.6rem;
+        display: flex;
+        .school-filter__form__item--search {
+            min-width: 33.5rem;
+            .app-search {
+                width: 100%;
+            }
+        }
+    }
+}

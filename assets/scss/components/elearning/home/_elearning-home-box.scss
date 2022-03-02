@@ -1,0 +1,47 @@
+.elearning-home-box {
+    margin-bottom: 4rem;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tab {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            color: $color-text-dark;
+            font-weight: 600;
+            padding: .9rem 1.5rem;
+            border-bottom: 0.3rem solor transparent;
+            text-transform: uppercase;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: .3rem;
+                background-color: $color-primary;
+                transition: transform .3s;
+                transform: scale(0);
+            }
+
+            &.active {
+                color: $color-primary;
+
+                &:after {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

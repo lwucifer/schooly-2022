@@ -1,0 +1,58 @@
+.exams-create-setting{
+    &__content{
+         padding: .5rem;
+        .text-left{
+            width: 17rem;
+            display: inline-block;
+            color: #222222;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .group-form{
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            .ecs__select{
+                margin-right: 2rem;
+                min-width: 19rem;
+                .app-select__selected{
+                    border: 1px solid #E0E0E0;
+                }
+            }
+        }
+        .group-pick-time{
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            .text-left{
+                font-size: 14px;
+                color: #656565;
+                width: 17rem;
+            }
+        }
+    }
+    &__wrap-select-class{
+        color: #222222;
+        .btn-tab{
+            background: #F2F2F2;
+            border-radius: 2px;
+            width: 18rem;
+            height: 4rem;
+        }
+        .active{
+            background: #37A000;
+            border-radius: 2px;
+            color: #ffffff;
+        }
+        .box-checkbox{
+            background: #F9F9F9;
+            border-radius: 2px;
+            padding:2rem;
+            max-height: 30rem;
+            overflow-y: auto;
+            margin-top: 1rem;
+             margin-bottom: 2rem;
+             color: #656565;
+        }
+    }
+}

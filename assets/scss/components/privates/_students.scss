@@ -1,0 +1,55 @@
+.wrap_list-students{
+    display: flex;
+    align-items: center;
+    .app-search{
+        width: 459px;
+        margin-right: 12px;
+        .app-search__submit{
+            width: 3.2rem;
+        }
+    }
+    .app-input{
+        margin-bottom: 0;
+    }
+}
+.wrap-header-students{
+    background: #F9F9F9;
+    padding: 16px;
+    margin-top: 1.6rem;
+}
+.wrap-table{
+        .app-table{
+            font-size: 1.4rem;
+            thead{
+                th{
+                    font-weight: normal;
+                    color: #999999 !important;
+                    border-top: none;
+                    font-size: 1.4rem;
+                }
+            }
+            td{
+                border-bottom: none;
+            }
+            .wrap-name__table{
+                &:nth-child(5){
+                    white-space: nowrap;
+                    span{
+                        width:3.7rem
+                    }
+                }
+            }
+        }
+    }
+.right-pagination{
+    margin-top: 1.8rem;
+    .app-pagination{
+        text-align: right;
+    }
+}
+.wrap-name-class__table{
+    color: $color-primary;
+    .tooltip-arrow{
+        display: none;
+    }
+}

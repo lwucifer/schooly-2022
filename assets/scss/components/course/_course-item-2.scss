@@ -1,0 +1,175 @@
+.course-item-2 {
+    background-color: #fff;
+    margin: 9px 0;
+    transition: box-shadow .3s;
+    box-shadow: $shadow-1;
+    position: relative;
+
+    $this: &;
+
+    &__img {
+        position: relative;
+        background-color: $color-image-placeholder;
+        height: 0;
+        padding-top: (204/340) * 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__bottom {
+        padding: 1.5rem 1.4rem 1.3rem 1.4rem;
+    }
+
+    &__name {
+        @include set-line((
+            'lineClamp': 2,
+            'lineHeight': (20/15),
+            'fixedHeight': true
+        ));
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.1rem;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__rating {
+        margin-bottom: 1.8rem;
+
+        .app-stars {
+            margin-right: 1.3rem;
+        }
+    }
+
+    &__teacher {
+        .profile-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            text-decoration: none;
+            color: $color-text;
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+        
+        .app-avatar {
+            margin-right: 0.6rem;
+        }
+    }
+
+    &__price-wrapper {
+        text-align: right;
+    }
+
+    &__online-class {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(#6FDA44, .8);
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        padding: 1rem 1.4rem;
+    }
+
+    &__livestream {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        display: flex;
+        align-items: center;
+        background-color: $color-red;
+        font-size: 1.2rem;
+        color: #fff;
+        padding: .5rem 1rem .5rem .6rem;
+
+        .icon {
+            width: 2rem;
+            height: 1.5rem;
+            margin-right: 4px;
+
+            circle {
+                animation: scaleDot 1s infinite;
+                transform-origin: center;
+            }
+        }
+    }
+
+    &__discount {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 3.6rem;
+        height: 3.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-red;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    &:hover {
+        box-shadow: $shadow-hover;
+    }
+
+    &--size-sm {
+        #{$this}__bottom {
+            padding: 1.3rem 1.5rem;
+        }
+
+        #{$this}__name {
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        #{$this}__teacher {
+            margin-bottom: 1rem;
+        }
+
+        #{$this}__rating {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+@keyframes scaleDot {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,53 @@
+.list-question {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $color-disabled;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        .question-actions button {
+            display: block;
+        }
+
+        .tool-tip {
+            display: block;
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:first-child {
+        padding-top: 2rem;
+    }
+
+    .question-title {
+        width: 7%;
+        min-width: 7%;
+    }
+
+    .question-content {
+        width: 55%;
+        min-width: 55%;
+    }
+    
+    .question-type {
+        width: 24%;
+    }
+
+    .question-point {
+        width: 9%;
+        min-width: 9%;
+    }
+
+    .question-actions {
+        max-width: 7%;
+        min-width: 60px;
+        height: 20px;
+        
+        button {
+            display: none;
+        }
+    }
+}

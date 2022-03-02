@@ -1,0 +1,31 @@
+.exam-create-new{
+    &__content{
+        padding:1rem .5rem;
+        .app-input__unit{
+            font-weight: 600;
+            color: #656565;
+            background-color: #F2F2F2;
+            height: 100%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .app-select__placeholder{
+            color: #656565;
+        }
+    }
+    .text-left{
+        width: 15rem;
+    }
+    .ecn__title{
+        font-weight: 500;
+        font-size: 15px;
+        color: #222222;
+        margin-bottom: 1rem;
+        span{
+            font-weight: normal;
+            font-size: 14px;
+            color: #656565;
+        }
+    }
+    
+}

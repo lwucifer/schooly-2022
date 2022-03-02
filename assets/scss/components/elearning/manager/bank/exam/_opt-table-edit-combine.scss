@@ -1,0 +1,18 @@
+.opt-table-edit-combine {
+    ul {
+        list-style-type: none;
+
+        li {
+            padding: 0.5rem 1rem;
+            a {
+                color: $color-text;
+                font-size: 1.4rem;
+
+                svg {
+                    vertical-align: middle;
+                    width: 18px;
+                }
+            }
+        }
+    }
+}

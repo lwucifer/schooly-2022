@@ -1,0 +1,43 @@
+.course-teacher-info {
+    .teacher-top {
+        .right {
+            >div {
+                padding: 1rem 3rem;
+            }
+
+            strong {
+                display: block;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            margin-left: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .info {
+            >p {
+                margin-top: 0.4rem;
+                margin-bottom: 1rem;
+            }
+
+            padding: 1rem;
+        }
+
+        display: flex;
+        align-items: center;
+    }
+
+    .teacher-bottom {
+        h4 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: #666;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.chart-stars {
+    max-width: 30rem;
+    .star {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        > strong {
+            font-variant-numeric: tabular-nums;
+            width: 10px;
+        }
+
+        + .star {
+            margin-top: 1rem;
+        }
+
+        > span {
+            margin-left: 1rem;
+        }
+    }
+    .chart {
+        position: relative;
+        flex: 1;
+        height: .6rem;
+        background-color: #eee;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        margin-left: .7rem;
+        max-width: 210px;
+        >div {
+            position: absolute;
+            height: .6rem;
+            left: 0;
+            right: auto;
+            bottom: 0;
+            top: 0;
+            background: #F2C94C;
+            border-radius: 1rem;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.e-exercise-do-exercise {
+  &__countdown {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.e-exercise-choose {
+  border-radius: 2px;
+  border: 1px solid #eeeeee;
+
+  &__answers {
+    margin-left: 1.4rem;
+
+    .app-radio:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__question {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.e-exercise-essay {
+  &__question-name {
+    background: $color-disabled;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    padding: 1rem 1.5rem;
+  }
+
+  &__attachment {
+    &__weight {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+  &__icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    vertical-align: middle;
+    background: $color-secondary;
+    opacity: 0.6;
+    border-radius: 2px;
+  }
+}

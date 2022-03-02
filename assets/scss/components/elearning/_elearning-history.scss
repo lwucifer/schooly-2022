@@ -1,0 +1,173 @@
+.elearning-history__main {
+	background: #fff;
+
+	.elearning-history__table {
+		padding: 2rem 0;
+	}
+	.elearning-history__statistical {
+		//padding: 0 2rem;
+		.row >div {
+			.item {
+				border-top: 1px solid $color-text-sub;
+				border-right: 1px solid $color-text-sub;
+				border-bottom: 1px solid $color-text-sub;
+				border-left: 6px solid;
+				//border-radius: 2px 0 0 2px;
+				border-radius: 2px;
+				background-color: #fff;
+				padding: 1.5rem;
+				
+				.title {
+					color: $color-text;
+					font-size: 1.4rem;
+				}
+				
+				.value {
+					font-size: 1.8rem;
+					font-weight: bold;
+				}
+			}
+			
+			&:first-child .item {
+				border-left-color: $color-green;
+			}
+
+			&:nth-child(2) .item {
+				border-left-color: $color-blue;
+			}
+
+			&:nth-child(3) .item {
+				border-left-color: $color-yellow;
+			}
+
+			&:nth-child(4) .item {
+				border-left-color: #2B5468;
+				strong{
+					color: #2B5468;
+				}
+			}
+		}
+	}
+
+	.elearning-history__title {
+		padding: 0 2rem;
+
+		a:any-link {
+			color: #333;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+
+	.dates,
+	h5.elearning-history__title {
+		padding: 0 2rem;
+	}
+
+	.table {
+		width: 100%;
+
+		th {
+			color: #999;
+			text-align: left;
+			font-weight: normal;
+			padding: 1rem 0 0;
+
+			hr {
+				margin-top: 1rem;
+			}
+
+			&:first-child {
+				padding-left: 2rem;
+			}
+
+			&:last-child {
+				padding-right: 2rem;
+			}
+		}
+
+		tr {
+			>td {
+				padding: 1rem 0;
+
+				.status,
+				.status-2 {
+					display: inline-block;
+					min-width: 7.5rem;
+					background-color: $color-primary;
+					font-size: 11px;
+					color: #fff;
+					line-height: 2rem;
+					text-align: center
+				}
+
+				.status-2 {
+					background-color: #FFCA56;
+				}
+
+				&:first-child {
+					padding-left: 2rem;
+				}
+
+				&:last-child {
+					padding-right: 2rem;
+				}
+			}
+
+			&:nth-child(2n) {
+				>td {
+					background-color: #f8f8f8;
+				}
+			}
+
+			&:hover {
+				>td {
+					background-color: rgba($color: $color-primary, $alpha: 0.05);
+				}
+			}
+		}
+	}
+
+	.pagination {
+		margin: 0 2rem 1rem;
+	}
+}
+
+.elearning-history__toolbar {
+	display: flex;
+	align-items: center;
+	margin: 1.5rem 0 2rem;
+	padding: 0 2rem;
+
+	.dates {
+		padding: 0;
+	}
+
+	.mx-datepicker {
+		width: 13rem;
+	}
+
+	.app-select__selected {
+		height: 3.2rem;
+		border-color: $color-border;
+		outline: none;
+
+		&:focus {
+			border-color: #0070E0;
+		}
+	}
+}
+.date_withdrawals{
+	width: 25rem;
+	.mx-datepicker{
+	  width: 100% !important;
+	}
+  }
+.tooltip-account-info-table{
+	max-width: 33.4rem !important;
+	.tooltip-inner{
+		font-size: 1.4rem !important;
+	}
+}

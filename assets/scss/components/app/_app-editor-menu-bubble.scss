@@ -1,0 +1,93 @@
+.app-editor {
+    border: 1px solid $color-border;
+    border-radius: 2px;
+
+    &--is-focused {
+        border-color: $color-primary;
+    }
+}
+
+.app-editor__content {
+    .ProseMirror {
+        &.ProseMirror-focused {
+            outline: none;
+        }
+    }
+}
+
+.app-editor__content-wrapper {
+    padding: 1rem 1.5rem;
+    cursor: text;
+}
+
+.app-editor--menu-bubble {
+    background: #fff;
+    position: relative;
+
+    .app-editor__content-wrapper {
+        min-height: auto;
+    }
+
+    .menububble {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.05);
+        transform: translateX(-50%);
+        transition: opacity .3s, visibility .3s;
+        opacity: 0;
+        visibility: hidden;
+
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .menububble__form {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 4px;
+
+        > .menububble__button {
+            margin: 0;
+        }
+    }
+
+    .menububble__input {
+        border: 1px solid $color-border;
+        border-radius: 3px;
+        line-height: 2.4rem;
+        padding: 0 4px;
+    }
+
+    .menububble__button {
+        display: inline-flex;
+        background: transparent;
+        border: 0;
+        color: #000;
+        font-weight: 700;
+        padding: .5rem;
+        margin: 2px;
+        border-radius: 3px;
+        cursor: pointer;
+        vertical-align: top;
+    
+        &.is-active {
+            background-color: $color-primary;
+            color: #fff;
+    
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    .menububble__button--link {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,128 @@
+.eh-personal-box {
+    display: flex;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 9px 0;
+    transition: box-shadow .3s;
+    box-shadow: $shadow-1;
+
+    &:hover {
+        box-shadow: $shadow-hover;
+    }
+}
+
+.eh-personal-box__img {
+    flex: 0 0 380px;
+    width: 380px;
+    position: relative;
+    background-color: $color-image-placeholder;
+    margin-right: 3.4rem;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.eh-personal-box__name {
+    font-size: map-get($text-size, 'heading-3');
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.eh-personal-box__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.eh-personal-box__teacher {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+    
+    .profile-link {
+        display: flex;
+        align-items: center;
+        //margin-bottom: ;
+        text-decoration: none;
+        color: $color-text;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+.eh-personal-box__desc {
+    @include set-line((
+        'lineClamp': 3,
+        'lineHeight': $line-height-base,
+    ));
+    margin-bottom: 3rem;
+    word-break: break-word;
+}
+
+.eh-personal-box__bottom {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.eh-personal-box__online-class {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(#6FDA44, .8);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 1rem 1.4rem;
+}
+
+.eh-personal-box__livestream {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    display: flex;
+    align-items: center;
+    background-color: $color-red;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: .5rem 1rem .5rem .6rem;
+
+    .icon {
+        width: 2rem;
+        height: 1.5rem;
+        margin-right: 4px;
+    }
+}
+
+.eh-personal-box__discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-red;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+}

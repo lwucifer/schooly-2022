@@ -1,0 +1,246 @@
+.the-header {
+  background-color: #fff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+  .btn-login {
+    font-weight: bold;
+    color: #999;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+  }
+  .btn-signin__header{
+    font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+    width: 123px;
+    
+  }
+  .btn-signup__header{
+    width: 123px;
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.the-header__content {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  // align-items: stretch;
+  >* {
+    display: flex;
+    align-items: center;
+  }
+  .link--dropdown__content ul {
+    list-style: none;
+    width: 100%;
+    li {
+      display: block;
+      padding: 1rem;
+      background-color: #fff;
+      margin: 0;
+      border: 0;
+      a {
+        font-weight: normal;
+        color: #666;
+        padding: 0;
+        text-decoration: none;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+      + li {
+        border-top: 1px solid $color-border;
+      }
+    }
+  }
+}
+
+.the-header__logo {
+  flex-shrink: 0;
+  margin-right: 4rem;
+
+  svg {
+    display: block;
+    width: 130px;
+    height: 40px;
+  }
+}
+
+.the-header__menu {
+  list-style-type: none;
+  margin-right: 2.7rem;
+  margin-left: 3rem;
+  white-space: nowrap;
+  
+
+  > li {
+    display: inline-block;
+    .link--dropdown-course {
+      padding: 2.5rem 0;
+      position: relative;
+      a {
+        font-weight: bold;
+        color: $color-primary;
+      }
+      &::before {
+        content: "";
+        height: 2rem;
+        width: 1px;
+        background-color: #333;
+        display: block;
+        position: absolute;
+        left: -1.5rem;
+      }
+    }
+    > a {
+      padding: 2.5rem 0;
+      display: block;
+      position: relative;
+      outline: none !important;
+      /*
+      &.nuxt-link-exact-active:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 4.4rem;
+        margin-left: -2.2rem;
+        bottom: 0;
+        left: 50%;
+        background-color: $color-primary;
+      }
+      */
+    }
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $color-text;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    &:hover,
+    &.active,
+    &.nuxt-link-exact-active {
+      color: $color-primary;
+    }
+
+    &.active,
+    &.nuxt-link-exact-active {
+      font-weight: 700;
+    }
+  }
+}
+
+.the-header__menu-status {
+  font-weight: 700;
+}
+
+.the-header__search {
+  &.app-search {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: auto;
+    max-width: 39.8rem;
+
+    .app-search__submit {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.the-header__right {
+  display: flex;
+  align-items: center;
+}
+
+.the-header__right-menu {
+  list-style-type: none;
+  margin-right: 1rem;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.the-header__noti {
+  position: relative;
+  display: block;
+
+  > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22.67px;
+    height: 16.29px;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+}
+
+.the-header__user {
+  display: flex;
+  // align-items: stretch;
+  .item {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    .number {
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+      padding: 2px 5px;
+      margin-top: -2rem;
+      min-width: 2.2rem;
+      background: #e9446a;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      border-radius: 1.2rem;
+    }
+    &.link--dropdown-auth {
+      padding: 0 0 0 2rem;
+      margin: 0;
+    }
+  }
+  button.item, > a.item {
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+    svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      path {
+        fill: #666;
+      }
+    }
+  }
+}
+
+.the-header__user-avt {
+  margin-right: 1rem;
+}
+
+.the-header__user-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 1rem;
+  max-width: 65px;
+}
+
+.the-header__user-arrow {
+  svg {
+    fill: $color-text;
+  }
+}

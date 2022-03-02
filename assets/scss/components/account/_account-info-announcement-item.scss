@@ -1,0 +1,29 @@
+.readed{
+    .wrapitemnotify{
+        background: #FFFFFF;
+    }
+}
+.wrapitemnotify{
+    display: flex;
+    align-items: center;
+    background: #F8F8F8;
+    padding: 10px 20px;
+    .btn-hover{
+        visibility: hidden;
+    }
+    &:hover{
+        .btn-hover{
+            visibility: visible;
+        }
+    }
+}
+.tooltip{
+    &.tooltipAnnouncenment{
+        z-index: 111;
+        .tooltip-inner{
+            background: #666666;
+            color: white;
+        }
+        
+    }
+}

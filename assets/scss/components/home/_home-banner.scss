@@ -1,0 +1,32 @@
+.home-banner {
+    background: url("~assets/images/home/elearning-home-banner.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 596px;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $color-primary;
+        margin-bottom: 2rem;
+
+        span {
+            display: block;
+            color: $color-text-white;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        font-weight: 500;
+        color: $color-text-white;
+        margin-bottom: 2.6rem;
+    }
+
+    &__btn {
+        padding: 0.8rem 3.3rem;
+        font-size: 1.5rem;
+    }
+}

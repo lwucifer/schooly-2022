@@ -1,0 +1,13 @@
+.rate-status {
+  &__title {
+    line-height: 2rem;
+  }
+  &__figure {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    font-size: 1.3rem;
+    p {
+      margin: 0 1rem;
+    }
+  }
+}

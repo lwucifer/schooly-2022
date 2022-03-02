@@ -1,0 +1,31 @@
+.exam-create-add-question{
+    .excaq__title-block{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-dark;
+    }
+    .ecaq__content{
+        padding: 1rem .5rem;
+        .app-input__unit{
+            font-weight: 600;
+            color: #656565;
+            background-color: #F2F2F2;
+            height: 100%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .text-left{
+            width: 15rem;
+        }
+        .no-question{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

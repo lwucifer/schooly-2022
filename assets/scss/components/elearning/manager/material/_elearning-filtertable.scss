@@ -1,0 +1,93 @@
+.wrapfilterbar__ElearningManagerFilterTable{
+    padding:20px 0px;
+}
+.wrapfilterform__ElearningManagerFilterTable{
+    display: flex;
+    flex: row;
+}
+.btnFitlerSummit__ElearningManagerFilterTable{
+    border-radius: 100px;
+    width: 129px;
+    height: 32px;
+    background: #32AF85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    span{
+        color: #FBFBFB;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.selectTypes__ElearningManagerFilterTable{
+    //width: 130px;
+    height: 32px;
+    margin:0px 20px;
+}
+.selectStatus__ElearningManagerFilterTable{
+    height: 32px;
+}
+
+.bntRemoveList__ElearningManagerFilterTable{
+    //height: 32px;
+    //background: #E9446A;
+    //border-radius: 0px;
+    //margin-top: 24px;
+    //display: flex;
+    //flex: row;
+    //justify-content: center;
+    //align-items: center;
+    svg{
+        fill: #FFFFFF;
+        height: 16px;
+    }
+    span{
+        font-size: 14px;
+        color: #FBFBFB;
+    }
+}
+.wrapTable__ElearningManagerFilterTable{
+    padding-top:20px;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.wrapSearchForm___ElearningManagerFilterTable{
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+    height: 32px;
+    width: 289px;
+    .app-input__input{
+        height: 30px;
+        border: none;
+        width: 257px;
+    }
+    button{
+        height: 32px;
+        padding:0px 7px;
+        border-left: none;
+    }
+}
+.tableUploadFile__ElearningManagerFilterTable{
+    .app-checkbox{
+        width: 16px;
+    }
+    .app-checkbox__checkmark{
+        border: 1px solid #CCCCCC;
+    }
+    //th:first-child{
+       //width: 18px;
+    //}
+    //th:nth-child(2){
+    //    width: 280px;
+    //}
+    //th:nth-child(3){
+    //    width: 150px;
+    //}
+    //th:nth-child(4){
+    //    width: 220px;
+    //}
+}

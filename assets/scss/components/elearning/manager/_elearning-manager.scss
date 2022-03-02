@@ -1,0 +1,207 @@
+.row-space-5 {
+    margin-right: -2.5rem;
+    margin-left: -2.5rem;
+    > div {
+        padding: 0 2.5rem;
+    }
+}
+.elearning-manager__tab {
+    margin-bottom: 2rem;
+    display: flex;
+    .nav {
+        a {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 19px;
+            display: inline-block;
+            cursor: pointer;
+            padding: 0.7rem 1rem;
+            margin: 0 0.5rem;
+            color: $color-text-dark;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a.active,
+        a:hover {
+            font-weight: 500;
+            border-bottom: 3px solid $color-primary;
+            color: $color-primary;
+        }
+    }
+    .btn-right {
+        margin-left: auto;
+    }
+}
+.text-desc {
+    position: relative;
+    .text-desc__text {
+        width: 17rem;
+        max-height: 5.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover {
+        .text-desc__sub {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .text-desc__sub {
+        position: absolute;
+        top: 100%;
+        bottom: auto;
+        left: 40%;
+        transform: translateX(-50%);
+        padding: 1rem;
+        border: 1px solid $color-border;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 300ms;
+        width: 36rem;
+        z-index: 9;
+        background-color: #fff;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+    }
+}
+.elearning-manager__serch {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    .app-select__selected {
+        height: 3.2rem;
+    }
+}
+.elearning-manager__dashboard {
+    .row {
+        align-items: stretch;
+    }
+    .row .item > div {
+        height: 100%;
+        background-color: #fff;
+        padding: 2rem 3rem;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+        border: 1px solid #e0e0e0;
+    }
+    .item {
+        margin-bottom: 2rem;
+        &:first-child > div {
+            border-left: 2px solid #37a000;
+            strong {
+                color: #37a000;
+            }
+        }
+        &:nth-child(2) > div {
+            border-left: 2px solid #2d9cdb;
+            strong {
+                color: #2d9cdb;
+            }
+        }
+        &:nth-child(3) > div {
+            border-left: 2px solid #eb5757;
+            strong {
+                color: #eb5757;
+            }
+        }
+        &:nth-child(4) > div {
+            border-left: 2px solid #e6a01e;
+            strong {
+                color: #e6a01e;
+            }
+        }
+        .top {
+            display: flex;
+            align-items: center;
+            color: #999;
+            font-weight: bold;
+            svg {
+                margin-left: auto;
+            }
+        }
+        strong {
+            font-size: 4rem;
+            line-height: 1;
+            display: block;
+        }
+    }
+}
+
+.elearning-manager__revenue {
+    margin: 5rem 0;
+    .revenue {
+        background: #f2f2f2;
+        border: 1px solid #e0e0e0;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+        padding: 2.5rem 5rem;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        color: rgba($color: #d50000, $alpha: 0.7);
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+}
+
+.page-title {
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 1.5rem;
+    color: #333;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.elearning-manager__dashboard-filter {
+    display: flex;
+    align-items: center;
+    .app-date-picker {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        label {
+            white-space: nowrap;
+        }
+    }
+}
+
+.app-table .link {
+    text-decoration: none;
+    color: #656565;
+}
+
+.elearning-courses {
+    .table-avatar {
+        display: flex;
+        .left {
+            width: 10rem;
+            margin-right: 1rem;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .btn-color-blue {
+        background-color: #1481fe;
+    }
+    .app-table table {
+        thead th {
+            white-space: nowrap;
+        }
+        tbody td {
+            overflow: hidden;
+        }
+    }
+}

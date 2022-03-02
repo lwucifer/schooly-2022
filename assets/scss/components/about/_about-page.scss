@@ -1,0 +1,178 @@
+.about-page{
+    background: #FFFFFF;
+    .about-banner{
+        background: url("~assets/images/about/Group 1570.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        padding:0 15rem;
+        &__title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 48px;
+            color: #6FDA44;
+            margin-top: 8rem;
+        }
+        &__text{
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FFFFFF;
+        }
+    }
+    .about-benefit{
+        padding:0 15rem;
+        margin-top: 11rem;
+        margin-bottom: 6rem;
+        &__title{
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            color:$color-primary;
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+        &__img-school{
+            background: url("~assets/images/about/about-benefit-school.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 334px;
+            border-radius: 16px;
+        }
+        &__img-teacher{
+            background: url("~assets/images/about/about-benefit-teacher.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 334px;
+            border-radius: 16px;
+        }
+        &__img-student{
+            background: url("~assets/images/about/about-benefit-student.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 334px;
+            border-radius: 16px;
+        }
+        &__text{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            color: #222222;
+        }
+        &__text-item{
+            font-weight: 500;
+            font-size: 16px;
+            color: #222222;
+        }
+        .mb-benefit{
+            margin-bottom: 7rem;
+        }
+        .mb-benefit-footer{
+            margin-bottom: 10rem;
+        }
+    }
+    .about-purpose{
+        margin-top:7rem;
+        margin-bottom: 3rem;
+        padding:0 15rem;
+        &__title{
+            font-weight: bold;
+            font-size: 32px;
+            color: $color-primary;
+            margin-bottom: 2rem;
+        }
+        &__text{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222222;
+            margin-bottom: 3rem;
+        }
+        &__icons-purporse{
+            width: 5.6rem;
+        }
+        &__img{
+            background: url("~assets/images/about/Rectangle 11.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 307px;
+            border-radius: 16px;
+        }
+        &__item{
+            margin-bottom: 4rem;
+        }
+    }
+    .about-intro{
+        margin-top:4rem;
+        margin-bottom: 3rem;
+        padding:0 15rem;
+        &__title{
+            font-weight: bold;
+            font-size: 32px;
+            color: $color-primary;
+            margin-bottom: 2rem;
+        }
+        &__text{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222222;
+            margin-bottom: 3rem;
+        }
+        &__icons-bookmark{
+            width: 2rem;
+        }
+        &__img{
+            background: url("~assets/images/about/Rectangle 284.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 336px;
+            border-radius: 16px;
+        }
+    }
+    .about-feature{
+        padding:0 15rem;
+        margin-top: 11rem;
+        &__title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            color:$color-primary;
+            text-align: center;
+        }
+        &__group-btn{
+            width: 752px;
+            height: 72x;
+            margin:4rem auto;
+            border-radius: 8px;
+            border: 1px solid #E0E0E0;
+            background: #F9F9F9;
+        }
+        &__btn{
+            background: #F9F9F9;
+            height: 72px;
+            color: #999999;
+            font-size: 18px;
+            box-shadow: none;
+            font-weight: 500;
+            &:hover{
+                color:white;
+                background: $color-primary;
+                border-radius: 8px;
+            }
+        }
+        .active{
+            color:white;
+            background: $color-primary;
+            border-radius: 8px;
+        }
+        &__img{
+            background: url("/images/home/every-devices.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 307px;
+        }
+    }
+ }

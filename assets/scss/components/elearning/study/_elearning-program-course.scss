@@ -1,0 +1,40 @@
+.e-program-course {
+    &:not(:last-child) {
+        border-bottom: 1px solid $color-disabled;
+    }
+}
+
+.e-program-course__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.e-program-course__heading {
+    font-size: 1.5rem;
+    // line-height: (24/15);
+    margin-bottom: 1rem;
+}
+
+.e-program-course__heading-wrapper {
+    margin-right: 1rem;
+}
+
+.e-program-course__icon-toggle {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: $shadow-1;
+    background-color: #fff;
+    color: $color-primary;
+    transition: transform .3s;
+
+    &.active {
+        transform: rotate(-180deg);
+    }
+}

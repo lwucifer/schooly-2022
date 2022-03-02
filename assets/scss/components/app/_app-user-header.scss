@@ -1,0 +1,91 @@
+.the-header__user {
+  position: relative;
+  /*
+  &:hover {
+    /deep/ .the-header__user-menu {
+      display: block;
+    }
+  }
+  */
+}
+
+.the-header__user-avt {
+  margin-left: 3.6rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.the-header__user-menu {
+  display: block;
+  position: absolute;
+  padding-top: 4rem;
+  top: 3.2rem;
+  z-index: map_get($z-index, "dropdown");
+  //border: 1px solid #eee;
+  //box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  min-width: 28.3rem;
+  right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2.8rem;  /* At the top of the tooltip */
+    right:  5%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    display: block;
+    z-index: 12px;
+}
+
+  ul {
+    list-style-type: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding:2rem 0;
+  }
+
+  &__item {
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: inherit;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 4rem;
+      padding-left: 2rem;
+      border-left: 4px solid transparent;
+      svg path {
+        fill-opacity: 1;
+      }
+      &.nuxt-link-exact-active{
+        color: $color-primary;
+        border-left: 4px solid $color-primary !important;
+        background: #F9F9F9;
+        svg path {
+          fill: $color-primary !important;
+        }
+      }
+      &:hover{
+        border-color: #008329;
+        background: #F9F9F9;
+        color: #008329;
+        svg path {
+          fill: #008329 !important;
+        }
+      }
+      svg {
+        margin-right: 1rem;
+        width: 22px;
+      }
+    }
+  
+  }
+}

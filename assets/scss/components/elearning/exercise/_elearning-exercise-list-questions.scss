@@ -1,0 +1,69 @@
+.e-exercise-list-questions {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+
+    &__item {
+        counter-increment: my-awesome-counter;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+
+        // &:before {
+        //     content: counter(my-awesome-counter) ". ";
+        //     font-weight: bold;
+        // }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-disabled;
+        }
+    }
+
+    &__question {
+        display: block;
+        color: $color-text;
+        font-size: 1.5rem;
+
+        &:before {
+            content: "Câu hỏi " counter(my-awesome-counter) ". ";
+            font-weight: bold;
+            margin-right: 4px;
+        }
+    }
+
+    &__answer {
+
+        &--essay {
+            margin-top: 0.7rem;
+        }
+
+        &--choice {
+            margin-top: 1rem;
+            padding-left: 2rem;
+        }
+    }
+
+    &__answer-content {
+        padding: 1rem;
+        background-color: $color-text-light-2;
+        color: $color-text-gray;
+        margin-top: 0.9rem;
+    }
+
+    &__toggle-answer {
+        font-size: 1.3rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+
+        .icon {
+            font-size: 2rem;
+            margin-left: 1rem;
+            transition: transform .3s;
+        }
+
+        &.expand {
+            .icon {
+                transform: rotate(-180deg)
+            }
+        }
+    }
+}  

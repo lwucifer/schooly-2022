@@ -1,0 +1,178 @@
+$default-color: #1D243E !default;
+$primary-color: $color-primary !default;
+
+//$today-color: mix(#fff, $primary-color, 10%) !default;
+
+$input-border-color: #E0E0E0;
+//$input-color: #555 !default;
+$input-hover-border-color: $primary-color;
+
+//
+//$disabled-color: #ccc !default;
+//$disabled-background-color: #f3f3f3 !default;
+//
+//$border-color: #e8e8e8 !default;
+//
+//$calendar-active-color: #fff !default;
+//$calendar-active-background-color: $primary-color !default;
+//
+//$calendar-hover-color: $default-color !default;
+//$calendar-hover-background-color: mix(#fff, $calendar-active-background-color, 95%) !default;
+//
+//$calendar-in-range-color: $default-color !default;
+//$calendar-in-range-background-color: mix(#fff, $calendar-active-background-color, 85%) !default;
+//
+//$time-active-color: $primary-color !default;
+//$time-active-background-color: transparent !default;
+//
+//$time-hover-color: $default-color !default;
+//$time-hover-background-color: mix(#fff, $calendar-active-background-color, 95%) !default;
+
+@import '~vue2-datepicker/scss/index.scss';
+
+.#{$namespace}-input {
+    height: 4rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #999;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.#{$namespace}-datepicker {
+    //width: 15.5rem;
+    width: 100%;
+    max-width: 100%;
+}
+.app-date-picker {
+    display: inline-block;
+    + .app-date-picker {
+        margin-left: 2.6rem;
+    }
+    label {
+        margin-right: 0.3rem;
+    }
+    
+    .mx-input {
+        border-radius: 2px;
+    }
+    
+    &.size-sm .mx-input {
+        height: 3.2rem;
+    }
+    &.size-xs .mx-input {
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+    &.size-lg .mx-input {
+        height: 4.8rem;
+    }
+    &.square {
+        .mx-input {
+            border-radius: 0;
+        }
+    }
+}
+
+.#{$namespace}-datepicker-range {
+    width: 21rem;
+    .mx-input {
+        &::placeholder {
+            color: $color-text-gray-2;
+            font-size: 1.2rem;
+            letter-spacing: -0.01em;
+            opacity: 1; /* Firefox */
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $color-text-gray-2;
+            font-size: 1.2rem;
+            letter-spacing: -0.01em;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: $color-text-gray-2;
+            font-size: 1.2rem;
+            letter-spacing: -0.01em;
+        }
+    }
+}
+
+.#{$namespace}-calendar-content{
+    .cell{
+        &.active{
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.#{$namespace}-table-date {
+    thead tr th {
+        font-weight: bold;
+        color: #6C738D;
+    }
+}
+
+.#{$namespace}-datepicker-sidebar {
+    background: #fff;
+    width: 21rem;
+    box-shadow: 0px 8px 32px rgba(108, 115, 141, 0.12);
+}
+
+.#{$namespace}-btn-shortcut {
+    border-radius: 2px;
+    width: 100%;
+    background: #F9F9F9;
+    margin-bottom: 8px;
+    padding: 6px 11px;
+    &.active {
+        background: $primary-color;
+    }
+}
+
+.app-date-picker__popup--range.mx-datepicker-main{
+    background: none !important;
+    box-shadow:none !important;
+    border: none !important;
+    display: flex;
+    font-family: "Montserrat", sans-serif !important;
+    .mx-datepicker-sidebar + .mx-datepicker-content{
+        border-left: none !important;
+        background: #fff;
+        box-shadow: 0px 8px 32px rgba(108, 115, 141, 0.12);
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+    .mx-calendar:last-child{
+        border-left: none !important;
+        margin-left: 20px;
+    }
+}
+
+.#{$namespace}-icon-calendar,
+.#{$namespace}-icon-clear {
+  color: $primary-color;
+}
+
+.#{$namespace}-datepicker-main {
+  font: 1.2rem inherit, Helvetica, Arial, 'Microsoft Yahei', sans-serif;
+}
+
+//button
+.#{$namespace}-btn {
+  color: $color-text;
+  letter-spacing: -0.01em;
+}
+
+.mx-time-column .mx-time-list::after {
+    height: 5px !important;
+}
+
+.app-date-picker.border-red .mx-input {
+    border-color: #D50000 !important;
+}

@@ -1,0 +1,36 @@
+.exam-manager__title-block{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222222;
+}
+.exam-manager__content{
+    padding:1rem .5rem;
+}
+.exam-manager__tooltip{
+    li{
+        list-style-type: none;
+        padding: 1rem;
+        a{
+            color: #656565;
+            svg{
+                margin-right: 1rem;
+            }
+            .icon__ms path{
+                fill: #9B51E0;
+            }
+        }
+    }
+}
+.table-extend-content{
+    padding: 2rem;
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    p+p{
+        margin-left: 4rem;
+    }
+}

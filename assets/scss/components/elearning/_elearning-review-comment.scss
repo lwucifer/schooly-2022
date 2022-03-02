@@ -1,0 +1,19 @@
+.elearning-review-comment {
+    padding: 2rem 0;
+    display: flex;
+
+    &__top {
+        margin-bottom: 1.4rem;
+    }
+
+    &__info {
+        .app-stars {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    + .elearning-review-comment {
+        border-top: 1px solid $color-border;
+    }
+}

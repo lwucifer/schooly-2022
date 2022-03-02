@@ -1,0 +1,48 @@
+.school-list-box {
+    margin-bottom: 4rem;
+
+    .school-list-box__title {
+        margin-bottom: 1rem;
+        line-height: 2.2rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+
+        &__name {
+            color: $color-primary;
+            font-weight: 500;
+            border-bottom: 2px solid $color-primary;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 0.5rem 1rem; 
+            margin-right: 2rem;
+        }
+
+        &__description {
+            color: #222;
+            font-weight: normal;
+        }
+        
+        &__submit-btn {
+            display: flex;
+            align-items: center;
+            color: $color-primary;
+            margin-left: auto;
+            text-decoration: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .school-list-box__content {
+        margin-bottom: 1rem;
+        .row--school-list {
+            margin-left: -10px;
+            margin-right: -10px;
+            .custom-col-lg-5 {
+                padding: 0 10px;
+            }
+        }
+    }
+}

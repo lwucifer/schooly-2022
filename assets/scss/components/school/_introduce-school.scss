@@ -1,0 +1,125 @@
+.wrap-intro-school{
+    padding: 3rem 3.5rem;
+    background-color: #fff;
+    .intro-text-school{
+        font-size: 3rem;
+        color: #222222;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 3.5rem;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 67px;
+            height: 3px;
+            background: #37A000;
+            bottom: 0;
+            margin-bottom: -1rem;
+        }
+    }
+    .btn-intro-school{
+        color: #656565;
+        font-weight: 500;
+        font-size: 16px;
+        border-radius: 2px;
+    }
+    .active{
+        background: #37A000;
+        color: #FFFFFF;
+        box-shadow:none;
+    }
+}
+.btn-system-school{
+    color: #222222;
+    justify-content: start;
+    width: 100%;
+}
+.change-tab{
+    border: 1px solid #37A000;
+    color: #37A000;
+    box-shadow: none;
+}
+.intro-system-detail-school{
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 0px 0px 2px 2px;
+    margin-top: 2rem;
+    .title-system-school{
+        padding:1.7rem 2.6rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #656565;
+        background: #F2F2F2;
+    }
+    .content-system-school{
+        padding:2.5rem;
+        .title-left{
+            width: 94px;
+            color: #656565;
+            font-weight: 500;
+        }
+        a{
+          text-decoration: none;
+          span{
+            color: #656565;
+          }
+          &:hover{
+            background: #F2F2F2;
+          }
+        }
+    }
+}
+.news-intro-school{
+    a{
+      p:first-child{
+        color: #222222;
+      }
+      &:hover{
+        p:first-child{
+        color: $color-primary;
+      }
+      }
+    }
+  }
+  .intro-text-school-menu-side{
+          font-size: 24px;
+          color: #222222;
+          margin-bottom: 1rem;
+          font-weight: 500;
+          position: relative;
+          margin-bottom: 3.5rem;
+          &::before{
+              content: '';
+              position: absolute;
+              width: 67px;
+              height: 3px;
+              background: #37A000;
+              bottom: 0;
+              margin-bottom: -1rem;
+          }
+  }
+  .notify-intro-school{
+    margin-top: 5rem;
+    a{
+      p:first-child{
+        color: #222222;
+      }
+      &:hover{
+        p:first-child{
+        color: $color-primary;
+      }
+      }
+    }
+  }
+  .circle-background{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

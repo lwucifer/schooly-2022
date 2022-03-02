@@ -1,0 +1,104 @@
+.wrapTest{
+    background: #F5FBF9;
+    width: 750px;
+    height: 422px;
+}
+.titleChoiceTest{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+}
+.wrapbtnSummitTest{
+    position: absolute;
+    z-index:1;
+    right:25px;
+}
+
+.timetest_ElearningCourse{
+   display: flex;
+    flex: row;
+    justify-content: center;
+    margin:20px;
+    div :first-child{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19p;
+        color: #333333;
+    }
+    div :last-child{
+        color: #E9446A;
+        font-weight: bold;
+    } 
+}
+.titleQuestion__ElearningCourse{
+    align-items: center;
+    .wrapselect__ElearningCourse{
+        width: 61px;
+        height: 32px;
+        margin-left: 8px;
+    }
+    
+
+}
+.answerQuestionChoiceTest__ElearningCourse{
+    margin-top: 20px;
+    padding-left:15px;
+    background: #FFFFFF;
+    min-height: 159px;
+    margin: 10px;
+    padding: 10px;
+    .radio{
+        margin-top: 10px;
+        
+    }
+}
+.wrapGroupButton__ElearningCourseCourse{
+    display: flex;
+    flex: row;
+    margin-top:28px;
+}
+
+.btnbackChoiceTest__ElearningCourse{
+    width: 86px;
+    height: 32px;
+    background: #CCCCCC;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-right:10px;
+    
+}
+.btncontinueChoiceTest__ElearningCouse{
+    width: 84px;
+    height: 32px;
+    background: #32AF85;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.btnSummitChoiceTest__ElearningCourse{
+    width: 104px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #1481FE;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.iconprint__ElearningCourse{
+    fill: #FFFFFF;
+    margin-right:5px;
+    height: 16px;
+}

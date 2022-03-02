@@ -1,0 +1,44 @@
+.wrapResultTest{
+    width: 750px;
+    height: 422px; 
+    background: #F5FBF9;
+}
+.titleNameTest{
+    font-size: 16px;
+    line-height: 22px;
+    padding-top:20px;
+}
+.checkTest{
+    margin-top:17px;
+    font-size: 14px;
+    line-height: 19px;
+    justify-content: center;
+    span:last-of-type{
+        color: #F5CC77;
+        font-weight: bold;
+        font-size: 16px;
+        padding-left:10px;
+    }
+}
+.detailTimeTest{
+    display: flex;
+    flex: row;
+    align-items: center;
+    margin:20px;
+    min-height: 170px;
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
+    font-size: 14px;
+    div{
+        width: 50%;
+        span{
+             padding: 10px;
+        }
+    }
+    div:first-of-type{
+        color: #666666;
+    }
+    div:last-of-type{
+        color: #32AF85;
+    }
+}

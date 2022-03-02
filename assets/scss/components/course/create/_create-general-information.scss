@@ -1,0 +1,99 @@
+.cgi-upload-avt {
+    .app-upload__button {
+        // border: 2px solid $color-primary;
+        // padding: 0.5rem;
+        width: 100%;
+    }
+}
+
+.cgi-upload-avt-icon-wrapper {
+    width: 8.6rem;
+    height: 8.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        font-size: 4.8rem;
+        fill: $color-primary;
+    }
+}
+
+.cgi-upload-avt-preview {
+    position: relative;
+    #avatar {
+        border-radius: 2px;
+    }
+}
+
+.cgi-upload-avt-close-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#000, .2);
+    z-index: 1;
+    cursor: pointer;
+
+    svg {
+        fill: #fff;
+    }
+}
+
+
+.cc-panel {
+    .cc-panel__title {
+        height: 50px;
+        background: #F9F9F9;
+    }
+
+    .cc-panel__body {
+        .cgi-form-group {
+            .v-select {
+                .vs__dropdown-toggle {
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}
+
+.cgi-demo-text {
+    max-width: 80%;
+    @include text-overflow;
+
+    p {
+        @include text-overflow;
+    }
+
+    svg {
+        width: 25px;
+    }
+}
+
+.cgi-form-title {
+    white-space: nowrap;
+    line-height: (24/14);
+}
+
+.cgi-col-aside {
+    @include media(">xl") {
+        max-width: #{(324/1164) * 100 + '%'};
+        flex: 0 0 #{(324/1164) * 100 + '%'};
+    }
+}
+
+.cgi-col-content {
+    @include media(">xl") {
+        max-width: #{100 - ((324/1164) * 100) + '%'};
+        flex: 0 0 #{100 - ((324/1164) * 100) + '%'};
+    }
+}
+
+.create-action__right{
+    float: right;
+}

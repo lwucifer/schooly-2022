@@ -1,0 +1,35 @@
+.eh-subject-item {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 3.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    text-align: center;
+    margin: 9px 0;
+    transition: box-shadow .3s;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+
+    &__icon {
+        svg, img {
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        margin-top: 2.4rem;
+        font-size: map-get($text-size, 'body-2');
+        font-weight: 600;
+    }
+    
+    &:hover {
+        box-shadow: $shadow-hover;
+    }
+}
+  

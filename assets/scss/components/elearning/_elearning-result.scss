@@ -1,0 +1,82 @@
+.elearning-manager-result {
+    &__section {
+
+        h4.content-title {
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: #333;
+            margin-bottom: 1rem;
+            padding: 0 2rem;
+        }
+    }
+
+    .elearning-test-result {
+        .item {
+            .content-title {
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 4rem;
+                color: #222222;
+                display: block;
+            }
+        }
+    }
+
+    .mark-section {
+        margin-bottom: 1rem;
+        
+        .student-profile {
+            img {
+                max-width: 6rem;
+                border-radius: 50%;
+                max-height: 6rem;
+                width: 100%;
+            }
+        }
+
+        .score {
+            &__num {
+                font-weight: bold;
+                font-size: 2.4rem;
+                margin-bottom: 1rem;
+            }
+
+            &__note {
+                font-size: 1.4rem;
+            }
+        }
+
+        .description {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            
+            .item {
+                padding: .4rem 0;
+
+                .label {
+                    text-align: right;
+                }
+
+                .value {
+                    color: $color-text-dark;
+                    font-weight: 600;
+                    letter-spacing: -0.03em;
+                }
+            }
+        }
+    }
+}
+
+.form--note {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 2rem;
+    margin-top: 1.3rem;
+}
+
+.form--score {
+    .btn--submit {
+        color: #fff;
+    }
+}

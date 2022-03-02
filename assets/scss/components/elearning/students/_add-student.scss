@@ -1,0 +1,72 @@
+.invite-student-modal .app-modal-content {
+    padding: 2.5rem 0;
+  }
+  .add-student__menu-tab{
+      border-bottom: 1px solid #37A000;
+      padding-left: 2.5rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+      box-sizing: border-box;;
+      .wrap-menu-tab{
+        position: absolute;
+        bottom: -1px;
+      }
+      .btn-tab{
+        background: #F2F2F2;
+        height: 4rem;
+        font-size: 1.4rem;
+        padding: 0 1.5rem;
+        border-bottom: 1px solid #37A000;
+        border-radius: 2px;
+        &:first-of-type{
+          margin-right: 1.5rem;
+        }
+      }
+      .active{
+        border: 1px solid #37A000;
+        border-bottom: 2px solid #ffffff;
+        background: #ffffff;
+        border-radius: 2px;
+      }
+  }
+  .add-student__content{
+    padding:2.5rem 2rem 0 2rem
+  }
+
+  .add-student__action{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .add-student__select-class{
+    min-width: 9.5rem;
+    margin-left: 2rem;
+  }
+  .add-student__wrap-checkbox{
+    background: #F9F9F9;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    height: 24rem;
+    margin-top: 2rem;
+    padding:2rem;
+    overflow-y: auto;
+    .select-all{
+      border-bottom: 1px solid #999999;
+      padding-bottom: 1rem;
+    }
+  }
+  .add-student__scroll-table{
+    height: 40rem;
+    overflow-y: auto;
+  } 
+
+.app-table th {
+  white-space: nowrap;
+}
+.add-student__wrap-table{
+    height: 40rem;
+    overflow-y: auto;
+}

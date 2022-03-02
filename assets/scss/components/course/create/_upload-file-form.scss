@@ -1,0 +1,153 @@
+.upload-resource-form {
+  .btn-upload {
+    border-color: $color-primary;
+  }
+}
+
+.uprf__wrapper {
+  border: 1px dashed #999999;
+  border-radius: 2px;
+  padding: 4rem 1.5rem;
+  text-align: center;
+
+  .file-name {
+    color: $color-text-dark;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    height: 4.5rem;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 1rem;
+    min-width: 44rem;
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+  }
+
+  .text-instruction {
+    line-height: 16px;
+  }
+
+  input[type=file] {
+    display: none;
+    z-index: -9999;
+  }
+}
+
+.upload-repository__box--upload{
+  // box-shadow: $shadow-1;
+  // border: 1px dashed $color-text-sub;
+  // padding: 1.5rem;
+
+}
+
+.icon-uploading-cancel {
+ position: absolute;
+ width: 1.8rem;
+ height: 1.8rem;
+ right: 0;
+ top: calc(50% - 0.9rem);
+ & path {
+     fill: #DADADA;
+ }
+
+ &:hover {
+     cursor: pointer;
+ }
+
+ &:hover path {
+     fill: $color-warning;
+ }
+}
+
+.process--upload {
+  background: #fff;
+  border: 1px solid $color-primary;
+
+  &__percentage {
+      height: 1.3rem;
+      background-color: lighten($color-primary, 0.8);
+  }
+
+  &__status {
+      font-size: 1.3rem   ;
+  }
+}
+
+.upload-alert {
+ //.btn--other-file {
+ //    //background-color: #fff;
+ //    color: $color-primary;
+ //    svg {
+ //        width: 1.6rem;
+ //        height: 1rem;
+ //        margin-right: .5rem;
+ //        path {
+ //            fill: $color-primary;
+ //        }
+ //    }
+ //}
+}
+
+.upload-alert--error {
+ margin-bottom: 1rem;
+
+ &__info {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .icon--close-alert {
+     height: 1.8rem;
+     width: 1.8rem;
+     margin-right: 0.5rem;
+     path {
+         fill: rgba(213, 0, 0, 0.6);
+     }
+     &:hover {
+         cursor: pointer;
+     }
+
+     &:hover path {
+         fill: lighten(rgba(213, 0, 0, 0.6), .8);
+     }
+ }
+ &__mess {
+     color: rgba(213, 0, 0, 0.6);
+     letter-spacing: -0.01em;
+     font-weight: 600;
+ }
+
+ &__status {
+     text-align: center;
+     font-style: italic;
+     font-size: 1.3rem;
+     color: rgba(213, 0, 0, 0.5);
+ }
+}
+
+.upload-alert--success {
+
+ &__title {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     svg.icon {
+         margin-right: .4rem;
+     }
+
+     margin-bottom: 2rem;
+     display: flex;
+     align-items: center;
+ }
+}
+
+.tooltip.tooltip--available-file {
+max-width: 45.5rem;
+.tooltip-inner {
+  letter-spacing: -0.01em;
+  line-height: 2.4rem;
+}
+}

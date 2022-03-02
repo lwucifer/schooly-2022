@@ -1,0 +1,210 @@
+.app-video {
+    position: relative;
+    border-radius: $border-radius-common;
+    background-color: #000;
+    overflow: hidden;
+
+    &.play, &.fullscreen {
+        .app-video__controls {
+            transition: transform .3s, opacity .3s, visibility .3s;
+            transform: translate(0, 30px);
+            visibility: hidden;
+            opacity: 0;
+
+            &.show {
+                transform: translate(0, 0);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.play {
+        .app-video__overlay {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &:not(.fullscreen):hover {
+            .app-video__controls {
+                transform: translate(0, 0);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.waiting {
+        .app-video__overlay {
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+    }
+}
+
+.app-video__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .3);
+    cursor: pointer;
+    z-index: 1;
+    transition: opacity .3s, visibility .3s;
+    visibility: visible;
+    opacity: 1;
+
+    &:hover {
+        .app-video__overlay-btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.app-video__overlay-btn {
+    @include absCenter;
+    font-size: 24px;
+    color: #fff;
+    opacity: .7;
+}
+
+.app-video__video {
+    display: block;
+    width: 100%;
+    border-radius: $border-radius-common;
+    object-fit: contain;
+}
+
+.app-video__controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(0,0,0, .7);
+    z-index: 1;
+}
+
+.app-video__control-btn {
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 16px;
+
+    .icon {
+        display: block;
+    }
+
+    &--play {
+        margin-right: 2px;
+    }
+}
+
+.app-video__seek-bar-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 5px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.app-video__seek-bar {
+    width: 100%;
+    height: 3px;
+    background: #f9f9f9;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-video__seek, .app-video__buffered {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-radius: 2px 0 0 2px;
+    pointer-events: none;
+    transition: all linear 0.1s;
+}
+
+.app-video__seek {
+    background: $color-primary;
+    z-index: 1;
+}
+
+.app-video__buffered {
+    background: #cccccc;
+    z-index: 0;
+}
+
+.app-video__timer {
+    font-size: 10px;
+    font-variant-numeric: tabular-nums;
+}
+
+// MODIFIER
+.app-video--size-md, .app-video.fullscreen {
+    .app-video__overlay-btn {
+        font-size: 6rem;
+    }
+
+    .app-video__control-btn {
+        font-size: 2.4rem;
+    }
+
+    .app-video__timer {
+        font-size: 1.8rem;
+    }
+
+    .app-video__controls {
+        padding: 1.2rem;
+    }
+    
+    .app-video__seek-bar-wrapper {
+        height: 2.4rem;
+        margin: 0 1.5rem;
+    }
+
+    .app-video__seek-bar {
+        height: 1rem;
+    }
+
+    .app-video__seek-bar {
+        border-radius: 1rem;
+    }
+
+    .app-video__seek, .app-video__buffered {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .app-video__control-btn--play {
+        margin-right: 1.5rem;
+    }
+}
+
+.app-video--size-md {
+    .app-video__control-btn--play {
+        order: 1;
+        margin-right: 0;
+    }
+
+    .app-video__seek-bar-wrapper {
+        order: 2;
+    }
+
+    .app-video__timer {
+        order: 3;
+        margin-right: 1.5rem;
+    }
+
+    .app-video__controls > .app-video__control-btn:last-child {
+        order: 4;
+    }
+}

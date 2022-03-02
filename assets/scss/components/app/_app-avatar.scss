@@ -1,0 +1,47 @@
+.app-avatar {
+    background-color: $color-image-placeholder;
+    display: inline-block;
+    overflow: hidden;
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+// Shape
+.app-avatar-circle {
+    border-radius: 50%;
+}
+
+.app-avatar-square {
+    border-radius: $border-radius-common;
+}
+
+
+/**
+*** MODIFIER ***
+**/
+
+
+// Size
+.app-avatar--size-xs {
+    width: 2rem;
+    height: 2rem;
+}
+
+.app-avatar--size-sm {
+    width: 4rem;
+    height: 4rem;
+}
+
+.app-avatar--size-lg {
+    width: 6.4rem;
+    height: 6.4rem;
+}

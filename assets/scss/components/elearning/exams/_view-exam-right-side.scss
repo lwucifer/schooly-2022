@@ -1,0 +1,34 @@
+.exam-right-side {
+    background: $color-text-white;
+
+    &__title {
+        padding: 1.5rem 2rem;
+        height: 50px;
+        background: #F9F9F9;
+        border-bottom: 1px solid $color-disabled;
+    }
+
+    &__content {
+        ul {
+            list-style-type: none;
+
+            li {
+                padding: 1.5rem 2rem;
+                border-bottom: 1px solid $color-disabled;
+                height: 95px;
+
+                &:hover {
+                    background: #F9F9F9;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                h5 {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.ce-input-with-unit {
+  .app-input__unit {
+    font-weight: normal;
+    color: #fff;
+    background-color: $color-text-gray-2;
+    height: calc(100% - 6px);
+    min-width: 62px;
+    margin-right: 2px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: center;
+  }
+}
+
+.ce-item {
+  padding: 1.3rem 1.5rem;
+  //border: 1px solid $color-border;
+}
+
+.ce-question-item {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid $color-border;
+
+  .ce-question-item__actions {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover {
+    .ce-question-item__actions {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.ce-question-type {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    padding: .8rem 1rem;
+    text-align: center;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $color-disabled;
+    color: $color-text-sub;
+    width: 17.4rem;
+    max-width: 100%;
+
+    .icon {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      fill: $color-text-sub;
+    }
+
+    &.active {
+      background-color: $color-primary;
+      color: #fff;
+      border-color: $color-primary;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.app-upload {
+  &__button {
+    width: 100% !important;
+  }
+}

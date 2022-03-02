@@ -1,0 +1,226 @@
+.clc-btn-add-docs {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    svg {
+        font-size: 1.6rem;
+        fill: $color-primary;
+        margin-right: 0.5rem;
+    }
+}
+
+.clc-type-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.clc-type-tab-item:last-child {
+    margin-right: 0;
+}
+
+.clc-type-tab-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 2.5rem;
+    text-decoration: none;
+
+    $this: &;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6.4rem;
+        border-bottom: 0;
+        transition: border .3s;
+        border: 1px solid $color-disabled;
+        border-radius: 2px;
+        box-shadow: $shadow-1;
+        color: $color-text;
+
+        .icon {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__text {
+        // display: block;
+        // color: #fff;
+        // padding: 4px 2px;
+        // font-weight: 600;
+        // transition: background-color .3s;
+        // background-color: $color-disabled;
+        color: $color-text;
+    }
+
+    @include media(">=xl") {
+        margin-right: 4rem;
+    }
+
+    &.active {
+        #{$this}__icon {
+            border-color: $color-primary;
+
+            svg {
+                fill: $color-primary;
+            }
+        }
+
+        span {
+            color: $color-primary;
+        }
+
+        // #{$this}__text {
+        //     background-color: $color-primary;
+        // }
+    }
+}
+
+.clc-upload-video {
+    .app-upload__button {
+        display: block;
+    }
+}
+
+.clc-btn {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.clc-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.clc-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    th {
+        font-weight: 400;
+        color: $color-text-sub;
+        background-color: $color-border;
+        padding: 1rem;
+    }
+
+    td {
+        color: $color-text;
+        padding: 1.2rem 1rem;
+        border-bottom: 1px solid $color-border;
+    }
+
+    tr {
+        td:last-child {
+            text-align: right;
+        }
+
+        &:last-child td {
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+.clc-table-action {
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+.clc-table-action-delete {
+    svg {
+        font-size: 2rem;
+        fill: $color-red;
+    }
+}
+
+.clc-video {
+    display: flex;
+}
+
+.clc-video__image {
+    flex: 0 0 160px;
+    width: 160px;
+    margin-right: 15px;
+
+    a {
+        img {
+            display: block;
+        }
+    }
+}
+
+.clc-video__name {
+    &:hover .clc-video__actions {
+        display: block;
+        visibility: visible;
+    }
+}
+
+.clc-video__actions {
+    display: none;
+    visibility: hidden;
+
+    a {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+
+        svg {
+            font-size: 2rem;
+            margin-right: 0.6rem;
+        }
+    }
+}
+
+.clc-video__time {
+    svg {
+        vertical-align: top;
+    }
+}
+
+.clc-video__btn-edit {
+    svg {
+        fill: $color-primary;
+    }
+}
+
+.clc-video__btn-delete {
+    svg {
+        fill: $color-red;
+    }
+}
+
+.clc-choosen-doc-item {
+    padding: 1rem 1.5rem;
+    background-color: #F9F9F9;
+    border: 1px solid $color-text-sub;
+    border-radius: 2px;
+}
+
+.add-border-bottom {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.add-border-top {
+    border-top: 1px solid #E0E0E0;
+}
+
+.clc-title {
+    font-size: map-get($text-size, 'body-2');
+    font-weight: 500;
+    color: $color-primary;
+    padding: 0 1rem .6rem 1rem;
+    border-bottom: .3rem solid $color-primary;
+    text-transform: uppercase;
+}
+
+.clc-create-chapper-wrapper {
+    border: 1px solid $color-disabled;
+    box-shadow: $shadow-1;
+    border-radius: $border-radius-common;
+    padding: 1.6rem 2rem 2.5rem 2rem;
+    margin-bottom: 3rem;
+}

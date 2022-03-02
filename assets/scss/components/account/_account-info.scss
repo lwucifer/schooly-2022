@@ -1,0 +1,93 @@
+.wrapInfoAccount {
+    label {
+        color: #999999;
+    }
+
+    h5 {
+        margin-bottom: 25px;
+    }
+
+    .app-input {
+        display: flex;
+
+        .app-input__label {
+            white-space: nowrap;
+            width: 15rem;
+        }
+    }
+    .form-group {
+        label {
+            width: 14rem;
+            white-space: nowrap;
+        }
+    }
+
+    .picker-group__profileInfo {
+        display: flex;
+
+        .sex_Profile .app-input__input {
+            width: 62px;
+            margin-right: 80px;
+        }
+
+        .birthday_Profile {
+            .app-input__label {
+                width: 10rem;
+            }
+
+            .app-input__input {
+                width: 110px;
+            }
+        }
+    }
+}
+
+.btnChangePassword {
+    margin-left: 15rem;
+    margin-bottom: 30px;
+}
+
+.account-edit-modal .app-modal-content .app-input {
+    display: flex;
+    flex-wrap: wrap;
+
+    .app-input__error {
+        margin-left: 16.1rem;
+    }
+}
+
+.btnAccountLink_account-info {
+    box-shadow: $shadow-1;
+    background: #2579E7;
+    color: #FBFBFB !important;
+}
+
+.school-account__main {
+    .app-input__input input:disabled {
+        background-color: $color-border;
+        color: $color-text;
+    }
+
+    .acc-tab {
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        height: 50px;
+        background: $color-text-light-2;
+
+        a {
+            color: $color-text-dark;
+            text-decoration: none;
+            margin-right: 3rem;
+            padding: 1rem 1rem 1.5rem 1rem;
+            font-weight: 500;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+
+        .active {
+            color: $color-primary;
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+}

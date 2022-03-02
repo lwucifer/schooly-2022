@@ -1,0 +1,86 @@
+.eeb__submit-wrap{
+    background-image: url('~assets/images/elearning/pana1.png');
+    background-repeat: no-repeat;
+    background-position: right 3rem bottom 0;
+    padding:0 4.5rem;
+    .eeb__submit-title{
+        display: flex;
+        align-items: center;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        justify-content: center;
+        width: 355px;
+        height: 70px;
+        p{
+            font-weight: 500;
+            font-size: 24px;
+            color: $color-primary;
+            margin-left: 1.3rem;
+        }
+    }
+    .btn-back{
+        width: 13.8rem;
+        margin-top: 4rem;
+    }
+}
+.elearning-result-fail{
+    background-image: url('~assets/images/elearning/pana3.png');
+    background-repeat: no-repeat;
+    background-position: right 3rem bottom 0;
+    padding:0 4.5rem;
+    .erp__title{
+      display: flex;
+      align-items: center;
+      border: 1px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      justify-content: center;
+      width: 355px;
+      height: 70px;
+    }
+    .btn-back{
+      padding:0 4rem;
+      margin-right: 2rem;
+    }
+}
+.elearning-result-pass{
+    background-image: url('~assets/images/elearning/pana4.png');
+    background-repeat: no-repeat;
+    background-position: right 3rem bottom 0;
+    padding:0 4.5rem;
+    .erp__title{
+      display: flex;
+      align-items: center;
+      border: 1px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      justify-content: center;
+      width: 355px;
+      height: 70px;
+    }
+    .btn-back{
+     padding:0 4rem;
+      margin-top: 4rem;
+    }
+}
+.elearning-result-pending{
+    background-image: url('~assets/images/elearning/pana2.png');
+    background-repeat: no-repeat;
+    background-position: right 3rem bottom 0;
+    padding:0 4.5rem;
+    .erp__title{
+      display: flex;
+      align-items: center;
+      border: 1px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      justify-content: center;
+      width: 355px;
+      height: 70px;
+    }
+    .btn-back{
+      width: 13.8rem;
+      margin-top: 4rem;
+    }
+}

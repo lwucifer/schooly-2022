@@ -1,0 +1,56 @@
+.account-friends-menu {
+  @include box(
+    $padding: 1.6rem 2rem 2rem 2rem,
+    $border: null,
+    $shadow: $shadow-1
+  );
+}
+
+.account-friends-menu__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.account-friends-menu__heading {
+  font-size: map-get($text-size, "heading-4");
+}
+
+.account-friends-menu__heading-count {
+  font-size: map-get($text-size, "body-2");
+  font-weight: 400;
+  color: $color-text;
+}
+
+.account-friends-menu__search {
+  margin-bottom: 0;
+  border-radius: $border-radius-common;
+  overflow: hidden;
+
+  .app-input__input {
+    background-color: $color-border;
+  }
+
+  .app-input__input input {
+    order: 2;
+    padding-left: 0;
+    padding-right: 1.5rem;
+
+    &::placeholder {
+      color: $color-text;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .app-search__submit {
+    order: 1;
+    background-color: $color-border;
+    color: $color-text;
+    box-shadow: none;
+    font-size: 1.5rem !important;
+    width: auto;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+}

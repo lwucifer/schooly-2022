@@ -1,0 +1,147 @@
+.comment-editor {
+    display: flex;
+}
+
+.comment-editor__right {
+    flex-grow: 1;
+    max-width: calc(100% - 5.1rem);
+}
+
+.comment-editor__editor-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    border-radius: $border-radius-common;
+    background: $color-border;
+
+    .editor *.is-empty:nth-child(1)::before,
+    .editor *.is-empty:nth-child(2)::before {
+        color: $color-text-gray;
+        font-size: $font-size-caption;
+        line-height: 1.8rem;
+    }
+}
+
+.comment-editor__editor {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-text-dark;
+    max-width: 100%;
+
+    .ProseMirror {
+        padding: 1.15rem 1.6rem;
+    }
+
+    .ProseMirror-focused {
+        outline: none;
+    }
+}
+
+.comment-editor__avatar {
+    margin-right: 1.1rem;
+}
+
+.comment-editor__actions {
+    flex-shrink: 0;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    margin-right: 1.2rem - 0.5rem;
+}
+
+.comment-editor__button {
+    padding: 1rem .5rem;
+    font-size: 2rem;
+    color: $color-text;
+
+    .icon {
+        display: block;
+    }
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+// Upload
+.comment-editor__upload {
+    
+}
+
+.comment-editor__upload-preview {
+    position: relative;
+    display: inline-block;
+
+    img {
+        display: block;
+        max-width: 8.6rem;
+        max-height: 8.6rem;
+    }
+}
+
+.comment-editor__upload-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.comment-editor__preview-link {
+    position: relative;
+
+    $this: &;
+
+    &-remove {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        visibility: hidden;
+
+        .icon {
+            color: $color-text;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            .icon {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &:hover {
+        #{$this}__remove {
+            visibility: visible;
+        }
+    }
+}
+
+// MODIFIER
+.comment-editor--reply {
+    margin-bottom: 1.5rem;
+
+    .comment-editor__avatar {
+        margin-top: 0.5rem;
+    }
+
+    .comment-editor__right {
+        max-width: calc(100% - 4.1rem);
+    }
+}

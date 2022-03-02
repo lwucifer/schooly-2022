@@ -1,0 +1,148 @@
+.elearning-view__info {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+
+    .stars {
+        font-size: 1.4rem;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        margin-right: 2.3rem;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-text-dark;
+        margin-right: 2.3rem;
+        margin-top: 2px;
+    }
+
+    .font-13px {
+        font-size: 1.3rem;
+    }
+}
+
+.img-info {
+    border-radius: 2px;
+}
+
+.elearning-view__content {
+    .info {
+        margin-bottom: 1.4rem;
+    }
+    
+    .download-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+        background-color: rgba($color-primary, .1);
+    }
+}
+.elearning-view__main {
+    .box {
+        margin-bottom: 2rem;
+    }
+}
+
+.elearning-view__main-nav {
+    padding: 0 1.5rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+
+    a {
+        padding: 1.1rem 0 0.8rem;
+        text-decoration: none;
+        display: inline-block;
+        color: #333;
+        border-bottom: .3rem solid transparent;
+
+        &.active {
+            font-weight: bold;
+            border-bottom-color: $color-primary;
+        }
+        
+        + a {
+            margin-left: 4rem;
+        }
+    }
+}
+
+.elearning-view__main-nav.top-sticky {
+    box-shadow: 0px 0px 12px 0px rgba(#000, .05);
+}
+
+.evlc-item {
+    &__head {
+        border: 1px solid $color-border;
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+
+        button {
+            &:active, &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__body {
+        background-color: map-get($bg-colors, 'input-gray');
+        padding: 0 1.5rem;
+    }
+
+    &__btn-collapse {
+        border-radius: 50%;
+        border: 2px solid $color-border;
+        background-color: #fff;
+        color: $color-text-sub;
+        transition: transform .3s;
+        transform: rotate(0deg);
+
+        svg {
+            display: block;
+            font-size: 2rem;
+        }
+
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.elearning-id-box {
+    padding: 2rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+.elearning-view #introduce p {
+    word-break: normal;
+}
+
+.elearning-view #introduce .benefits {
+    overflow-x: scroll;
+}
+
+.elearning-id-box .teacher-title {
+    color: #666666;
+    text-decoration: none;
+}
+
+.elearning-id-box .teacher-title:hover {
+    color: #37A000;
+}
+
+.elearning-id-box .school-title {
+    color: #656565;
+    text-decoration: none;
+}
+
+.elearning-id-box .school-title:hover {
+    color: #37A000;
+}

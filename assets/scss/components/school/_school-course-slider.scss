@@ -1,0 +1,64 @@
+.school-course-slider {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: normal;
+        line-height: 22px;
+        color: #222;
+        margin-bottom: 2rem;
+    }
+
+    .swiper-slide {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        width: 3.3rem;
+        height: 4.5rem;
+        margin-top: -(4.5rem/2);
+        font-size: 3rem;
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color-dark, .5);
+
+        svg {
+            width: 1.6rem;
+            height: 1.6rem;
+            fill: #fff;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-pagination {
+        margin-top: 2.5rem !important;
+        position: relative;
+        line-height: 0;
+        margin-bottom: -1rem;
+    }
+
+    &__footer__submit-btn {
+        font-size: 1.4rem;
+        padding: 1.2rem 8.25rem;
+    }
+}

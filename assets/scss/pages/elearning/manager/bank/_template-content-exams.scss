@@ -1,0 +1,134 @@
+.page-title {
+    background: $color-text-light-2;
+    height: 50px;
+    border-bottom: 1px solid $color-disabled;
+    padding: 1.5rem 2rem;
+
+    span {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-text-dark;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+
+    .icon-edit {
+        display: none;
+    }
+
+    &:hover {
+        .icon-edit {
+            display: inline-block;
+        }
+    }
+}
+
+.template-content {
+    background: $color-text-white;
+    padding: 2rem;
+    overflow-x: auto;
+    .btn-add-questions {
+        position: relative;
+
+        &:hover {
+            .opt-question {
+                display: block;
+            }
+        }
+
+        .opt-question {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            display: none;
+        }
+    }
+
+    &__btn {
+        margin-top: 5.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .frame {
+        border: 1px solid $color-disabled;
+        border-radius: 3px;
+
+        &__title {
+            padding: 1.2rem 0;
+            background: #EEEEEE;
+            color: $color-text-dark;
+        }
+
+        &__content {
+            padding: 2rem;
+
+            .btn-type-question {
+                border: 1px solid $color-primary;
+                color: $color-primary;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    .frame-dash {
+        margin-top: 1.6rem;
+        border: 1px dashed #999999;
+        padding: 4rem 0;
+
+        .file-upload {
+            margin: 0 auto;
+            padding: 1.2rem 1.8rem;
+            border: 1px solid $color-disabled;
+            border-radius: 2px;
+            width: 440px;
+            margin-bottom: 2.5rem;
+            position: relative;
+
+            .icon-close {
+                position: absolute;
+                top: 50%;
+                right: -40px;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+
+        .app-upload-exam {
+            display: inline-block;
+            font-size: 1.4rem;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+            border-radius: 50px;
+            padding: 1.2rem 3rem;
+            font-weight: 500;
+        }
+
+        .note-upload {
+            opacity: 0.5;
+        }
+    }
+
+    .w-60 {
+        width: 60px !important;
+    }
+}
+
+.input-with-unit {
+
+    /deep/ .app-input__unit {
+      font-weight: 600;
+      color: $color-text;
+      background-color: $color-border;
+      height: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+.upload-exam-desc {
+    opacity: .5;
+    line-height: (24/14);
+    font-style: italic;
+}

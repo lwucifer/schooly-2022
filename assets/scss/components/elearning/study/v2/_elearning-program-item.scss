@@ -1,0 +1,34 @@
+.elearning-program-item-v2{
+    padding:2rem;
+    border-bottom: 0.5px solid #C5C5C5;
+    a{
+      color: #656565;
+    }
+    .epiv__link{
+      color: #222222;
+      &:hover{
+        font-weight: 500;
+      }
+    }
+    .active{
+      color: $color-primary;
+    }
+    .exercise-passed{
+      color: $color-primary;
+      svg path{
+        stroke: $color-primary;
+      }
+    }
+    .exercise-pending{
+      color:#E6A01E;
+      svg path{
+        stroke: #E6A01E;
+      }
+    }
+    .exercise-failed{
+      color:#E9446A;
+      svg path{
+        stroke: #E9446A;
+      }
+    }
+  }

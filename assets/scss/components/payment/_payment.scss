@@ -1,0 +1,79 @@
+.wrap-cart-item_payment{
+    display: flex;
+    padding: 10px 22px;
+    margin:0 -1.5rem;
+    border-bottom: 1px solid #F2F2F2;
+    &:last-child{
+        border-bottom: none;
+    }
+    img{
+        width: 130px;
+        height: 78px;
+    }
+    .price-cart_payment{
+        padding-left: 10px;
+        color: #656565;
+        text-decoration: line-through;
+    }
+    .btn-delete_cart-item{
+        margin-top: 2.8rem;
+        text-align: right;
+        a{
+            color: $color-secondary;
+            font-size: 12px;
+        }
+    }
+}
+.wrap-cart-side_payment{
+    .sub-block-section__main{
+        padding: 0;
+    }
+    .item__payment-side{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 1.6rem;
+
+        .name-teacher__payment{
+            font-size: 13px;
+            line-height: 16px;
+            color: #656565;
+            margin-top: 5px;
+        }
+        .name-elearning__payment {
+            display: flex;
+            span{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    .wrap-footer__payment-side{
+        padding: 3.3rem 1.6rem  4.2rem;
+    }
+    .btn-cart_payment{
+        margin: 32px 0px;
+        padding: 1.6rem;
+        width: 100%;
+    }
+ }
+.wrap-success_payment{
+    text-align: center;
+    margin: 20px 100px 100px;
+    background: #ffffff;
+    padding-bottom: 0;
+    .description__payment-fail{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        padding: 0 253px;
+    }
+}
+.icon-fail_payment{
+    width: 66px;
+    height: 60px;
+}

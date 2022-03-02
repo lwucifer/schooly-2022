@@ -1,0 +1,42 @@
+.wrapContentTest{
+    width: 750px;
+    height: 422px; 
+    background: #F5FBF9;
+    text-align: center;
+}
+.titleNametest{
+    font-size: 16px;
+    line-height: 22px;
+    padding-top:20px;
+}
+.timeTest{
+    margin-top:17px;
+    font-size: 14px;
+    line-height: 19px;
+    justify-content: center;
+    div {
+        padding: 0px 10px 0px 10px;
+    }
+}
+.timeTest div:first-child{
+    border-right: 1px solid #CCCCCC;
+}
+.timeTest div span:last-child{
+    color: #E9446A;
+    font-weight: bold;
+}
+.contentTest{
+    height: 344px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.btndoTest{
+    width: 241px;
+    height: 48px;
+    background: #32AF85;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}

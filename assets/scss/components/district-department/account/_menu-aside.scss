@@ -1,0 +1,76 @@
+.manager-side {
+  text-align: center;
+  padding: 2rem 3rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+.manager-side__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  line-height: 0;
+  display: inline-block;
+  &:hover {
+    .change-avatar {
+      bottom: 0;
+    }
+  }
+  .change-avatar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3rem;
+    background: rgba(51, 51, 51, 0.7);
+    padding: .4rem;
+    transition: all 300ms;
+  }
+}
+
+.manager-side__name {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.manager-side__links {
+  text-align: left;
+  margin-top: 1rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #666;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+
+    &:hover {
+      cursor: pointer;
+      svg path {
+        fill: $color-primary;
+      }
+    }
+
+    span {
+      font-size: 1.6rem;
+    }
+
+    svg path {
+      fill: #666;
+    }
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 9px;
+    }
+
+    &.active {
+      color: $color-primary;
+      font-weight: bold;
+      svg {
+        path {
+          fill: $color-primary;
+        }
+      }
+    }
+  }
+}
+

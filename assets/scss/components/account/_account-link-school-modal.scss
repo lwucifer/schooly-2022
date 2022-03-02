@@ -1,0 +1,41 @@
+.account-link-school-modal {
+  .app-modal-content {
+    text-align: center;
+    padding: 3rem 8.4rem 2rem 8.4rem;
+  }
+  
+  .app-input {
+    &__error {
+      text-align: left;
+    }
+  }
+}
+
+.account-link-school-modal__close {
+  position: absolute;
+  top: 1.9rem;
+  right: 1.9rem;
+  font-size: map-get($text-size, 'heading-3');
+}
+
+.account-link-school-modal__icon {
+  margin-bottom: 1.5rem;
+}
+
+.account-link-school-modal__title {
+  margin-bottom: 1rem;
+}
+
+//.app-modal-confirm__desc {
+//  margin-bottom: 2.5rem;
+//  font-size: map-get($text-size, 'body-1');
+//}
+
+.account-link-school-modal__actions {
+  margin-top: 2.5rem;
+  
+  .btn {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+}

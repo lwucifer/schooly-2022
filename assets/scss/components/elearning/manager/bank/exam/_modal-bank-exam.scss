@@ -1,0 +1,42 @@
+.modal-bank-exam {
+    .title-table {
+        margin: 1.6rem 0;
+        font-size: 1.5rem;
+    }
+
+    .row-img {
+        img {
+            width: 91px;
+            height: 55px;
+        }
+    }
+
+    .total-point {
+        margin-top: 1rem;
+
+        p:first-child {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    .btn-close-table {
+        margin-top: 2.3rem;
+        margin-bottom: 1rem;
+
+        button {
+            padding: 0.8rem 3.5rem;
+        }
+    }
+}
+
+.table-exam-tooltip-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

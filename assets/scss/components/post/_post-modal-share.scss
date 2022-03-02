@@ -1,0 +1,84 @@
+.pms {
+    .app-modal-header,
+    .app-modal-content,
+    .app-modal-footer {
+        padding: 1.5rem 2rem;
+    }
+}
+
+// .pms-header,
+// .pms-body,
+// .pms-footer {
+//     padding: 1rem 2rem;
+// }
+
+.pms-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &__title {
+        margin-right: auto;
+    }
+}
+
+.pms-body {
+    .psc {
+        pointer-events: none;
+    }
+}
+
+.pms-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__flat-btn {
+        font-size: 2rem;
+
+        &.tag {
+            color: $color-yellow;
+        }
+
+        &.location {
+            color: $color-pink;
+        }
+
+        &.emoji {
+            color: $color-purple;
+        }
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__btn {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+}
+
+.pms-editor {
+    margin-bottom: 2rem;
+
+    .ProseMirror {
+        min-height: 2.5em;
+    }
+
+    .ProseMirror-focused {
+        outline: none;
+    }
+
+    &.editor *.is-empty:nth-child(1)::before {
+        color: $color-text-gray-2;
+    }
+}
+
+.pms-select-private {
+    .app-select__prepend {
+        font-size: 1.6rem;
+        color: $color-gray;
+        margin-right: 1rem;
+    }
+}

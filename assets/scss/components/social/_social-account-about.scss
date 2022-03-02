@@ -1,0 +1,103 @@
+.account-intro-privacy {
+    margin-left: 2px;
+
+    &__btn {
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__radio {
+        display: flex;
+        padding: 1rem .8rem;
+
+        .app-radio__decor {
+            order: 2;
+            margin-left: 2rem;
+            margin-right: 0;
+        }
+
+        .app-radio__text {
+            display: flex;
+            align-self: start;
+            order: 1;
+            margin-right: auto;
+
+            .icon {
+                font-size: 2rem;
+                margin-right: 1.4rem;
+            }
+        }
+    }
+}
+
+.social-account-intro {
+    padding: 2rem;
+    background: #FFFFFF;
+    margin-top: 1rem;
+    box-shadow: $shadow-1;
+}
+
+.social-account-intro__title {
+    font-size: 1.8rem;
+    color: $color-dark;
+    margin-bottom: 2rem;
+}
+
+.social-account-intro__row {
+    display: flex;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.social-account-intro__icon {
+    font-size: 2.4rem;
+    margin-right: 1.8rem;
+    flex-shrink: 0;
+
+    &.phone, &.pin, &.user {
+        fill: none;
+    }
+}
+
+.social-account-intro__center-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-text;
+    margin-bottom: .8rem;
+    margin-top: .4rem;
+    line-height: (18/15);
+}
+
+.social-account-intro__center {
+    flex-grow: 1;
+    margin-right: auto;
+}
+
+.social-account-intro__right {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.social-account-intro__btn-edit {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.social-account-intro__control {
+    margin-bottom: 2.7rem;
+}
+
+.social-account-intro__divider {
+    margin-top: 2.7rem;
+    margin-bottom: 1.9rem;
+}
+
+.social-account-intro__btn {
+    min-width: 6.6rem;
+    font-size: 1.4rem;
+}

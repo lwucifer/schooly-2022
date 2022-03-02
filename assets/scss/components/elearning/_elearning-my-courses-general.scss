@@ -1,0 +1,115 @@
+.wrap-general-study-space{
+    padding:0px 10px;
+    margin-top: 1rem;
+    .item{
+        .top{
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            margin-bottom: 2rem;
+            padding:2rem;
+        }
+        &:nth-child(1){
+            .top{
+                 border-left: 5px solid #E6A01E;
+                 h1{ color: #E6A01E; }
+            }
+        }
+        &:nth-child(2){
+            .top{
+                 border-left: 5px solid #2D9CDB;
+                 h1{ color: #14BFF4;; }
+            }
+        }
+        &:nth-child(3){
+            .top{
+                 border-left: 5px solid #EB5757;
+                 h1{ color: #EB5757; }
+                 svg path { fill: #EB5757; }
+            }
+        }
+        &:nth-child(4){
+            .top{
+                 border-left: 5px solid #37A000;
+                 h1{ color: #37A000; }
+                 svg path { fill: #37A000; }
+            }
+        }
+    }
+}
+.wrap-general-exam-expiry{
+    background: #ffffff;
+    padding:2rem;
+}
+.wrap-schedulte-today-study-space{
+    background: #ffffff;
+    padding:2rem;
+    margin-bottom: 2rem;
+    .day{
+        display: flex;
+        height: 3.7rem;
+        margin-top: 1.5rem;
+        background: #F2F2F2;
+        .item{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .day-number{
+        display: flex;
+        height: 3.7rem;
+        margin: 10px 0 16px 0;
+        .item{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .active{
+            background: $color-primary;
+            width: 3.3rem;
+            height: 3.3rem;
+            color: #ffffff;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+    .sunday{
+        color: #EB5757;
+    }
+    .schedule-item{
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+        padding: 1.5rem 0;
+        align-items: center;
+        margin: 0 0.3rem 1.5rem 0.3rem;
+        svg{
+            width: 9px;
+            height: 9px;
+            path{
+                fill: $color-primary;
+            }
+        }
+    }
+    .schedule-today-date-picker{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        .mx-datepicker{
+            width: 141px;
+            margin-left: 1rem;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}

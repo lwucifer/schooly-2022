@@ -1,0 +1,62 @@
+.exams-create-general{
+    .ecg__wrapper{
+        padding:1rem .5rem;
+    }
+    .ecg__title{
+        font-weight: 500;
+        font-size: 15px;
+        color: #222222;
+        margin-bottom: 1rem;
+        span{
+            font-size: 14px;
+            color: #666666;
+            font-weight: normal;
+        }
+    }
+    .cgi-upload-avt {
+        .app-upload__button {
+            // border: 2px solid $color-primary;
+            // padding: 0.5rem;
+            width: 100%;
+        }
+    }
+    
+    .cgi-upload-avt-icon-wrapper {
+        width: 8.6rem;
+        height: 8.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        svg {
+            font-size: 4.8rem;
+            fill: $color-primary;
+        }
+    }
+    
+    .cgi-upload-avt-preview {
+        position: relative;
+        #avatar {
+            border-radius: 2px;
+        }
+    }
+    
+    .cgi-upload-avt-close-preview {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(#000, .2);
+        z-index: 1;
+        cursor: pointer;
+    
+        svg {
+            fill: #fff;
+        }
+    }
+    
+}

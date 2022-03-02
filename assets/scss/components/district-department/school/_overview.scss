@@ -1,0 +1,43 @@
+.school-manager {
+
+}
+.box-primary{
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: rgba($color: #32AF85, $alpha: 0.1);
+  .text {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #999;
+  }
+}
+
+.statistic {
+  &__item {
+    border-right: 1px solid #EEEEEE;
+
+    &__title {
+      font-size: 1.4rem;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    &__value {
+      font-size: 4rem;
+      color: $color-primary;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}

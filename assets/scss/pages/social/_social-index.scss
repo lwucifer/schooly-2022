@@ -1,0 +1,104 @@
+$col-menu-md: (239/1164) * 100 * 1%;
+
+.page-social__aside-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+
+    a {
+        width: 50%;
+        flex: 50%;
+        text-align: center;
+        border: 1px solid $color-primary;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        font-weight: 500;
+        line-height: 1.7;
+
+        &:nth-child(1) {
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+
+        &:nth-child(2) {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+
+        &.active {
+            background-color: $color-primary;
+            color: #fff;
+        }
+    }
+}
+
+.page-social__aside-wrapper {
+    max-height: calc(100vh - 101px);
+    overflow-y: auto;
+}
+
+
+.page-social__col-menu {
+    @include media(">=md") {
+        max-width: $col-menu-md;
+        flex: 0 0 $col-menu-md;
+    }
+}
+
+.page-social__col-content {
+    @include media(">=md") {
+        max-width: 100% - 25% - $col-menu-md;
+        flex: 0 0 (100% - 25% - $col-menu-md);
+    }
+}
+
+.page-social__aside-friends-list {
+    padding-right: 0;
+    
+    .aside-box__content {
+        padding-right: 2rem;
+        max-height: 35rem;
+        overflow: auto;
+    }
+}
+
+// inner component
+.aside-birthday {
+    display: flex;
+    
+    &__img {
+        flex: 0 0 4rem;
+        margin-right: 2rem;
+    }
+}
+
+// modal in social pages
+.modal-edit-post {
+    .app-modal-content {
+        padding: 0 !important;
+    }
+}
+
+
+// tag options
+.social-tag-option {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        margin-right: 1.4rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $color-text-dark;
+        font-weight: 500;
+        margin-right: 3rem;
+    }
+
+    &__icon {
+        margin-left: auto;
+        font-size: 2.4rem;
+        color: $color-primary;
+    }
+}

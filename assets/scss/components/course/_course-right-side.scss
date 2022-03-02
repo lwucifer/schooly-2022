@@ -1,0 +1,30 @@
+.course-right-side {
+    padding: 1.5rem 2rem 2rem 2rem;
+    background-color: #fff;
+
+    .price {
+        margin-bottom: 1.5rem;
+        line-height: 4.1rem;
+    }
+
+    .price--primary {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .price--secondary {
+        font-size: 1.8rem;
+        text-decoration: line-through;
+        color: $color-text-gray-2;
+    }
+
+    ul.info {
+        list-style: none;
+        color: #666;
+        margin-bottom: 1rem;
+        li {
+            display: flex;
+            padding: 1rem 0;
+        }
+    }
+}

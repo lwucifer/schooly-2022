@@ -1,0 +1,37 @@
+.form-schedule {
+}
+
+.form-schedule__label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $color-text-dark;
+
+  &--gray {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-text-gray-3;
+  }
+}
+
+.form-schedule__row-actions {
+  .btn {
+    min-width: 12.9rem;
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+  }
+}
+
+.form-schedule__fake-input {
+  @include text-overflow;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  box-shadow: $shadow-1;
+  border-radius: $border-radius-common;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.2rem;
+  width: 100%;
+}

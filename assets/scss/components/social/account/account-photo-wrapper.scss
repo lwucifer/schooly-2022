@@ -1,0 +1,51 @@
+.account-photo-wrapper {
+  @include box(2rem, null, $shadow-1);
+}
+
+.account-photo-wrapper__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.account-photo-wrapper__title {
+    font-size: map-get($text-size, 'heading-4');
+    margin-right: 3rem;
+}
+
+.account-photo-wrapper__title-count {
+    font-size: $font-size-base;
+    color: $color-text;
+    font-weight: 400;
+}
+
+.account-photo-wrapper__add {
+    font-weight: 600;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+
+    .icon {
+        font-size: 2.4rem;
+        margin-right: 1px
+    }
+}
+
+.account-photo-wrapper__upload {
+    .app-upload__button {
+        display: flex;
+    }
+}
+
+.account-photo-wrapper__modal {
+    .post-editor__components {
+        padding: 0;
+    }
+
+    .app-modal-header,
+    .app-modal-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

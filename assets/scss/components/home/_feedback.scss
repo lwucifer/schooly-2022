@@ -1,0 +1,64 @@
+.feedback {
+    background: url("~assets/images/home/feedback-bg.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 8rem 0;
+
+    &__title {
+        font-size: 3rem;
+        color: $color-text-white;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &__swiper {
+        position: relative;
+        
+        .previous {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+            z-index: 999;
+        }
+        
+        .swiper-wrapper {
+            .feedback-item {
+                color: $color-text-white;
+    
+                &__img {
+                    margin-bottom: 3rem;
+                }
+    
+                &__name {
+                    font-size: 1.8rem;
+                    margin-bottom: 1rem;
+                }
+    
+                .border-line {
+                    width: 73px;
+                    height: 3px;
+                    background: $color-primary;
+                    margin: 0 auto;
+                    margin-bottom: 2.2rem;
+                }
+    
+                &__feedback {
+                    font-size: 1.5rem;
+                    padding: 0 6rem;
+                }
+            }
+            
+        }
+    }
+}

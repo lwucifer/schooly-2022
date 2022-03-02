@@ -1,0 +1,42 @@
+.filter-form {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+
+  &__item {
+    margin: 0 1rem 1rem 1rem;
+    @media (min-width: 758px) {
+      &:first-child {
+        flex: 0 0 auto;
+        max-width: 16%;
+        margin-left: 0;
+      }
+      &:nth-child(2) {
+        flex: 0 0 auto;
+        min-width: 14%;
+      }
+      &:nth-child(3) {
+        flex: 0 0 auto;
+        min-width: 13%;
+      }
+      &:nth-child(4) {
+        flex: 0 0 auto;
+        min-width: 14%;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    h3 {
+      color: #333;
+      font-size: 2rem;
+    }
+  }
+
+  .filter-form__form--right {
+    margin-left: auto;
+    .filter-form__form__item--search {
+      min-width: 33.5rem;
+    }
+  }
+}

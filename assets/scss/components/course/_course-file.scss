@@ -1,0 +1,21 @@
+.course-file {
+    padding: .6rem .6rem 1rem;
+    border: 1px solid #eee;
+    a:any-link {
+        color: #333;
+        text-decoration: none;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        >span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            margin-left: .9rem;
+            white-space: nowrap;
+            max-width: calc( 100% - 35px );
+        }
+    }
+}

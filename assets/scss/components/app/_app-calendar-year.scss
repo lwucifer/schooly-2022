@@ -1,0 +1,81 @@
+.app-calendar-year {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.app-calendar-year__arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 2.4rem;
+    height: 100%;
+    font-size: 2.4rem;
+    color: #6C738D;
+    transition: color .3s;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &--left {
+        left: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    &--right {
+        right: 0;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+.app-calendar-year__table {
+    width: calc(100% - 4.8rem);
+    height: 100%;
+    table-layout: fixed;
+    margin: 0 auto;
+
+    td {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    td {
+        height: (100%/5);
+        padding: .2rem;
+        cursor: pointer;
+
+        span {
+            vertical-align: middle;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+
+        &:hover {
+            span {
+                color: #fff;
+                background-color: rgba($color-primary, .5);
+            }
+        }
+
+        &.active {
+            span {
+                color: #fff;
+                background-color: $color-primary;
+                font-weight: 700;
+            }
+        }
+    }
+}

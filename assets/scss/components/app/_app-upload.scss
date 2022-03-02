@@ -1,0 +1,62 @@
+// Block
+.app-upload {
+    cursor: pointer;
+    
+    &:focus{
+        outline: none;
+    }
+}
+
+// Elements
+.app-upload__input {
+    display: none;
+}
+
+.app-upload__button {
+    display: inline-flex;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.app-upload__control {
+    display: flex;
+    align-items: center;
+}
+
+.app-upload__btn-choose-file {
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    &:hover, &:active {
+        background-color: $color-disabled !important;
+        outline: none;
+    }
+}
+
+.app-upload__text {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    letter-spacing: 0.01em;
+    border: 1px solid $color-border;
+    border-right: 0;
+    background-color: #fff;
+}
+
+.app-upload__placeholder {
+    color: $color-disabled;
+}
+
+.app-upload__file-name {
+    color: $color-text-gray;
+    word-break: break-all;
+}
+
+// Modifiers
+.app-upload--disabled {
+    cursor: not-allowed;
+}

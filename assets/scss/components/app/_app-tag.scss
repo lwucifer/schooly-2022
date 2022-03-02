@@ -1,0 +1,21 @@
+.app-tag {
+    display: inline-block;
+    height: 20px;
+    padding: 0 7px;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 1;
+    // transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &__close {
+        display: inline-block;
+        font-size: 7px;
+        padding: 0 3px;
+        margin-right: -3px;
+    }
+}

@@ -1,0 +1,125 @@
+.app-calendar-date {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    th, td {
+        font-size: 1.2rem;
+        text-align: center;
+        border: 4px solid transparent;
+    }
+
+    th {
+        font-weight: 700;
+        height: 3.2rem;
+    }
+
+    td {
+        height: (100%/6);
+        color: #AEB4C5;
+        cursor: pointer;
+
+        span {
+            vertical-align: middle;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+
+        &:hover {
+            span {
+                color: #fff;
+                background-color: rgba($color-primary, .5);
+            }
+        }
+
+        &.current-month {
+            color: #1D243E;
+        }
+
+        &.active {
+            span {
+                color: #fff;
+                background-color: $color-primary;
+                font-weight: 700;
+            }
+        }
+
+        &.in-range {
+            &:hover {
+                span {
+                    color: inherit;
+                }
+            }
+
+            &:not(.active) {
+                span {
+                    background-color: #F2F2F2;
+                    border-radius: 0;
+                    margin-left: -2px;
+                    margin-right: -2px;
+                    width: calc(100% + 4px);
+                }
+            }
+
+            &.active {
+                span {
+                    border-radius: 50%;
+                }
+
+                &:hover {
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.start-range {
+                position: relative;
+
+                span {
+                    position: relative;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    right: -2px;
+                    bottom: 0;
+                    background-color: #F2F2F2;
+                }
+            }
+
+            &.end-range {
+                position: relative;
+
+                span {
+                    position: relative;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 50%;
+                    left: -2px;
+                    bottom: 0;
+                    background-color: #F2F2F2;
+                }
+            }
+        }
+    }
+
+    &--range {
+        td span {
+            border-radius: 50%;
+        }
+    }
+}

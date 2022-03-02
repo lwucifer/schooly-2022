@@ -1,0 +1,56 @@
+
+.aside-menu {
+  &__item {
+    padding: 1rem 1.5rem;
+    margin-bottom: 8px;
+    border-left: 4px solid transparent;
+    a {
+      color: #585858;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      svg path {
+        fill: #666;
+        fill-opacity: 1;
+      }
+      &:hover {
+        svg path {
+          fill: $color-primary;
+        }
+      }
+      svg.icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1.5rem;
+      }
+    }
+    &.active {
+      border-left: 4px solid $color-primary;
+      background-color: #F9F9F9;
+      a {
+        color: $color-primary;
+        font-weight: 600;
+        svg {
+          path {
+            fill: $color-primary;
+          }
+        }
+      }
+    }
+    
+    &:hover {
+      border-color: #008329;
+      border-left: 4px solid #008329;
+      background-color: #F9F9F9;
+      a {
+        color: #008329;
+        align-items: center;
+        svg {
+          path {
+            fill: #008329;
+          }
+        }
+      }
+    }
+  }
+}

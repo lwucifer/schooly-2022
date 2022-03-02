@@ -1,0 +1,13 @@
+.list-lesson {
+    padding: 2rem;
+    border: 1px solid $color-disabled;
+    border-radius: 2px;
+}
+
+.chapter-item {
+    border-bottom: 1px solid $color-disabled;
+}
+
+.chapter-item:last-child {
+    border-bottom: none;
+}

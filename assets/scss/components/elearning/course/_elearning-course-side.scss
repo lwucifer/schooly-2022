@@ -1,0 +1,68 @@
+.elearning-lesson-side__course {
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid $color-border;
+
+    .elearning-lesson-side__course-title {
+        display: flex;
+
+        .toggle {
+            margin-left: auto;
+            cursor: pointer;
+            line-height: 0;
+
+            >input {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+            svg {
+                path {
+                    fill: $color-primary;
+                }
+            }
+        }
+    }
+}
+.elearning-lesson-side__class {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    + .elearning-lesson-side__class {
+        border-top: 1px solid $color-border;
+    }
+}
+.elearning-lesson-side__lesson {
+    padding: 1rem;
+    background-color: #fbfbfb;
+    margin-bottom: 1rem;
+
+    &.active {
+        background-color: rgba($color:$color-primary, $alpha: 0.1);
+    }
+
+    .bottom {
+        >div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .lesson-title {
+        display: flex;
+
+        .check {
+            border: 1.5px solid #ccc;
+            background-color: #fff;
+            min-width: 2rem;
+            height: 2rem;
+            text-align: center;
+            line-height: 2rem;
+            display: block;
+
+            &.checked {
+                border-color: $color-primary;
+                background-color: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.exams-case{
+    &__title{
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: #D50000;
+    }
+    &__content{
+        background: #FAFAFA;
+        padding:1.5rem 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #E0E0E0;
+    }
+    &__text{
+        color: #999999;
+    }
+}

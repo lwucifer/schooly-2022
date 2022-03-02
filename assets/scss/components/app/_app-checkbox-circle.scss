@@ -1,0 +1,49 @@
+.app-checkbox__checkmark {
+    border: 1.5px solid #DADADA;
+    border-radius: 50%;
+    margin-right: 1.4rem;
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 2rem;
+    font-size: 2rem;
+    svg {
+        display: none;
+        fill: $color-text;
+    }
+}
+
+.app-checkbox__input {
+    &:checked {
+        + .app-checkbox__checkmark {
+            border-color: #DADADA;
+
+            svg {
+                display: block;
+                fill: #DADADA;
+            }
+        }
+    }
+}
+
+.app-checkbox {
+    width: 100%;
+}
+
+.active {
+    .app-checkbox__checkmark {
+        border-color: $color-brand !important;
+    }
+
+    .app-checkbox__input:checked +.app-checkbox__checkmark {
+        border-color: $color-brand !important;
+        svg {
+            fill: $color-brand !important;
+        }
+    } 
+
+    .app-checkbox__text {
+        color: $color-brand !important;
+        font-weight: 600;
+    }
+}
+

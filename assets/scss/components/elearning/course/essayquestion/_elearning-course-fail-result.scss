@@ -1,0 +1,62 @@
+.wrapResultTest{
+    width: 750px;
+    height: 422px; 
+    background: #F5FBF9;
+}
+.titleNameTest{
+    font-size: 16px;
+    line-height: 22px;
+    padding-top:20px;
+}
+.resultTestFail{
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    flex: row;
+    margin-top:20px;
+    div{
+        width: 50%;
+        padding: 0px 20px 0px 20px;
+    }
+    div:first-child{
+        border-right:1px solid #CCCCCC;
+        height: 18px;
+        
+    }
+    span:last-of-type{
+        color: #E9446A;
+        font-weight: bold;
+        font-size: 16px;
+        padding-left:5px;
+    }
+}
+.detailTimeTest{
+    display: flex;
+    flex: row;
+    margin:20px;
+    min-height: 170px;
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
+    font-size: 14px;
+    div{
+        width: 50%;
+        span{
+             padding: 10px;
+        }
+    }
+    div:first-of-type{
+        color: #666666;
+    }
+    div:last-of-type{
+        color: #32AF85;
+    }
+}
+.btnretest__ElearningCourse{
+    width: 234px;
+    height: 48px;
+    color: #FFFFFF;
+    background: #1481FE;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}

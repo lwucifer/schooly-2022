@@ -1,0 +1,35 @@
+.chart-stars {
+    max-width: 30rem;
+    .star {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        + .star {
+            margin-top: 2rem;
+        }
+        >span {
+            width: 4rem;
+            text-align: right;
+        }
+    }
+    .chart {
+        position: relative;
+        flex: 1;
+        height: .6rem;
+        background-color: #eee;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        margin-left: .5rem;
+        >div {
+            position: absolute;
+            height: .6rem;
+            left: 0;
+            right: auto;
+            bottom: 0;
+            top: 0;
+            background: #F2C94C;
+            border-radius: 1rem;
+        }
+    }
+}

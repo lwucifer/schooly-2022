@@ -1,0 +1,61 @@
+.elearning-right-side {
+    position: relative;
+    padding: 0 2rem 1rem 2rem;
+    background-color: #fff;
+
+    ul.info {
+        list-style: none;
+        color: $color-text-gray;
+        margin-bottom: 2rem;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 1.2rem 0;
+
+            .icon {
+                font-size: 1.6rem;
+                margin-right: 0.8rem;
+                color: #000;
+
+                path {
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+
+    .alert-elearning {
+        .app-alert__content {
+            color: $color-dark;
+        }
+
+        .app-alert__content {
+            color: $color-dark !important;
+        }
+    }
+
+    .share-favourite {
+        .favourite {
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.elearning-right-side__img {
+    margin: 0 -2rem 1.6rem -2rem;
+}
+
+.elearning-right-side__divider {
+    background-color: $color-disabled;
+}
+
+.elearning-right-side__price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}

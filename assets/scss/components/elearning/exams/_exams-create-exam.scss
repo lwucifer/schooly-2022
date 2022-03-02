@@ -1,0 +1,29 @@
+.exams-create-exam{
+    &__content{
+        padding:1rem .5rem;
+        .icon-edit path{
+            fill: #9B51E0;;
+        }
+        .icon-create path{
+            fill: $color-yellow;
+        }
+        .app-table table th {
+            border-top: none;
+        }
+        .app-table table tr .actions button + button{
+            margin-left: 3rem;
+        }
+    }
+    &__table{
+        margin-top: 2rem;
+    }
+    .btn-cancel{
+        width: 11.5rem;
+        color: #EB5757;
+        font-size: 15px;
+    }
+    .btn-confirm{
+        width: 11.5rem;
+        font-size: 15px;
+    }
+}

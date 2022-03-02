@@ -1,0 +1,133 @@
+.app-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: map-get($z-index, modal);
+    overflow: auto;
+    outline: 0;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+}
+
+.app-modal-root {
+    .app-modal-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        z-index: map-get($z-index, modal);
+    }
+
+    &:nth-child(1) {
+        .app-modal-overlay {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    &:nth-child(2) {
+        .app-modal-overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    &:nth-child(3) {
+        .app-modal-overlay {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.onTop .app-modal {
+    top: 2rem !important;
+}
+
+.app-modal {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2.4rem;
+    position: relative;
+    top: 2.4rem;
+    width: auto;
+    max-width: calc(100% - 1.5rem);
+    text-align: left;
+}
+
+.app-modal-components {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+}
+
+.app-modal-header {
+    border-bottom: 1px solid $color-disabled;
+}
+
+.app-modal--centered {
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .app-modal {
+        top: 0;
+        padding-top: 2.4rem;
+        vertical-align: middle;
+    }
+}
+
+.app-modal--size-md {
+    .app-modal-header {
+        padding: 1.8rem 2.6rem;
+    }
+    
+    .app-modal-content, .app-modal-footer {
+        padding: 2rem 2.6rem;
+    }
+
+    .app-modal-title, .app-modal-close {
+        font-size: map-get($text-size, 'heading-3');
+    }
+}
+
+.app-modal--size-sm {
+    .app-modal-header, .app-modal-content, .app-modal-footer {
+        padding: 1.5rem 2.2rem;
+    }
+
+    .app-modal-title, .app-modal-close {
+        font-size: map-get($text-size, 'heading-4');
+    }
+}
+
+// New folder modal
+.new-folder-modal .app-modal-content {
+    padding: 1.5rem 2rem 0;
+    .btn {
+        width: 12.5rem;
+        margin: 2rem .5rem;
+    }
+    .title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .btn-close {
+        right: -1rem;
+    }
+}
+.form-control_border {
+    height: 3.5rem;
+    border: 1px solid $color-border;
+    padding: .8rem;
+}
+
+.background-transparent {
+    background: transparent !important;
+}

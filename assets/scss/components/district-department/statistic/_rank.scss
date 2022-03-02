@@ -1,0 +1,71 @@
+.rank {
+  padding: 2rem 0 0 0;
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__tab {
+    a {
+      font-size: 1.4rem;
+      line-height: 19px;
+      display: inline-block;
+      cursor: pointer;
+      padding: 1rem 0;
+      color: #666666;
+      margin: 0 3rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a.active,
+    a:hover {
+      //font-weight: bold;
+      text-shadow: 0 0 .8px #333, 0 0 .8px #333; // alternative for font-weight: bold; https://www.sitepoint.com/quick-tip-fixing-font-weight-problem-hover-states/
+      color: #333;
+    }
+
+    a.active {
+      border-bottom: 3px solid $color-primary;
+    }
+  }
+
+  &__tab-content {
+    padding: 2rem 0 0 0;
+  }
+}
+
+.filter-form--tab {
+  display: flex;
+  flex-wrap: wrap;
+  .v-select {
+    display: inline-block;
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 auto;
+    max-width: 22%;
+    align-items: center;
+
+    label {
+      margin-right: 1rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #333;
+      display: block;
+      line-height: 19px;
+    }
+
+    .v-select {
+      flex: 0 0 calc(100% - 64px); // 64px == width of label
+      min-width: calc(100% - 64px);
+    }
+  }
+}

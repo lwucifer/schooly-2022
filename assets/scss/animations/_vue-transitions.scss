@@ -1,0 +1,14 @@
+// Transition name collapse
+.collapse-enter-active {
+  transition: all .3s ease;
+}
+
+.collapse-leave-active {
+  transition: all .15s ease;
+}
+
+.collapse-enter, .collapse-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-10px);
+  opacity: 0;
+}

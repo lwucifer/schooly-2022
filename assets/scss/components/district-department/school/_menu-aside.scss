@@ -1,0 +1,73 @@
+.manager-side {
+  padding: 1rem 3rem;
+  background-color: #fff;
+
+  .item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+    button {
+      outline: none;
+      line-height: 1;
+    }
+
+    svg {
+      margin-right: 0.8rem;
+      width: 2rem;
+
+      path {
+        fill: #666;
+      }
+    }
+
+    &:hover {
+      color: $color-primary;
+      cursor: pointer;
+
+      svg path {
+        fill: $color-primary;
+      }
+    }
+
+    &.active {
+      > span {
+        font-weight: bold;
+      }
+
+      color: $color-primary;
+
+      svg path {
+        fill: $color-primary;
+      }
+    }
+  }
+
+  .sub-item {
+    &.active {
+      > span {
+        font-weight: bold;
+      }
+
+      color: $color-primary;
+
+      svg path {
+        fill: $color-primary;
+      }
+    }
+  }
+
+  ul {
+    list-style-position: inside;
+    padding-left: 2rem;
+
+    li {
+      padding-top: 1rem;
+
+      > a {
+        margin-left: -0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.table_schedule {
+    table {
+      width: 100%;
+      border: 1px solid #eeeeee;
+      margin-bottom: 40px;
+      th,td {
+        border: 1px solid #eeeeee;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        width: 108px;
+        height: 60px;
+        text-align: center;
+      }
+      thead th, .day{
+          background: #FBFBFB;
+      }
+      .active{
+          background: rgba(214, 0, 0, 0.2);
+          color: #D50000;
+      }
+    }
+  }

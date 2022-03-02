@@ -1,0 +1,147 @@
+.cca-checkbox-list {
+    list-style-type: none;
+    padding: 1.3rem 0;
+
+    li {
+        padding: .9rem 1.5rem;
+
+        &.active {
+            background-color: #F8F8F8;
+        }
+    }
+}
+
+.cca-action {
+    padding: 0 1.5rem;
+    
+    .btn {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.cca-sub-text {
+    font-size: 1.3rem
+}
+
+.cc-panel__title {
+    padding: 1rem 1.8rem;
+    border-bottom: 1px solid $color-border;
+}
+
+.cc-panel__body {
+    padding: 1rem 0 0 0;
+}
+
+.cc-box {
+    background-color: #fff;
+    border: 1px solid $color-border;
+}
+
+.cc-box__head, .cc-box__body {
+    padding: 1rem 1.5rem;
+}
+
+.cc-box__head {
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc-box__head-left, .cc-box__head-right {
+    display: flex;
+    align-items: center;
+}
+
+.cc-box__title {
+    margin-right: 1.2rem;
+}
+
+.cc-box__btn {
+    svg {
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+.cc-box__btn-edit {
+    svg {
+        fill: $color-primary;
+    }
+}
+
+.cc-box__btn-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 2px solid $color-border;
+    margin-left: 2.2rem;
+
+    svg {
+        fill: $color-text-sub;
+    }
+}
+
+.cc-box__bg-gray {
+    background-color: #FBFBFB;
+}
+
+.cc-tabs {
+    margin-bottom: 2rem;
+}
+
+.cc-tab-item {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 0.6rem;
+    transition: color .3s, border .3s;
+    color: $color-text-gray;
+    border-bottom: .4rem solid transparent;
+
+    &:any-link {
+        color: $color-text-gray;
+    }
+
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
+
+    &.active {
+        border-bottom-color: $color-primary;
+        color: $color-text;
+        font-weight: 700;
+    }
+}
+
+.cc-editor {
+    width: 100%;
+
+    .ProseMirror {
+        background-color: #fff;
+        min-height: 13rem;
+    }
+
+    .ProseMirror-focused {
+        outline: none;
+    }
+}
+
+.cc-select {
+    .app-select__selected {
+        border: 1px solid $color-border;
+    }
+
+    .app-select__placeholder {
+        color: $color-text;
+    }
+
+    .app-select__arrow {
+        svg {
+            font-size: 1.6rem;
+            fill: $color-text;
+        }
+    }
+}

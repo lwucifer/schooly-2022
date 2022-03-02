@@ -1,0 +1,322 @@
+.app-table {
+    table {
+        width: 100%;
+        border-spacing: 0;
+        .checkbox {
+            padding-right: 0;
+            padding-left: 0;
+            text-align: center;
+        }
+        .div-head {
+            position: relative;
+            display: inline-block;
+        }
+        .btn-sort {
+            vertical-align: middle;
+            display: inline-block;
+            cursor: pointer;
+            height: 18px;
+            width: 12px;
+            position: absolute;
+            top: calc(50% - 9px);
+            left: 100%;
+            svg path {
+                fill: #222;
+            }
+        }
+        td, th {
+            border-bottom: 1px solid $color-border;
+        }
+        th {
+            border-top: 1px solid $color-border;
+        }
+        th {
+            color: #222;
+            text-align: left;
+            font-weight: bold;
+            padding: 1rem 1rem;
+            position: relative;
+            &:hover {
+                .btn-sort {
+                    svg path {
+                        fill: $color-text-gray;
+                        fill-opacity: 1;
+                    }
+                    // opacity: 1;
+                    // visibility: visible;
+                }
+            }
+
+            &:first-child {
+                padding-left: 2rem;
+                hr {
+                    left: 2rem;
+                }
+            }
+
+            &:last-child {
+                padding-right: 2rem;
+                hr {
+                    right: 2rem;
+                }
+    
+                .btn-sort {
+                    //right: calc(1rem + 3px);
+                }
+            }
+        }
+
+        tr {
+            >td {
+                padding: 1.5rem 1rem;
+
+                .status,
+                .status-2 {
+                    display: inline-block;
+                    min-width: 7.5rem;
+                    background-color: $color-primary;
+                    font-size: 11px;
+                    color: #fff;
+                    line-height: 2rem;
+                    text-align: center
+                }
+
+                .status-2 {
+                    background-color: #FFCA56;
+                }
+
+                &:first-child {
+                    padding-left: 2rem;
+                }
+
+                &:last-child {
+                    padding-right: 2rem;
+                }
+            }
+
+            &:nth-child(2n) {
+                >td {
+                    //background-color: #f8f8f8;
+                }
+            }
+
+            &:hover {
+                >td {
+                    background-color: #F9F9F9;
+                }
+            }
+        }
+        tr {
+            position: relative;
+            transform: scale(1,1);
+            &:hover .actions.show {
+                opacity: 1;
+                visibility: visible;
+            }
+            .actions {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 1px;
+                bottom: 1px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 300ms;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                padding: 1rem 2rem 1rem 5rem !important;
+                background: rgba(255, 255, 255, 0.9);
+                min-width: 100%;
+                button, a {
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 0 1rem;
+                    line-height: 1;
+                    svg {
+                        margin-bottom: 2px;
+                    }
+                    + a,
+                    +button {
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    //header
+    &__head--sm {
+      font-size: 1.3rem;
+    }
+  
+    &__head--md {
+      font-size: 1.4rem;
+    }
+  
+    &__head--lg {
+      font-size: 1.5rem;
+    }
+    
+    &__head--normal {
+        th {
+            font-weight: 400 !important;
+        }
+    }
+    
+    &__head--semi-bold {
+        th {
+            font-weight: 600;
+        }
+    }
+    &__head--bold {
+        th {
+            font-weight: 700;
+        }
+    }
+  
+    @each $name, $color in $text-colors {
+        &__head--color-#{$name} {
+            th {
+                color: $color !important;
+                
+                .btn-sort {
+                    svg path {
+                        fill: currentColor;
+                    }
+                }
+            }
+        }
+        
+        &__body--color-#{$name} {
+            color: $color
+        }
+    }
+    //table
+    @each $name, $color in $bg-colors {
+        &__table--bg-#{$name} {
+            background-color: $color;
+        }
+    }
+
+    .pagination {
+        margin: 3rem 0 2rem;
+    }
+    
+    .status-item {
+        border-radius: 2px;
+        color: #fff;
+        font-weight: normal;
+        padding: .5rem 1rem;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    
+    .status-item--success {
+        background-color: $color-primary;
+    }
+    .status-item--pending {
+        background-color: $color-warning;
+    }
+    .status-item--fail {
+        background-color: $color-error;
+    }
+
+    // cells collapsed
+    .cell--collapsed {
+        overflow: hidden;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @for $c from 1 through 5 {
+        $max-height: $line-height-base * $c + 3;
+        .cell--collapsed-#{$c} {
+            max-height: $max-height + rem;
+        }
+    }
+}
+
+.none-decoration {
+    text-decoration: none;
+}
+
+
+.tr-static.app-table table tr{
+    position: static;
+    transform: none;
+    td{
+        position: relative;
+        z-index: 1;
+        &:hover{
+            z-index: 2;
+        }
+    }
+}
+
+
+// Grid table
+$start: 0;
+$end: 20;
+
+$start2: 0;
+$end2: 100;
+
+@for $i from $start through $end {
+    @for $j from $start2 through $end2 {
+    .table-grid.col-#{$i}--#{$j} {
+        tr {
+            th:nth-child(#{$i}),
+            td:nth-child(#{$i}) {
+                width: #{$j}#{"%"} !important;
+            }
+        }
+    }
+    }
+}
+
+.app-table .table-grid {
+    tr {
+        display: flex;
+        width: 100%;
+        position: relative;
+        align-items: stretch;
+        td, th  {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+        th {
+            padding: 1.2rem 1rem;
+        }
+        >td {
+            padding: 2rem 1rem;
+            max-width: 100%;
+        }
+    }
+}
+
+.app-table table tr > td:first-child,
+.app-table table th:first-child{
+    padding-left: 2rem;
+}
+
+.app-table .table-grid {
+    tr.app-table--expanded-content {
+        th,
+        td {
+            width: initial !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .app-table table tr .actions button + a, .app-table table tr .actions button + button, .app-table table tr .actions a + a, .app-table table tr .actions a + button {
+        margin-left: 1.5rem;
+    }
+    .app-table table tr .actions {
+        padding-left: 1.5rem !important;
+    }
+}

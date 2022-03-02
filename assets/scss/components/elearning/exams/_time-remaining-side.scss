@@ -1,0 +1,34 @@
+.time-remaining-side {
+    background: $color-text-white;
+
+    &__title {
+        background: #F9F9F9;
+        padding: 1.5rem 2rem;
+        height: 50px;
+        border-bottom: 1px solid $color-disabled;
+    }
+
+    &__content {
+        padding: 2rem;
+
+        .count-time {
+            padding: 2.6rem 3rem;
+
+            .time {
+                p:first-child {
+                    font-size: 3.6rem;
+                    color: $color-primary;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .submit-send {
+            color: $color-text-white;
+            background: #008EAF;
+        }
+    }
+}

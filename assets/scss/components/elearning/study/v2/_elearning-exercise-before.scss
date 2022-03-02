@@ -1,0 +1,51 @@
+.elearning-exercise-before-v2{
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 100%;
+    .eeb__header{
+      display: flex;
+      align-items: center;
+      padding:1.5rem;
+      border-bottom: 1px solid #E0E0E0;
+    }
+    .eeb__content{
+      padding: 4.5rem 0;
+      .content-wrap{
+        padding-left: 9rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .circle-content{
+        display: flex;
+        margin-top: 1.5rem;
+        align-items: center;
+        &__item{
+          width: 7.6rem;
+          height: 7.6rem;
+          border: 1px solid #008EAF;
+          border-radius: 50%;
+          color: #008EAF;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          p:first-of-type{
+            font-weight: 500;
+            font-size: 24px;
+          }
+        }
+        &__bar{
+          width: 2.5rem;
+          height: 1px;
+          border-bottom: 1px solid #008EAF;
+          margin: 0 1rem;
+        }
+      }
+      .btn-start{
+        width: 18.6rem;
+        margin-top: 3rem;
+      }
+    }
+  }

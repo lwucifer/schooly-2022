@@ -1,0 +1,23 @@
+.sub-banner {
+    background: #008EAF;
+
+    .sub-banner-item {
+        display: flex;
+        align-items: center;
+        padding: 2.2rem 0;
+
+        &__img {
+            margin-right: 2.6rem;
+        }
+
+        &__text {
+            color: $color-text-white;
+
+            h4 {
+                color: $color-text-white;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}

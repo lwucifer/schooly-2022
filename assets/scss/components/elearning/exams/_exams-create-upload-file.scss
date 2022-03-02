@@ -1,0 +1,36 @@
+.exam-create-upload{
+    .ecu__wrap-upload{
+        border: 1px dashed #999999;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 4rem 0;
+        text-align: center;
+    }
+    .ecu__title-block{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-dark;
+    }
+    .btn-upload{
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid #37A000;
+        box-sizing: border-box;
+    }
+    .ecu__name-file{
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 3px;
+        width: 44rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .elq__note{
+        color: #999999;
+        font-size: 13px;
+    }
+}

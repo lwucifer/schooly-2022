@@ -1,0 +1,9 @@
+.layout-create {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+
+    .page-content {
+        flex-grow: 1;
+    }
+}

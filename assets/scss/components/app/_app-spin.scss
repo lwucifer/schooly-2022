@@ -1,0 +1,190 @@
+.app-spin {
+    display: inline-block;
+    text-align: center;
+}
+
+//
+// SPIN TYPE SPINNER
+//
+.app-spin-spinner {
+    transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.app-spin-spinner__dots {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+    animation: SpinRotate 1.2s infinite linear;
+
+    i {
+        position: absolute;
+        display: block;
+        width: 9px;
+        height: 9px;
+        background-color: $color-primary;
+        border-radius: 100%;
+        transform: scale(0.75);
+        transform-origin: 50% 50%;
+        opacity: 0.3;
+        animation: SpinMove 1s infinite linear alternate;
+
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+        &:nth-child(2) {
+            top: 0;
+            right: 0;
+            animation-delay: .4s;
+        }
+        &:nth-child(3) {
+            right: 0;
+            bottom: 0;
+            animation-delay: .8s;
+        }
+        &:nth-child(4) {
+            bottom: 0;
+            left: 0;
+            animation-delay: 1.2s;
+        }
+    }
+}
+
+// Modifier of spinner
+.app-spin-spinner--white {
+    .app-spin-spinner__dots i {
+        background-color: #fff;
+    }
+
+    .app-spin-spinner__text {
+        color: #fff;
+    }
+}
+
+.app-spin-spinner--sm {
+    .app-spin-spinner__dots {
+        font-size: 14px;
+
+        i {
+            width: 6px;
+            height: 6px;
+        }
+    }
+}
+
+// Keyframes of Spinner
+@keyframes SpinRotate {
+    to {
+        transform: rotate(405deg);
+    }
+}
+
+@keyframes SpinMove {
+    to {
+        opacity: 1;
+    }
+}
+
+
+//
+// SPIN TYPE CIRCLE
+//
+@mixin spin-circle-size($size: 20px) {
+    height: $size;
+	width: $size;
+
+    span {
+        height: $size;
+        width: $size;
+        clip: rect(0, $size, $size, $size/2);
+    
+        &:after {
+            height: $size;
+            width: $size;
+            clip: rect(0, $size, $size, $size/2);
+        }
+    }
+}
+
+@mixin spin-circle-color($color: $color-primary) {
+    span:after {
+        border-color:$color;
+    }
+}
+
+.app-spin-circle {
+    position: relative;
+	height: 32px;
+	width: 32px;
+    animation: app-spin-circle-1 4.8s linear infinite;
+}
+
+.app-spin-circle span {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 32px;
+	width: 32px;
+	clip: rect(0, 32px, 32px, 16px);
+    animation: app-spin-circle-2 1.2s linear infinite;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        bottom: 0; right: 0;
+        margin: auto;
+        height: 32px;
+        width: 32px;
+        clip: rect(0, 32px, 32px, 16px);
+        border: 3px solid $color-primary;
+        border-radius: 50%;
+        animation: app-spin-circle-3 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    }
+}
+
+// Modifier of Circle
+.app-spin-circle--white {
+    @include spin-circle-color(#fff);
+}
+
+.app-spin-circle--xs {
+    @include spin-circle-size(12px);
+}
+
+.app-spin-circle--sm {
+    @include spin-circle-size(20px);
+}
+
+.app-spin-circle--lg {
+    @include spin-circle-size(60px);
+}
+
+// Keyframes of Circle
+@keyframes app-spin-circle-1 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes app-spin-circle-2 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(220deg); }
+}
+
+@keyframes app-spin-circle-3 {
+	0%   { transform: rotate(-140deg); }
+	50%  { transform: rotate(-160deg); }
+	100% { transform: rotate(140deg); }
+}
+
+
+
+// Common Element
+.app-spin__text {
+    color: $color-primary;
+}

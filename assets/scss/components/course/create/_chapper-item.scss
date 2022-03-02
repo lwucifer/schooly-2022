@@ -1,0 +1,162 @@
+.chapper-item {
+  margin-bottom: 2rem;
+}
+
+.chapper-item__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .6rem 2rem;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.chapper-item__name {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 4rem;
+}
+
+.chapper-item__name-title {
+  font-size: map-get($text-size, 'body-2');
+  line-height: (24/14);
+}
+
+.chapper-item__btn-edit-name {
+  font-size: 2rem;
+  color: $color-primary;
+  margin-left: 1rem;
+}
+
+.chaper-item__btn-add {
+  color: $color-primary;
+  display: inline-flex;
+  align-items: center;
+
+  .icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.chapper-item__btn-collapse {
+  font-size: 2.4rem;
+  color: $color-text-gray-3;
+  margin-left: 1rem;
+  transform: rotate(180deg);
+
+  &.collapsed {
+    transform: rotate(0)
+  }
+}
+
+.chapper-item__top-right {
+  display: flex;
+  align-items: center;
+}
+
+.chapper-item__content {
+  background-color: #F9F9F9;
+  border: 1px solid #E0E0E0;
+  margin-top: -1px;
+}
+
+.chapper-item__learning-item {
+  display: flex;
+  padding: 1rem 2.6rem;
+
+  &:hover {
+    .chapper-item__learning-btn-edit {
+      visibility: visible;
+    }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #f2f2f2
+  }
+}
+
+.chapper-item__learning-icon {
+  font-size: 1.6rem;
+  color: $color-primary;
+  margin-right: 1rem;
+}
+
+.chapper-item__learning-right {
+  margin-left: auto;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.chapper-item__learning-name {
+  color: $color-dark;
+  margin-bottom: 1rem;
+}
+
+.chapper-item__learning-info-item {
+  @include text-overflow;
+  font-size: 1.2rem;
+  width: 30%;
+  display: inline-block;
+
+  > span {
+    color: #2579E7;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.chapper-item__learning-btn-edit {
+  font-size: 2rem;
+  color: $color-primary;
+  vertical-align: bottom;
+  visibility: hidden;
+}
+
+.chapper-item__learning-text {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.chapper-item__btn {
+  font-weight: 600;
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+
+  .icon {
+    font-size: 1.6rem;
+    margin-right: 0.6rem;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &--save {
+    color: $color-primary;
+  }
+
+  &--cancel {
+    color: $color-pink-2;
+  }
+}
+
+.chapper-item__name-input {
+  background: #FFFFFF;
+  border: 1px solid $color-disabled;
+  box-sizing: border-box;
+  box-shadow: $shadow-1;
+  border-radius: $border-radius-common;
+  height: 2.4rem;
+  padding: 0 1rem;
+  margin-right: 2.4rem;
+  flex-grow: 1;
+}

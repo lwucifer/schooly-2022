@@ -1,0 +1,82 @@
+.e-program-item {
+    padding: 1rem 1.5rem;
+    display: flex;
+
+    $this: &;
+    
+    &:hover {
+        background-color: $color-text-light-2;
+    }
+
+    &.active, &.completed {
+        background-color: rgba($color-primary-1, 0.05);
+
+        #{$this}__title {
+            font-weight: 700;
+            color: $color-primary;
+        }
+    }
+}
+
+.e-program-item__left {
+    flex-shrink: 0;
+    margin-right: 0.9rem;
+}
+
+.e-program-item__title {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.e-program-item__right {
+    flex-grow: 1;
+}
+
+.e-program-item__bottom {
+    display: flex;
+    align-items: baseline;
+    font-size: map-get($text-size, 'caption');
+    font-variant-numeric: tabular-nums;
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+    > * {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.e-program-item__time {
+    width: 38%;
+    flex: 0 0 38%;
+}
+
+.e-program-item__exercises {
+    width: 42%;
+    flex: 0 0 42%;
+}
+
+.e-program-item__download {
+    width: 20%;
+    flex: 0 0 20%;
+}
+
+.e-program-item__download-tooltip {
+    font-size: $font-size-base;
+
+    .app-dropdown__content {
+        padding: .7rem 1.1rem;
+        border-radius: 4px;
+        box-shadow: $shadow-1;
+        border: 1px solid $color-disabled;
+        white-space: nowrap;
+    }
+}

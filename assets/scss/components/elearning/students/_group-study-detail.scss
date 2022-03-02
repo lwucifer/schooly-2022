@@ -1,0 +1,19 @@
+.group-students{
+    padding:1rem;
+    &__wrap-search{
+        width: 27.3rem;
+        .app-input{
+            margin-bottom: 0;
+        }
+    }
+    .btn-filter{
+        margin: 0 2rem;
+    }
+    .select-class{
+        border: 1px solid #E0E0E0;
+        border-radius: 2px;
+    }
+    .app-table table th {
+        border-top: none;
+    }
+}

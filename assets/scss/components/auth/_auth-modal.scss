@@ -1,0 +1,78 @@
+.auth-modal .app-modal-content{
+    text-align: center;
+    padding: 1.5rem 4rem 4rem;
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-control{
+        max-width: calc(100% - 8.5rem);
+        margin-left: 1.5rem;
+    }
+    .btn {
+        margin-top: 2.3rem;
+    }
+    a.color-primary {
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-decoration: underline;
+        margin-top: 1rem;
+        display: block;
+        cursor: pointer;
+        &.disabled {
+            cursor: default;
+            pointer-events: none;
+        }
+        >span {
+            font-weight: normal;
+        }
+    }
+}
+.phone-select {
+    .app-select__selected{
+        border: 0;
+        outline: none;
+        font-size: 2rem;
+        .app-select__arrow svg {
+            fill: #666;
+            width: .7rem;
+        }
+    }
+}
+.btn-close {
+    color: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: block;
+    line-height: 2.6rem;
+}
+.danger {
+    color: #F91C1C;
+    text-align: left;
+    float: left;
+    padding: .5rem 0 1rem;
+}
+.form-group_border-bottom {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    .form-control {
+        height: 4rem;
+        border: 0;
+        font-size: 1.4rem;
+        line-height: normal;
+        padding: .2rem;
+    }
+}
+.icon-inner-input{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+  }

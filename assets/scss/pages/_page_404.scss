@@ -1,0 +1,27 @@
+.wrap404page {
+    background: $color-text-white;
+    text-align: center;
+    padding: 4rem;
+
+    &__title {
+        font-size: 1.5rem;
+        color: $color-text;
+        opacity: 0.8;
+        margin-bottom: 5.4rem;
+    }
+
+    &__logo {
+        margin-bottom: 4rem;
+    }
+
+    &__button-back {
+        margin-bottom: 4rem;
+        
+        a {
+            text-decoration: none;
+            color: $color-text-white;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

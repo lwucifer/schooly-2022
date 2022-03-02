@@ -1,0 +1,58 @@
+.elearning-side {
+	text-align: center;
+	padding: 2rem 3rem;
+	background-color: #fff;
+}
+.elearning-side__avatar {
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	line-height: 0;
+	display: inline-block;
+	&:hover {
+		>a {
+			bottom: 0;
+		}
+	}
+	>a {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -3rem;
+		background: rgba(51, 51, 51, 0.7);
+		padding: .4rem;
+		transition: all 300ms;
+	}
+}
+.elearning-side__name {
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+.elearning-side__links {
+	text-align: left;
+	margin-top: 1rem;
+	a {
+		display: flex;
+		align-items: center;
+		padding: 0.6rem 0;
+		font-size: 1.6rem;
+		svg path {
+			fill: #666;
+		}
+		&:hover {
+			svg path {
+				fill: $color-primary;
+			}
+		}
+		svg {
+			width: 3rem;
+		}
+	}
+	a.active {
+		svg {
+			path {
+				fill: $color-primary;
+			}
+		}
+	}
+}

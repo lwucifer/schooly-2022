@@ -1,0 +1,41 @@
+.policy-manager-side {
+    .policy-manager-side-list {
+        list-style-type: none;
+
+        .policy-manager-side-item {
+            margin-bottom: 1rem;
+            a {
+                display: block;
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: #585858;
+                padding: 1rem 4rem 1rem 1.5rem;
+                height: 40px;
+
+                svg {
+                    vertical-align: text-top;
+                }
+            }
+
+            .active {
+                color: $color-primary;
+                background: $color-text-light-2;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 4px;
+                    height: 40px;
+                    background: $color-primary;
+                }
+            }
+        }
+
+        .policy-manager-side-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.app-editor {
+    border: 1px solid $color-border;
+    background: #fff;
+    &--is-focused {
+        border-color: $color-primary;
+    }
+}
+
+.app-editor__content {
+    .ProseMirror {
+        &.ProseMirror-focused {
+            outline: none;
+        }
+    }
+}
+
+.app-editor__content-wrapper {
+    padding: 1rem 1.5rem;
+    min-height: calc(#{7em * $line-height-base} + 2rem);
+    cursor: text;
+}
+
+.app-editor__menubar__button {
+    display: inline-flex;
+    background: transparent;
+    border: 0;
+    color: #000;
+    font-weight: 700;
+    padding: .5rem;
+    margin: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: top;
+    &.is-active {
+        background-color: $color-primary;
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+    }
+}
+
+.app-editor__menubar {
+    padding: .5rem 1.5rem .5rem 1rem;
+    border-bottom: 1px solid $color-border;
+    background: inherit;
+}
+
+.app-editor__menubar__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app-editor__menubar__form {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+    >.app-editor__menubar__button {
+        margin: 0;
+    }
+}
+
+.app-editor__menubar__input {
+    border: 1px solid $color-border;
+    border-radius: 3px;
+    line-height: 2.4rem;
+    padding: 0 4px;
+}
+
+.disabledEditor {
+    pointer-events: none;
+    opacity: 0.6;
+}

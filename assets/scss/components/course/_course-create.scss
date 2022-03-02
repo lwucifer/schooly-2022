@@ -1,0 +1,237 @@
+.course-create-aside {
+    padding-bottom: 2rem;
+}
+
+.cca-title {
+    padding: 1.2rem 1.5rem;
+    background: #F9F9F9;
+    box-shadow: 0px 1px 0px #E0E0E0;
+    height: 50px;
+}
+
+.cca-checkbox-list {
+    list-style-type: none;
+    padding: 1.3rem 0;
+
+    li:last-child {
+        &:after {
+            content: none;
+        }
+    }
+
+    li {
+        padding: .9rem 1.5rem;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 23px;
+            bottom: -10px;
+            width: 2px;
+            height: 20px;
+            background: url("~assets/images/create-course/line.png") no-repeat;
+        }
+
+        // &.active {
+        //     /deep/ .app-checkbox__checkmark {
+        //         border-color: $color-brand !important;
+        //     }
+
+        //     /deep/ .app-checkbox__input:checked +.app-checkbox__checkmark {
+        //         border-color: $color-brand !important;
+        //         svg {
+        //             fill: $color-brand !important;
+        //         }
+        //     } 
+
+        //     /deep/ .app-checkbox__text {
+        //         color: $color-brand !important;
+        //         font-weight: 600;
+        //     }
+        // }
+    }
+}
+
+.cca-action {
+    padding: 0 1.5rem;
+    
+    .btn {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.cca-sub-text {
+    font-size: 1.3rem
+}
+
+.cc-panel__title {
+    padding: 1.2rem 2rem;
+    box-shadow: 0px 1px 0px #E0E0E0;
+}
+
+.cc-panel__body {
+    padding: 2rem;
+}
+
+.cc-panel__body-modifer {
+    padding: 1rem 2rem;
+}
+
+.cc-box {
+    background-color: #fff;
+    border: 1px solid $color-border;
+    border-radius: 2px;
+}
+
+.cc-box__head, .cc-box__body {
+    padding: 1rem 2rem;
+}
+
+.cc-box__head {
+    // border-bottom: 1px solid $color-border;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1px;
+
+    &:hover {
+        .cc-box__btn-edit-hover {
+            // visibility: visible;
+            // opacity: 1;
+            display: block;
+        }
+    }
+}
+
+.cc-box__head-left, .cc-box__head-right {
+    display: flex;
+    align-items: center;
+}
+
+.cc-box__title {
+    margin-right: 1.2rem;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // overflow-x: hidden;
+    // max-width: 250px;
+
+    // @media (min-width: 768px) {
+    //     max-width: 400px;
+    // }
+}
+
+.cc-box__input-title {
+    width: 30.3rem;
+    max-width: 100%;
+    margin-right: 1rem;
+    border: none;
+    line-height: 3.2rem;
+    padding: 0 1.6rem;
+    border: 1px solid  $color-disabled;
+}
+
+.cc-box__btn {
+    svg {
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+.cc-box__btn-edit {
+    svg {
+        fill: $color-primary;
+    }
+}
+
+.cc-box__btn-edit-hover {
+    // visibility: hidden;
+    // opacity: 0;
+    display: none;
+
+    svg {
+        fill: $color-primary;
+    }
+}
+
+.cc-box__btn-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 2px solid $color-border;
+    margin-left: 2.2rem;
+
+    svg {
+        fill: $color-text-sub;
+    }
+}
+
+.cc-box__bg-gray {
+    
+}
+
+.cc-box__bg-disable {
+    background-color: #F9F9F9;
+    border: 1px solid $color-disabled;
+    padding: 2rem;
+}
+
+.cc-box__nested {
+    margin-left: 3rem;
+}
+
+.cc-tabs {
+    margin-bottom: 2rem;
+}
+
+.cc-tab-item {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 0.6rem;
+    transition: color .3s, border .3s;
+    color: $color-text-gray;
+    border-bottom: .4rem solid transparent;
+
+    &:any-link {
+        color: $color-text-gray;
+    }
+
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
+
+    &.active {
+        border-bottom-color: $color-primary;
+        color: $color-primary;
+        font-weight: 700;
+        padding: 5px 10px;
+    }
+}
+
+.cc-select {
+    // width: 65%;
+    .app-select__selected {
+        border: 1px solid $color-border;
+    }
+
+    .app-select__placeholder {
+        color: $color-text;
+    }
+
+    .app-select__arrow {
+        svg {
+            font-size: 1.6rem;
+            fill: $color-primary;
+            vertical-align: middle;
+        }
+    }
+}
+
+button {
+    &:active, &:focus {
+        outline: none;
+    }
+}

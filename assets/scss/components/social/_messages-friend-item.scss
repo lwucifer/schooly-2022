@@ -1,0 +1,64 @@
+.messages-friend-item {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        position: relative;
+        margin-right: 1.1rem;
+
+        .app-avatar {
+            display: block;
+        }
+    }
+
+    &__dot {
+        position: absolute;
+        bottom: 0;
+        right: 1px;
+        width: 1rem;
+        height: 1rem;
+        background-color: $color-primary;
+        border: 0.15rem solid #fff;
+        border-radius: 50%;
+    }
+
+    &__name {
+        @include text-overflow;
+        font-weight: 500;
+        color: $color-text-dark;
+        margin-right: auto;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: $border-radius-common;
+        margin-left: 5px;
+        transition: color .3s, border-color .3s, background-color .3s;
+        color: $color-text-gray-3;
+        border: 1px solid $color-text-gray-3;
+        background-color: #fff;
+
+        &:hover {
+            color: #fff;
+            background-color: $color-text-gray-3;
+        }
+
+        &--add {
+            border-color: $color-primary;
+            color: $color-primary;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}

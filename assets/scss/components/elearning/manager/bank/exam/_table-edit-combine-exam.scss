@@ -1,0 +1,182 @@
+.edit-combine-exam {
+    .table-wrapper {
+        margin-top: 1.7rem;
+        // overflow-x: auto;
+    
+        table {
+            width: 100%;
+            min-width: 600px;
+            border-collapse: collapse;
+    
+            thead {
+                tr {
+                    border-top: 1px solid $color-disabled;
+                    border-bottom: 1px solid $color-disabled;
+    
+                    th {
+                        text-align: left;
+                        padding: 1.5rem;
+                    }
+                }
+            }
+    
+            tbody {
+                tr {
+                    border-bottom: 1px solid $color-disabled;
+                    td {
+                        text-align: left;
+                        padding: 1.5rem;
+    
+                        .img-preview {
+                            width: 91px;
+                            height: 55px;
+                        }
+
+                        .note {
+                            margin-top: 1rem;
+                            opacity: 0.5;
+                        }
+                    }
+    
+                    td:nth-child(2) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+.table-exam-tooltip-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    // max-height: $line-height-base * 3 + 1.1 + rem;
+    // padding: 0;
+}
+.table-exam-tooltip-content{
+    min-width: 25rem;
+}
+.tooltip-has-limited-content {
+    .tooltip-limited-content {
+      max-height: 25rem;
+      overflow-y: auto;
+    }
+  }
+  
+  .tooltip-edit-ans-course {
+    .tooltip-inner {
+      max-width: 80rem;
+      word-break: break-all;
+    }
+  }
+  
+  
+  .tooltip-has-arrow {
+    .tooltip-arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      margin: 5px;
+      border-color: $color-text-gray-2;
+      z-index: 1;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        background-color: #fff;
+        transform: rotate(45deg);
+      }
+    }
+  
+    &[x-placement^="top"] {
+      margin-bottom: 5px;
+  
+      .tooltip-arrow {
+        border-width: 5px 5px 0 5px;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        bottom: -5px;
+        right: calc(50% - 5px);
+        margin-top: 0;
+        margin-bottom: 0;
+  
+        &::before {
+          top: -13px;
+          left: calc(50% - 5.2px);
+        }
+      }
+    }
+  
+    &[x-placement^="bottom"] {
+      margin-top: 5px;
+  
+      .tooltip-arrow {
+        border-width: 0 5px 5px 5px;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-top-color: transparent !important;
+        top: -5px;
+        right: calc(50% - 5px);
+        margin-top: 0;
+        margin-bottom: 0;
+        &:before {
+          top: 3px;
+          left: calc(50% - 5px);
+        }
+      }
+    }
+  
+    &[x-placement^="right"] {
+      margin-left: 5px;
+  
+      .tooltip-arrow {
+        border-width: 5px 5px 5px 0;
+        border-left-color: transparent !important;
+        border-top-color: transparent !important;
+        border-bottom-color: transparent !important;
+        left: -5px;
+        top: calc(50% - 5px);
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  
+    &[x-placement^="left"] {
+      margin-right: 5px;
+  
+      .tooltip-arrow {
+        border-width: 5px 0 5px 5px;
+        border-top-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        right: -5px;
+        top: calc(50% - 5px);
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .tooltip-rounded {
+    .tooltip-inner {
+      border-radius: 3px;
+    }
+  }
+  .tooltip-bordered {
+    .tooltip-inner {
+      background-color: #fff;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+      border: 1px solid $color-text-gray-2;
+      padding: 1.5rem;
+    }
+  
+  }

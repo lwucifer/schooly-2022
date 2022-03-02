@@ -1,0 +1,40 @@
+.home-mobile {
+    &__logo {
+        margin-top: 10rem;
+    }
+
+    &__title {
+        color: #1D4354;
+        font-weight: 500;
+        margin-bottom: 12rem;
+
+        span {
+            display: block;
+
+            @media (min-width: 768px) {
+                display: inline;
+            }
+        }
+    }
+
+    &__download {
+        text-align: center;
+        .intro {
+            font-weight: 500;
+            color: $color-text-dark;
+        }
+
+        img {
+            width: 176px;
+        }
+    }
+
+    &__link {
+        margin-top: 8.2rem;
+        margin-bottom: 10rem;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+}

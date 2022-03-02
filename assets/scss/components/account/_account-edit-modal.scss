@@ -1,0 +1,54 @@
+.account-edit-modal .app-modal-content {
+    padding: 2rem;
+    .app-input {
+        display: flex;
+        .app-input__label {
+            white-space: nowrap;
+        }
+        .app-input__label-fixed {
+            width: 12rem;
+        }
+        .app-input__label-bold {
+            font-weight: bold;
+        }
+    }
+    .form-group {
+        label {
+            font-weight: bold;
+            font-size: 16px;
+            // width: 12rem;
+            white-space: nowrap;
+            margin-right: 0;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.account-edit-modal .app-modal-content h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.change-pass-success .icon-tick {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-pass-success p,
+.account-edit-modal .app-modal-content .form-control .mx-input,
+.account-edit-modal .app-modal-content .form-control {
+    color: #666;
+}
+
+.account-form-change-pass {
+    .app-input label {
+        font-weight: bold;
+        width: 16rem;
+    }
+}

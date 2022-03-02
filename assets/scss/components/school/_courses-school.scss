@@ -1,0 +1,63 @@
+.wrap-courses-school{
+    padding:4.5rem 3.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+     .btn-show-all{
+         width: 122px;
+     }
+     .highlight{
+         margin-top: 4rem;
+     }
+     .app-carousel.swiper-container{
+         padding-bottom: 9px;
+     }
+}
+.school-course-menu-tab{
+    a{
+        text-decoration: none;
+        padding:6px 15px;
+        color: #222222;
+        text-transform: uppercase;
+        &:hover{
+            color: #37A000;
+            border-bottom: 3px solid #37A000;
+        }
+    }
+    div{
+        cursor: pointer;
+        padding:6px 15px;
+    }
+    .active{
+        color: #37A000;
+        border-bottom: 3px solid #37A000;
+    }
+}
+.filter-form-school{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    .app-vue-select{
+        margin:5px;
+        width: 100%;
+    }
+}
+.sort-courses-school{
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.list-course-school-search{
+    margin-top: 3rem;
+}
+.subject-item{
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 145px;
+    flex-direction: column;
+    cursor: pointer;
+}

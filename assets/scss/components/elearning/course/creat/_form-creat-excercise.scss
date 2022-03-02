@@ -1,0 +1,25 @@
+.ce-input-with-unit {
+    @-moz-document url-prefix() {
+        width: 120px !important;
+
+        input {
+            width: 57px !important;
+        }
+    }
+}
+
+.input--modifer {
+    @-moz-document url-prefix() {
+        width: 90px !important;
+
+        input {
+            width: 40px !important;
+        }
+    }
+}
+
+.cex__select-item {
+    .v-select.app-vue-select .vs__dropdown-toggle {
+        height: 100%;
+    }
+}

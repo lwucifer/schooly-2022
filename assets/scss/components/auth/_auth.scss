@@ -1,0 +1,59 @@
+.auth {
+    .form-control {
+        background-color: #f8f8f8;
+    }
+    .form-group .unit{
+        background-color: #f8f8f8;
+    }
+    .btn-send-otp {
+        text-decoration: none;
+        color: #999;
+        &:not(.disable){
+            cursor: pointer;
+            color: $color-blue;
+        }
+    }
+    .btn-social {
+        border-radius: 0;
+        font-size: 1.4rem;
+        font-weight: normal;
+        width: 12rem;
+        + .btn-social { 
+            margin-left: 1.8rem;
+        }
+    }
+    .btn-facebook {
+        background-color: #3A559F;;
+    }
+    .btn-google {
+        background-color: #DF322F;;;
+    }
+}
+.auth__main {
+    max-width: 500px;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1.5rem 2rem 2rem;
+    background-color: #fff;
+}
+.auth__nav {
+    display: table;
+    width: 100%;
+    margin: 1.5rem 0 3rem;
+    >a {
+        font-weight: bold;
+        display: table-cell;
+        text-align: center;
+        padding: 1rem;
+        width: 50%;
+        font-size: 1.6rem;
+        color: #999;
+        &.active {
+            color: $color-primary;
+            border-bottom: .4rem solid $color-primary;
+        }
+        &:not(.active) {
+            cursor: pointer;
+        }
+    }
+}

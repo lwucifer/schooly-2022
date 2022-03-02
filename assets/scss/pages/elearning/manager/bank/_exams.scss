@@ -1,0 +1,16 @@
+.page-filter {
+    &__select, &__search, &__btn-filter {
+        border: 1px solid $color-disabled;
+        border-radius: 2px;
+    }
+
+    &__btn-filter {
+        height: 3.4rem;
+    }
+}
+
+.page-btn {
+    button {
+        height: 3.6rem;
+    }
+}

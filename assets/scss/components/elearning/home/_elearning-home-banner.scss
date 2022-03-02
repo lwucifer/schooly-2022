@@ -1,0 +1,26 @@
+.elearning-home-banner {
+    background-color: #1D4254;
+    color: #fff;
+
+    &__title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        color: inherit;
+
+        > div {
+            color: $color-primary-1;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        margin-bottom: -2px;
+        margin-top: 3.5rem;
+    }
+}

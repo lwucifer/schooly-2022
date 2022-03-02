@@ -1,0 +1,279 @@
+.wrap__elearning-item{
+    width: 100%;
+    margin-bottom: 22px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    &:hover{
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    .profile-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-text;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+    .wrap-content_Elearning{
+        padding: 15px;
+    }
+    .img__elearning-item{
+        width: 100%;
+        height: 159px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item-2__livestream{
+            position: absolute;
+            top: 1.2rem;
+            right: 1.2rem;
+            display: flex;
+            align-items: center;
+            background-color: $color-red;
+            font-size: 1.2rem;
+            color: #fff;
+            padding: .5rem 1rem .5rem .6rem;
+
+            .icon {
+                width: 2rem;
+                height: 1.5rem;
+                margin-right: 4px;
+
+                circle {
+                    animation: scaleDot 1s infinite;
+                    transform-origin: center;
+                }
+            }
+        }
+        .item-2__online-class{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(#6FDA44, .8);
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            padding: 1rem 1.4rem;
+            }
+        .item-2__discount{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-red;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+        }
+    }
+    .proccess-bar-study-border{
+            height: 5px;
+            width: 100%;
+            background: #EEEEEE;
+            margin-top: 1.2rem;
+            .percent-proccess{
+                background: #37A000;
+                height: 5px;
+                max-width: 100% !important;
+        }
+    }
+    .name_elearning-item{
+        @include set-line((
+            'lineClamp': 2,
+            'lineHeight': (20/15),
+            'fixedHeight': true
+        ));
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.4rem;
+        a{
+            color: inherit;
+            text-decoration: none;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+
+    .finish-lesson {
+        border-bottom: 1px solid $color-disabled;
+    }
+
+    .middle-point {
+       margin-top: 1rem;
+
+        .popover-point {
+            cursor: pointer;
+
+            .popover-detail {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .rate-lesson {
+        font-size: 1.3rem;
+    }
+
+    .buy-lesson {
+        &__price {
+            font-size: 1.6rem;
+        }
+
+        .old-price {
+            font-size: 1.3rem;
+        }
+    }
+
+    .app-dropdown__content{
+        right: -16px !important;
+        overflow: unset;
+    }
+    .link--dropdown__ElearningItem{
+        list-style: none;
+        padding: 1.5rem;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+        >li{
+            a{
+                font-size: 13px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: #656565;
+                svg{
+                    margin-right: 10px;
+                    width: 2rem;
+                    height: 2rem;
+                }
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+            .text-primary{
+                &:hover{
+                    color: #656565 !important;
+                }
+            }
+        }
+        li:nth-child(2){
+            margin: 1.5rem 0px;
+        }
+        
+    }
+}
+.wrap__study-space{
+    .title__study-space{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.01em;
+        color: #222222;
+        margin-bottom: 25px;
+        display: block;
+    }
+    .elearning-manager-content__title__nav{
+        a{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            height: 37px;
+        }
+    }
+    .submit-btn{
+        svg path { fill:  #656565;}
+    }
+    .search__mycourses{
+        .app-search{
+            width: 100%;
+            .app-input__input {
+                height: 32px;
+            }
+
+            .app-search__submit{
+                background: $color-primary;
+                box-shadow: none;
+                svg path {fill: #fff;}
+                // height: 30px;
+
+                // svg {
+                //     width: 12px;
+                // }
+            }
+
+            &::placeholder {
+                font-size: 1.3rem;
+            }
+        }
+        // .app-input--focused{
+        //     .app-search__submit{
+        //         svg path{ fill: $color-primary;}
+        //     }  
+        // }
+    }
+}
+.menu-share-elearning-tooltip{
+    z-index: 11;
+    .tooltip-arrow {
+        display: none;
+    }
+    .tooltip-inner{
+        padding:10px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        border: none;
+        margin-top: 1rem;
+        margin-left: -0.7rem;
+    }   
+    .share-dropdowm__ElearningItem{
+        list-style: none;
+        text-decoration: none;
+        svg{
+            margin-right: 10px;
+        }
+        li{
+            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: 0.01em;
+            display: flex;
+            align-items: center;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+        li:nth-child(2){
+            margin: 10px 0 0;
+        }
+      }
+}
+
+.mycourses {
+    &__title {
+        padding: 1.5rem;
+        color: #333;
+        background: $color-text-light-2;
+        border-bottom: 1px solid $color-disabled;
+        height: 49px;
+    }
+
+    &__content {
+        background: $color-text-white;
+        padding: 3rem 2rem;
+
+        .search-field {
+            margin-bottom: -1rem;
+        }
+    }
+}

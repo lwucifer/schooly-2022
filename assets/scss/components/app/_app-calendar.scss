@@ -1,0 +1,52 @@
+.app-calendar {
+    user-select: none;
+}
+
+.app-calendar__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.app-calendar__select-year {
+    display: flex;
+    align-items: center;
+    color: #1D243E;
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    .icon {
+        font-size: 2.4rem;
+        margin-left: 0.3rem;
+    }
+}
+
+.app-calendar__nav-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 2.4rem;
+    color: #6C738D;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: #1D243E;
+    }
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+.app-calendar__nav-right {
+    display: flex;
+}
+
+.app-calendar__calendar {
+    position: relative;
+    height: 22.4rem;
+}

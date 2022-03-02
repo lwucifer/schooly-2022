@@ -1,0 +1,45 @@
+.learn-everywhere {
+    background: $color-text-white;
+    padding: 8rem 0;
+
+    .learn-everywhere-title {
+        margin-bottom: 5.8rem;
+    }
+
+    .learn-everywhere-content {
+
+        .col-12.col-md-5,
+        .col-12.col-md-7 {
+            margin-bottom: 4rem;
+        }
+
+        .learn-everywhere-box {
+            &__title {
+                margin-bottom: 2rem;
+            }
+
+            .border {
+                width: 75px;
+                height: 5px;
+                background: $color-primary;
+                margin-bottom: 2rem;
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                margin-bottom: 7.5rem;
+                color: $color-text-dark;
+            }
+
+            a {
+                border: 1px solid $color-primary;
+                padding: 0.8rem 3rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        .learn-everywhere-box--modifier {
+            padding: 0 10rem;
+        }
+    }
+}

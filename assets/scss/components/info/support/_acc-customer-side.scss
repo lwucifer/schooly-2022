@@ -1,0 +1,43 @@
+.customer-acc {
+    &__title {
+        margin-bottom: 1.6rem;
+    }
+
+    &__intro {
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+
+    &__contact {
+        p {
+            margin-bottom: 2rem;
+
+            a {
+                color: $color-text-dark;
+                text-decoration: none;
+
+                svg {
+                    vertical-align: middle;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &:hover {
+                    color: $color-primary;
+
+                    svg  path{
+                        fill: $color-primary;
+                    }
+                }
+            }
+        }
+
+        p:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__note {
+        color: $color-text-dark;
+    }
+}

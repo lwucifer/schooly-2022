@@ -1,0 +1,44 @@
+.social-search-side{
+    .sss{
+        &__content{
+            li{
+                padding:1rem;
+                border-left: 4px solid transparent;
+                a{
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+                    svg path{
+                        fill: #000000;
+                        fill-opacity:1;
+                    }
+                }
+                &:hover{
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+                    border-left: 4px solid #008329;
+                    a{
+                        color:#008329;
+                        svg path{
+                            fill: #008329;
+                        }
+                    }
+                }
+            }
+            .active{
+                background: #FFFFFF;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+                border-left: 4px solid $color-primary;
+                a{
+                    color:$color-primary;
+                    svg path{
+                        fill: $color-primary;
+                    }
+                }
+            }
+        }
+    
+    }
+}

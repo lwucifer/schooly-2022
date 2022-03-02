@@ -1,0 +1,55 @@
+.support {
+    &__title {
+        margin-bottom: 1.6rem;
+    }
+
+    &__form {
+        padding: 3rem 2rem;
+
+        .form-group {
+            .form-name {
+                max-width: 30%;
+                flex: 0 0  30%;
+
+                span {
+                    color: $color-red;
+                }
+            }
+
+            .form-input {
+                max-width: 70%;
+                flex: 0 0  70%;
+
+                textarea {
+                    width: 100%;
+                    padding: 1.5rem;
+                    border: 1px solid $color-disabled;
+
+                    &:focus, &:active {
+                        border-color: $color-primary;
+                        box-shadow: $shadow-hover;
+                    }
+                }
+
+                .upload {
+                    margin-bottom: 3.5rem;
+
+                    span {
+                        font-size: 1.3rem;
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .form-group .error {
+            padding-left: 0px !important;
+          }
+        .content-error{
+            border: 1px solid red !important;
+        }
+        .content-success{
+            border: 1px solid green !important;
+        }
+    }
+}

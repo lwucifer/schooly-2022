@@ -1,0 +1,46 @@
+.exams-table{
+    .app-table table th {
+        border-top: none;
+    }
+    &__tooltip{
+        li{
+            list-style-type: none;
+            width: 100%;
+            padding: 1.2rem 1.2rem;
+            a{
+                text-decoration: none;
+                color: #656565;
+                .icon-playist path{
+                    fill:  #F2994A;
+                }
+                .icon-manager-exam path{
+                    fill: #E6A01E;
+                }
+                .icon-manager-student path{
+                    fill: #9B51E0;
+                }
+            }
+        }
+    }
+     .open{
+        button{
+            svg path{
+                fill: $color-primary;
+            }
+        }
+    }
+    .wrap-expanded-render{
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        background: #F9F9F9;
+        padding:1.5rem 2rem;
+    }
+}
+.tooltip--exams-table{
+    min-width: 16.2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+ }

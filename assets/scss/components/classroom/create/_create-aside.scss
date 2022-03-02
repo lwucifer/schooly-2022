@@ -1,0 +1,37 @@
+.manager-side--creation {
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+
+  &__checklist {
+    .item {
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      margin: 0 -1.5rem;
+      color: #333;
+
+      svg path {
+        fill: #333;
+      }
+
+      .text-sub {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        svg path {
+          fill: $color-primary;
+        }
+      }
+
+      &.active {
+        background-color: #F8F8F8;
+        font-weight: normal;
+
+        svg path {
+          fill: $color-primary;
+        }
+      }
+    }
+  }
+}

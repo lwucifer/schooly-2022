@@ -1,0 +1,36 @@
+.noti-setting {
+    background: #fcf8e3;
+    border: 1px solid #cdc52d;
+    border-radius: 2px;
+    height: 40px;
+    padding: 0 1.5rem;
+    margin: 1rem 0 3rem 0;
+  
+    &__text {
+      a {
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+}
+
+.percent_price__ElearningCreate {
+    height: 3.2rem;
+    line-height: 3.2rem;
+    padding: 0 1rem;
+}
+
+.input-price {
+    @-moz-document url-prefix() { 
+      width: 170px !important;
+
+      input {
+        width: 100px;
+      }
+    }
+}
+
+.icon-tooltip {
+  vertical-align: middle;
+  cursor: pointer;
+}

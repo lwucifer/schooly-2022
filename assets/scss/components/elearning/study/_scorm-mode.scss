@@ -1,0 +1,97 @@
+.es-scorm-mode {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.es-scorm-mode__iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.es-scorm-mode__menu {
+    position: absolute;
+    top: 0;
+    width: 205px;
+    height: 100%;
+    background-color: rgba(#222222, .7);
+    z-index: 1;
+    border-radius: 0px 2px 2px 0px;
+    color: #fff;
+    transition: visibility .3s, right .3s;
+    transition-delay: 0;
+    right: -205px;
+
+    .es-scorm-mode__button {
+        position: relative;
+        transition: left .3s;
+        left: -4rem;
+    }
+
+    &.show {
+        transition-delay: .3s;
+        right: 0;
+
+        .es-scorm-mode__button {
+            left: 0;
+        }
+    }
+}
+
+.es-scorm-mode__heading {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-right: .8rem;
+    background-color: $color-primary;
+    font-size: $font-size-base;
+    font-weight: 600;
+}
+
+.es-scorm-mode__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    flex: 0 0 4rem;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 4px;
+    text-align: center;
+    border-radius: 2px 0px 0px 2px;
+    background-color: $color-primary;
+}
+
+.es-scorm-mode__menu-list {
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+
+    li {
+        a {
+            position: relative;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 1rem 2.4rem 1rem 3.6rem;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 2.4rem;
+                width: .4rem;
+                height: .4rem;
+                margin-top: -.2rem;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+
+            &.active {
+                background-color: rgba(#F9F9F9, .2);
+            }
+        }
+    }
+}

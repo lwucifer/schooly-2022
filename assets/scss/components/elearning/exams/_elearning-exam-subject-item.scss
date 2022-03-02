@@ -1,0 +1,46 @@
+.subject-item {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    display: block;
+    text-decoration: none;
+    background-color: $color-text-white;
+    min-height: 105px;
+    text-align: center;
+    margin: 15px 0;
+    transition: box-shadow .3s;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid $color-text-white;
+
+    &__icon {
+        svg, img {
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__star {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        display: none;
+    }
+
+    &__title {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+    
+    &:hover {
+        border-color: $color-primary;
+
+        .subject-item__star {
+            display: block;
+        }
+    }
+}
+  

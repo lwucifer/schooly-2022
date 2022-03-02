@@ -1,0 +1,88 @@
+.list-question-side {
+    background: $color-text-white;
+
+    &__title {
+        background: #F9F9F9;
+        padding: 1.5rem 2rem;
+        height: 50px;
+        border-bottom: 1px solid $color-disabled;
+    }
+
+    &__content {
+        padding: 2rem;
+
+        .number-question {
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                font-size: 1.5rem;
+                width: 40px;
+                height: 40px;
+                background: $color-border;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-right: 1.6rem;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .bg-green {
+                background: $color-primary !important;
+                color: $color-text-white;
+            }
+
+            .bg-red {
+                background: $color-pink-2 !important;
+                color: $color-text-white;
+            }
+
+            .bg-blue {
+                background: #14BFF4 !important;
+                color: $color-text-white;
+            }
+        }
+
+        .status-question {
+            margin-top: 3.5rem;
+
+            .title {
+                font-weight: 500;
+                margin-bottom: 1.8rem;
+            }
+
+            p {
+                .cycle {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                    margin-top: 0.5rem;
+                }
+
+                .cycle-green {
+                    background: $color-primary;
+                }
+
+                .cycle-blue {
+                    background: #14BFF4;
+                }
+
+                .cycle-red {
+                    background: $color-pink-2;
+                }
+
+                .cycle-gray {
+                    background: $color-border;
+                }
+
+                span:first-child {
+                    display: inline-block;
+                    width: 120px;
+                }
+            }
+        }
+    }
+}

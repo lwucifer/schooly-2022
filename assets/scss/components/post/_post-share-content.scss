@@ -1,0 +1,64 @@
+.psc {
+    border: 1px solid $color-disabled;
+    box-shadow: $shadow-1;
+    border-radius: $border-radius-common;
+    padding: 2rem 2rem 1.4rem 2rem;
+
+    .app-content-box.app-content-box--type-preview-link {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+
+    }
+}
+
+.psc__avatar {
+    float: left;
+}
+
+.psc__top {
+    @include clearfix;
+}
+
+.psc__top-row {
+    margin-left: 5.1rem;
+
+    &:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    &--name {
+        font-size: 1.5rem;
+        color: $color-text-dark;
+
+        a {
+            color: inherit;
+            font-weight: 700;
+            color: $color-text-dark;
+        }
+    }
+}
+
+.psc__date {
+    text-decoration: none;
+    color: $color-text;
+    margin-right: 1.1rem;
+}
+
+.psc__privacy {
+    font-size: 1.6rem;
+    color: $color-gray;
+
+    svg {
+        display: block;
+    }
+}
+
+.psc__text {
+    color: $color-text-gray;
+}
+
+.psc__desc {
+    margin-top: 1.5rem;
+}

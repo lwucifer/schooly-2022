@@ -1,0 +1,40 @@
+.detail-exam-intro {
+    padding: 2.4rem 2rem;
+    background: $color-text-white;
+
+    &__title {
+        margin-bottom: 2.2rem;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info-school {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: $color-text;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .info-social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__text {
+        margin-top: 2.2rem;
+        border-top: 1px solid $color-disabled;
+        padding-top: 1.8rem;
+    }
+}

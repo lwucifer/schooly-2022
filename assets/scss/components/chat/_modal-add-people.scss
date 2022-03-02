@@ -1,0 +1,73 @@
+.app-modal-content {
+    padding: 0 0 2rem 0 !important;
+}
+.content {
+    .modal-search {
+        border-bottom: 1px solid $color-text-sub;
+        padding: 5px 0;
+        height: 50px;
+
+        .input-no-border {
+            /deep/ .app-input__input{
+                border-color: transparent !important;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .modal-add {
+        padding: 2rem 2.6rem;
+
+        &__title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: $color-text-dark;
+            margin-bottom: 2.2rem;
+        }
+
+        &__list {
+            height: 300px;
+            overflow-y: auto;
+            ul {
+                list-style-type: none;
+                li {
+                    margin-bottom: 1.5rem;
+                    .list-item {
+                        cursor: pointer;
+
+                        &:active {
+                            .name span {
+                                outline: none;
+                            }
+                        }
+                        .name {
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                margin-right: 1rem;
+                            }
+
+                            span {
+                                color: $color-text-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-btn {
+        button {
+            font-size: 1.3rem;
+        }
+
+        button:first-child {
+            padding: 1.2rem 2.3rem;
+        }
+
+        button:last-child {
+            padding: 1.2rem 3.3rem;
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.app-range-calendar {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+  position: relative;
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+    .app-range-calendar__placeholder {
+      box-shadow: $shadow-hover;
+    }
+  }
+
+  &.app-range-calendar--bordered {
+    box-shadow: $shadow-1;
+    .app-range-calendar__placeholder {
+      border: 1px solid #E0E0E0;
+    }
+  }
+
+  &.active {
+    .app-range-calendar__placeholder {
+      border: 1px solid $color-primary;
+    }
+  }
+}
+
+.app-range-calendar--size-sm {
+  .app-range-calendar__placeholder {
+    height: 3.2rem;
+  }
+}
+.app-range-calendar--size-md {
+  .app-range-calendar__placeholder {
+    height: 4rem;
+  }
+}
+.app-range-calendar--size-lg {
+  .app-range-calendar__placeholder {
+    height: 4.8rem;
+  }
+}
+
+.app-range-calendar__input-wrapper {
+  position: relative;
+}
+
+.app-range-calendar__placeholder {
+  color: $color-text-gray-2;
+  line-height: 2rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  width: 100%;
+  border: none;
+
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: inherit;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: inherit;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: inherit;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: inherit;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+  }
+}
+
+.app-range-calendar__shortcuts {
+  display: block;
+  background: #fff;
+  padding: 0.6rem;
+  width: 100%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.app-range-calendar__shortcut-item {
+  display: block;
+  height: 3.2rem;
+  background: $color-text-light-2;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 1.1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 2px;
+  &:hover {
+    color: $color-primary;
+  }
+  &.app-range-calendar__shortcut-item--active:hover {
+    background: $color-primary-3;
+    color: #fff;
+  }
+}
+.app-range-calendar__shortcut-item--active {
+  background: $color-primary;
+  font-weight: 600;
+  color: #fff;
+}
+.app-range-calendar__calendar {
+  display: flex;
+  position: absolute;
+  transform: translateX(100%);
+  right: -1rem;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+  /*.app-calendar {*/
+  /*  width: 27.4rem;*/
+  /*  height: 30rem;*/
+  /*  padding: 0.6rem 1.2rem;*/
+  /*}*/
+  .app-range-picker {
+    margin-bottom: 0;
+  }
+  .app-calendar.app-range-picker__calendar {
+    width: 234px;
+    flex: 0 0 234px;
+    overflow: hidden;
+  }
+  .app-calendar__calendar {
+    height: 186px;
+  }
+}
+.app-range-calendar__icon-select,
+.app-range-calendar__icon-close {
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 0.7rem);
+  display: inline-block;
+  height: 1.4rem;
+  width: 1.4rem;
+  svg path {
+    fill: $color-primary;
+    fill-opacity: 1;
+  }
+}
+.app-range-calendar__options {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 1s ease-in;
+  position: absolute;
+  width: 100%;
+  z-index: map-get($z-index, 'dropdown');
+}

@@ -1,0 +1,84 @@
+.list-exam-item {
+    background: $color-text-white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+
+    &__img {
+        position: relative;
+
+        a img {
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .absolute-price {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            background: #2D9CDB;
+            border-radius: 2px;
+            padding: 0.5rem 1rem;
+            font-size: 1.8rem;
+            color: $color-text-white;
+            font-weight: 500;
+        }
+
+        .free {
+            background: $color-primary !important;
+        }
+    }
+
+    &__content {
+        .content-top {
+            padding: 1.2rem;
+
+            .top-name {
+                margin-bottom: 0.5rem;
+                a {
+                    font-size: 1.5rem;
+                    color: $color-text-dark;
+                    text-decoration: none;
+                    font-weight: 500;
+    
+                    &:hover {
+                        color: $color-primary
+                    }
+                }
+            }
+    
+            .top-rating {
+                margin-bottom: 1.7rem;
+            }
+    
+            .top-school {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+    
+                a {
+                    text-decoration: none;
+                    color: $color-text;
+                    margin-left: 1rem;
+    
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+    
+            .top-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .content-bottom {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

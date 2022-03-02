@@ -1,0 +1,18 @@
+.policy {
+    padding: 2rem;
+    background: $color-text-white;
+
+    &__content {
+        p {
+            margin-bottom: 2rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

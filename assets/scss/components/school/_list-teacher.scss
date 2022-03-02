@@ -1,0 +1,44 @@
+.list-teacher {
+    display: flex;
+    padding: 9rem 3.5rem;
+    background-color: $color-text-white;
+    
+    &__text {
+        flex-grow: 3;
+        padding: 7rem;
+        background: #1D4354;
+        text-align: center;
+        .list {
+            font-size: 3rem;
+            color: $color-text-white;
+            margin-bottom: 1.8rem;
+
+            span {
+                @media (min-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+
+        .line {
+            width: 62px;
+            height: 3px;
+            background-color: $color-text-white;
+            margin: 0 auto;
+            margin-bottom: 2.5rem;
+        }
+
+        button {
+            padding: 0.8rem 2.4rem;
+        }
+    }
+
+    &__img {
+        flex-grow: 5;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.elearning-course-comment__item {
+    display: flex;
+    margin-bottom: 1.8rem;
+    .content {
+        margin-left: 1rem;
+        width: 100%;
+    }
+}
+.elearning-course-comment__input {
+    .main {
+        display: flex;
+        align-items: center;
+    }
+    .editor-wrapper {
+        display: flex;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid $color-border;
+        margin-left: .5rem;
+        .editor {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .ProseMirror {
+                outline: none;
+            }
+        }
+        strong.name {
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: 0;
+        }
+    }
+    .btn-cancel {
+        background-color: transparent;
+        color: #999 !important;
+    }
+    .ProseMirror {
+        display: flex;
+        p {
+            display: inline;
+            order: 2;
+            color: #666;
+        }
+        h6 {
+            pointer-events: none;
+            display: inline;
+            margin-right: .5rem;
+            order: 1;
+        }
+    }
+    .editor *.is-empty:nth-child(1)::before, .editor *.is-empty:nth-child(2)::before {
+        float: none;
+        color: #ccc;
+    }
+}
+.app-input__input textarea {
+    height: auto;
+}

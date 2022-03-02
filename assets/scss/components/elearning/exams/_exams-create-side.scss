@@ -1,0 +1,42 @@
+.exams-create-side{
+    padding-bottom: 2rem;
+    .exs-title{
+      padding: 1.2rem 1.5rem;
+      background: #F9F9F9;
+      box-shadow: 0px 1px 0px #E0E0E0;
+      height: 50px;
+    }
+    .exs-checkbox-list {
+        list-style-type: none;
+        padding: 1.3rem 0;
+  
+        li:last-child {
+            &:after {
+                content: none;
+            }
+        }
+  
+        li {
+            padding: .7rem 2rem;
+            position: relative;
+  
+            &:after {
+                content: "";
+                position: absolute;
+                left: 28px;
+                bottom: -9px;
+                width: 2px;
+                height: 20px;
+                background: url("~assets/images/create-course/line.png") no-repeat;
+            }
+        }
+    }
+    .exs-action {
+      padding: 0 1.5rem;
+      
+      .btn {
+          font-size: 1.4rem;
+          font-weight: 600;
+      }
+  }
+  }
